@@ -225,7 +225,7 @@ export function EventsCalendar({
                                 href={e.href}
                                 title={e.title}
                                 className={cn(
-                                  "block truncate rounded-sm px-1.5 py-0.5 text-xs font-semibold",
+                                  "block rounded-sm px-1.5 py-0.5 text-xs font-semibold leading-snug break-words hyphens-auto",
                                   e.major ? "bg-royal-800 text-white hover:bg-royal-700" : "bg-royal-50 text-royal-900 hover:bg-royal-100",
                                 )}
                               >

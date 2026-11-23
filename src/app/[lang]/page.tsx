@@ -81,19 +81,21 @@ function Hero({ lang, buildTime }: { lang: string; buildTime: string }) {
   const t = getDictionary(lang);
   const { bishop } = diocese;
   return (
-    <section className="on-dark relative overflow-hidden bg-royal-950 text-white" aria-labelledby="hero-title">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={asset("/images/pd/stolobny-monastery.jpg")}
-        alt=""
-        className="absolute inset-0 size-full object-cover opacity-35"
-        fetchPriority="high"
-      />
-      <div aria-hidden className="absolute inset-0 bg-linear-to-b from-royal-950/80 via-royal-950/85 to-royal-950" />
+    <section className="on-dark relative bg-royal-950 text-white" aria-labelledby="hero-title">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={asset("/images/pd/stolobny-monastery.jpg")}
+          alt=""
+          className="absolute inset-0 size-full object-cover opacity-35"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-linear-to-b from-royal-950/80 via-royal-950/85 to-royal-950" />
+      </div>
       <div className="container-site relative grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.2fr_1fr] lg:gap-14 lg:py-20">
         <div className="min-w-0">
           <p className="eyebrow mb-4">{t.home.heroEyebrow}</p>
-          <h1 id="hero-title" className="display-text text-4xl leading-[1.05] sm:text-5xl lg:text-6xl">
+          <h1 id="hero-title" className="display-text text-4xl leading-snug sm:text-5xl lg:text-6xl">
             {loc(siteConfig.siteName, lang)}
           </h1>
           <Ornament className="my-7 max-w-xs !justify-start [&>span:first-child]:hidden" />
@@ -200,7 +202,7 @@ function Announcements({ lang }: { lang: string }) {
                     </time>
                   </div>
                   <h3 className="font-heading text-2xl leading-snug text-royal-900 group-hover:underline underline-offset-4">{loc(n.title, lang)}</h3>
-                  <p className="mt-2 line-clamp-3 text-muted-ink">{loc(n.summary, lang)}</p>
+                  <p className="mt-2 text-muted-ink">{loc(n.summary, lang)}</p>
                   {n.pdf ? <p className="mt-auto pt-4 text-sm font-semibold text-royal-700">PDF</p> : null}
                 </Link>
               </li>

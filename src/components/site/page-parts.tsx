@@ -24,16 +24,17 @@ export function PageHeader({
 }) {
   const t = getDictionary(lang);
   return (
-    <div className="on-dark relative overflow-hidden bg-royal-900 text-white">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-60"
-        style={{
-          backgroundImage:
-            "radial-gradient(ellipse 60% 120% at 85% 0%, color-mix(in oklch, var(--color-royal-600) 70%, transparent), transparent 70%), radial-gradient(circle at 1px 1px, color-mix(in oklch, var(--color-gold-400) 22%, transparent) 1px, transparent 0)",
-          backgroundSize: "auto, 22px 22px",
-        }}
-      />
+    <div className="on-dark relative bg-royal-900 text-white">
+      <div className="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden>
+        <div
+          className="absolute inset-0 opacity-60"
+          style={{
+            backgroundImage:
+              "radial-gradient(ellipse 60% 120% at 85% 0%, color-mix(in oklch, var(--color-royal-600) 70%, transparent), transparent 70%), radial-gradient(circle at 1px 1px, color-mix(in oklch, var(--color-gold-400) 22%, transparent) 1px, transparent 0)",
+            backgroundSize: "auto, 22px 22px",
+          }}
+        />
+      </div>
       <div className="container-site relative py-10 sm:py-14">
         <nav aria-label={t.common.breadcrumb} className="mb-5 text-sm text-royal-200">
           <ol className="flex flex-wrap items-center gap-1.5">
@@ -53,7 +54,7 @@ export function PageHeader({
           </ol>
         </nav>
         {eyebrow ? <p className="eyebrow mb-3">{eyebrow}</p> : null}
-        <h1 className="max-w-4xl text-4xl leading-[1.08] sm:text-5xl lg:text-[3.4rem]">{title}</h1>
+        <h1 className="max-w-4xl text-4xl leading-snug sm:text-5xl lg:text-[3.4rem]">{title}</h1>
         {intro ? <p className="mt-4 max-w-3xl text-lg leading-relaxed text-royal-100">{intro}</p> : null}
         {children}
       </div>
@@ -113,8 +114,8 @@ export function DateTile({ day, month, className }: { day: string; month: string
         className,
       )}
     >
-      <span className="font-heading text-2xl leading-none text-royal-900">{day}</span>
-      <span className="mt-0.5 text-[0.68rem] font-bold uppercase tracking-wider text-gold-700">{month}</span>
+      <span className="font-heading text-2xl leading-tight text-royal-900">{day}</span>
+      <span className="mt-0.5 text-[0.68rem] font-bold uppercase leading-snug tracking-wider text-gold-700">{month}</span>
     </div>
   );
 }

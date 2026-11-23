@@ -56,10 +56,10 @@ export function SiteFooter({ lang }: { lang: string }) {
           {siteConfig.social.length ? (
             <>
               <h2 className="eyebrow mb-3 mt-8">{t.footer.follow}</h2>
-              <ul className="flex flex-wrap gap-3 text-sm">
+              <ul className="flex flex-wrap items-center gap-3 text-sm leading-normal">
                 {siteConfig.social.map((s) => (
-                  <li key={s.href}>
-                    <a href={s.href} rel="noopener" className="rounded border border-white/15 px-3 py-1.5 hover:border-gold-400 hover:text-white">
+                  <li key={s.href} className="leading-normal">
+                    <a href={s.href} rel="noopener" className="inline-flex items-center rounded border border-white/15 px-3 py-1.5 leading-normal hover:border-gold-400 hover:text-white">
                       {s.label}
                     </a>
                   </li>

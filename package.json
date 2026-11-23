@@ -10,6 +10,7 @@
     "lint": "eslint",
     "make-pdfs": "node scripts/make-sample-pdfs.mjs",
     "qa:fit": "node scripts/fit-check.mjs",
+    "qa:language-fit": "node scripts/language-fit.mjs",
     "qa:screenshots": "node scripts/screenshots.mjs",
     "zip": "node scripts/zip-dist.mjs"
   },

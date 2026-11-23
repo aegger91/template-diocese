@@ -1,16 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
-
-@import "@fontsource/eb-garamond/400.css";
-@import "@fontsource/eb-garamond/500.css";
-@import "@fontsource/eb-garamond/600.css";
-@import "@fontsource/eb-garamond/400-italic.css";
-@import "@fontsource/source-sans-3/400.css";
-@import "@fontsource/source-sans-3/600.css";
-@import "@fontsource/source-sans-3/700.css";
-@import "@fontsource/ruslan-display/400.css";
-@import "@fontsource/gfs-didot/400.css";
+@import "../styles/fonts.css";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -110,14 +101,27 @@
     font-family: var(--font-heading);
     font-weight: 500;
     letter-spacing: -0.005em;
+    line-height: 1.25;
     overflow-wrap: break-word;
+    overflow: visible;
     hyphens: auto;
     text-wrap: balance;
+    padding-block: 0.05em;
   }
   p,
   li,
-  dd {
+  dd,
+  label,
+  button,
+  a,
+  span {
     overflow-wrap: break-word;
+  }
+  /* Uppercase + tracking must not clip glyph ink or descenders. */
+  .eyebrow,
+  [class*="uppercase"][class*="tracking"] {
+    line-height: 1.35;
+    overflow: visible;
   }
   button:not(:disabled),
   [role="button"]:not(:disabled) {
@@ -151,9 +155,11 @@
     font-family: var(--font-sans);
     font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
+    line-height: 1.35;
     text-transform: uppercase;
     color: var(--color-gold-700);
+    overflow: visible;
   }
   .on-dark .eyebrow,
   .eyebrow.on-dark {

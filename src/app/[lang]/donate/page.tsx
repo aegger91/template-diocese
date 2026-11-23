@@ -54,7 +54,6 @@ export default async function DonatePage({ params }: Props) {
               secure: d.secure,
               summary: d.summary,
               perMonth: d.perMonth,
-              invalidAmount: d.invalidAmount,
               invalidEmail: d.invalidEmail,
               raised: d.raised,
               donors: d.donors,

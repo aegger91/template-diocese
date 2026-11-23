@@ -99,7 +99,8 @@ export function SiteHeader({ lang, dir, languages, nav, utilityLinks, donateHref
     const onScroll = () => {
       cancelAnimationFrame(frame);
       frame = requestAnimationFrame(() => {
-        setCondensed((prev) => (prev ? window.scrollY > 8 : window.scrollY > 48));
+        // Wide hysteresis avoids flicker/jitter near the threshold.
+        setCondensed((prev) => (prev ? window.scrollY > 12 : window.scrollY > 64));
       });
     };
     onScroll();
@@ -114,32 +115,35 @@ export function SiteHeader({ lang, dir, languages, nav, utilityLinks, donateHref
     <header
       data-condensed={condensed}
       className={cn(
-        "group/header sticky top-0 z-40 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/90 transition-shadow duration-300",
+        "group/header sticky top-0 z-40 bg-white/95 backdrop-blur supports-backdrop-filter:bg-white/90",
         condensed ? "shadow-[0_6px_24px_-12px_rgba(14,27,66,0.35)]" : "shadow-none",
       )}
     >
+      {/* Utility row: grid 0fr/1fr collapses without max-height flicker or clipping ink. */}
       <div
         className={cn(
-          "overflow-hidden bg-royal-900 text-royal-100 transition-[max-height,opacity] duration-300",
-          condensed ? "max-h-0 opacity-0" : "max-h-12 opacity-100",
+          "grid bg-royal-900 text-royal-100 transition-[grid-template-rows] duration-200 ease-out",
+          condensed ? "grid-rows-[0fr]" : "grid-rows-[1fr]",
         )}
       >
-        <div className="container-site flex h-10 items-center justify-between gap-4 text-xs">
-          <nav aria-label="Utility" className="hidden min-w-0 md:block">
-            <ul className="flex items-center gap-5">
-              {utilityLinks.map((l) => (
-                <li key={l.href}>
-                  <Link href={l.href} className="whitespace-nowrap hover:text-white hover:underline underline-offset-4">
-                    {l.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-          <div className="ms-auto flex items-center gap-2">
-            <Globe className="size-3.5 opacity-70" aria-hidden />
-            <span className="sr-only">{labels.language}</span>
-            <LanguageLinks lang={lang} languages={languages} />
+        <div className="min-h-0 overflow-hidden">
+          <div className="container-site flex h-10 items-center justify-between gap-4 text-xs">
+            <nav aria-label="Utility" className="hidden min-w-0 md:block">
+              <ul className="flex flex-wrap items-center gap-x-5 gap-y-1">
+                {utilityLinks.map((l) => (
+                  <li key={l.href}>
+                    <Link href={l.href} className="inline-block leading-snug hover:text-white hover:underline underline-offset-4">
+                      {l.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+            <div className="ms-auto flex items-center gap-2">
+              <Globe className="size-3.5 opacity-70" aria-hidden />
+              <span className="sr-only">{labels.language}</span>
+              <LanguageLinks lang={lang} languages={languages} />
+            </div>
           </div>
         </div>
       </div>
@@ -147,8 +151,8 @@ export function SiteHeader({ lang, dir, languages, nav, utilityLinks, donateHref
       <div className="border-b border-line">
         <div
           className={cn(
-            "container-site flex items-center justify-between gap-3 transition-[height] duration-300",
-            "h-(--header-full) group-data-[condensed=true]/header:h-(--header-condensed)",
+            "container-site flex items-center justify-between gap-3 py-2",
+            "min-h-(--header-full) group-data-[condensed=true]/header:min-h-(--header-condensed) group-data-[condensed=true]/header:py-1.5",
           )}
         >
           <Link href={homeHref} className="min-w-0 shrink rounded focus-visible:outline-2 focus-visible:outline-gold-500" aria-label={labels.home}>
@@ -215,9 +219,9 @@ export function SiteHeader({ lang, dir, languages, nav, utilityLinks, donateHref
                 asChild
                 className="h-10 rounded-md bg-gold-500 px-3 text-[0.95rem] font-semibold text-royal-950 shadow-sm hover:bg-gold-400 sm:px-4"
               >
-                <Link href={donateHref}>
+                <Link href={donateHref} aria-label={labels.donate}>
                   <HeartHandshake className="size-4" aria-hidden />
-                  <span className="max-[419px]:sr-only">{labels.donate}</span>
+                  <span className="hidden min-[420px]:inline">{labels.donate}</span>
                 </Link>
               </Button>
             ) : null}

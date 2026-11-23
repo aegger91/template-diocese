@@ -32,7 +32,6 @@ interface Labels {
   secure: string;
   summary: string;
   perMonth: string;
-  invalidAmount: string;
   invalidEmail: string;
   raised: string;
   donors: string;
@@ -60,12 +59,12 @@ export function DonateForm({
   const uid = useId();
   const [fund, setFund] = useState(defaultFund);
   const [frequency, setFrequency] = useState<"one-time" | "monthly">("one-time");
-  const [preset, setPreset] = useState<number | null>(amounts[1] ?? amounts[0] ?? null);
+  const [preset, setPreset] = useState<number | null>(null);
   const [custom, setCustom] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [dedication, setDedication] = useState("");
-  const [errors, setErrors] = useState<{ amount?: string; email?: string }>({});
+  const [errors, setErrors] = useState<{ email?: string }>({});
   const [busy, setBusy] = useState(false);
   const [result, setResult] = useState<DonationResult | null>(null);
 
@@ -76,13 +75,13 @@ export function DonateForm({
   }, [funds]);
 
   const money = new Intl.NumberFormat(lang, { style: "currency", currency, maximumFractionDigits: 2, minimumFractionDigits: 0 });
-  const amount = custom ? Number(custom.replace(",", ".")) : preset ?? 0;
+  const parsedCustom = custom ? Number(custom.replace(",", ".")) : NaN;
+  const amount = custom ? (Number.isFinite(parsedCustom) ? parsedCustom : 0) : (preset ?? 0);
   const fundName = funds.find((f) => f.id === fund)?.name ?? "";
 
   const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     const next: typeof errors = {};
-    if (!(amount >= 1)) next.amount = labels.invalidAmount;
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) next.email = labels.invalidEmail;
     setErrors(next);
     if (Object.keys(next).length) return;
@@ -171,16 +170,13 @@ export function DonateForm({
             id={`${uid}-other`}
             inputMode="decimal"
             value={custom}
-            onChange={(e) => setCustom(e.target.value.replace(/[^\d.,]/g, ""))}
-            aria-invalid={Boolean(errors.amount)}
-            aria-describedby={errors.amount ? `${uid}-amount-err` : undefined}
+            onChange={(e) => {
+              setCustom(e.target.value.replace(/[^\d.,]/g, ""));
+              setPreset(null);
+            }}
+            placeholder={money.format(0)}
             className="h-11 bg-white text-base"
           />
-          {errors.amount ? (
-            <p id={`${uid}-amount-err`} className="text-sm text-destructive">
-              {errors.amount}
-            </p>
-          ) : null}
         </div>
       </fieldset>
 
@@ -223,7 +219,7 @@ export function DonateForm({
       <div className="rounded-lg border border-gold-500/50 bg-parchment p-5">
         <p className="text-sm text-muted-ink">{labels.summary}</p>
         <p className="mt-1 font-heading text-2xl text-royal-900">
-          {amount >= 1 ? money.format(amount) : "-"}
+          {money.format(amount)}
           {frequency === "monthly" ? ` ${labels.perMonth}` : ""}
           <span className="text-muted-ink">, </span>
           {fundName}

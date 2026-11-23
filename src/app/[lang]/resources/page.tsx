@@ -59,13 +59,17 @@ export default async function ResourcesPage({ params }: Props) {
         <aside className="h-fit">
           <Link
             href={localHref(lang, "/resources/feasts/")}
-            className="on-dark group relative block overflow-hidden rounded-lg bg-royal-900 p-6 text-white"
+            className="on-dark group relative block rounded-lg bg-royal-900 p-6 text-white"
           >
-            <OrthodoxCross className="pointer-events-none absolute -bottom-4 end-3 h-32 w-auto text-gold-400/20" />
-            <p className="eyebrow">{r.year}</p>
-            <p className="mt-2 font-heading text-2xl text-gold-300">{r.feastsTitle}</p>
-            <p className="mt-2 text-sm text-royal-100">{r.feastsIntro}</p>
-            <ArrowRight className="mt-4 size-5 text-gold-300 transition group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden />
+            <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-lg" aria-hidden>
+              <OrthodoxCross className="absolute -bottom-4 end-3 h-32 w-auto text-gold-400/20" />
+            </div>
+            <div className="relative">
+              <p className="eyebrow">{r.year}</p>
+              <p className="mt-2 font-heading text-2xl leading-snug text-gold-300">{r.feastsTitle}</p>
+              <p className="mt-2 text-sm leading-snug text-royal-100">{r.feastsIntro}</p>
+              <ArrowRight className="mt-4 size-5 text-gold-300 transition group-hover:translate-x-1 rtl:rotate-180 rtl:group-hover:-translate-x-1" aria-hidden />
+            </div>
           </Link>
         </aside>
       </div>

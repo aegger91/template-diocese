@@ -23,17 +23,17 @@ export function Logo({
   const onDark = variant === "footer";
   const markSize =
     variant === "header"
-      ? "size-11 sm:size-14 group-data-[condensed=true]/header:size-10 sm:group-data-[condensed=true]/header:size-11"
+      ? "size-11 shrink-0 sm:size-12 xl:size-14 group-data-[condensed=true]/header:size-10"
       : "size-20";
 
   let mark: React.ReactNode = null;
   if (logo.style === "seal") {
-    mark = <EpiscopalSeal text={loc(logo.sealText, lang)} year={logo.sealYear} idPrefix={idPrefix} className={cn(markSize, "shrink-0 transition-all duration-300")} title={name} />;
+    mark = <EpiscopalSeal text={loc(logo.sealText, lang)} year={logo.sealYear} idPrefix={idPrefix} className={cn(markSize, "shrink-0")} title={name} />;
   } else if (logo.style === "kiot") {
-    mark = <KiotFrame className={cn(markSize, "w-auto shrink-0 transition-all duration-300")} />;
+    mark = <KiotFrame className={cn(markSize, "w-auto shrink-0")} />;
   } else if (logo.style === "square" && logo.image) {
     // eslint-disable-next-line @next/next/no-img-element
-    mark = <img src={asset(logo.image)} alt="" className={cn(markSize, "shrink-0 rounded-sm object-contain transition-all duration-300")} />;
+    mark = <img src={asset(logo.image)} alt="" className={cn(markSize, "shrink-0 rounded-sm object-contain")} />;
   }
 
   return (
@@ -42,7 +42,7 @@ export function Logo({
       <span className={cn("flex min-w-0 flex-col", logo.style === "wordmark" && "border-s-2 border-gold-500 ps-3")}>
         <span
           className={cn(
-            "display-text line-clamp-2 leading-[1.1] text-balance",
+            "display-text leading-snug text-balance",
             onDark ? "text-xl text-white" : "text-[0.95rem] text-royal-900 sm:text-lg lg:text-xl",
             logo.style === "wordmark" && !onDark && "text-lg sm:text-xl lg:text-2xl",
           )}
@@ -51,7 +51,7 @@ export function Logo({
         </span>
         <span
           className={cn(
-            "mt-0.5 hidden truncate text-xs tracking-wide sm:block",
+            "mt-0.5 hidden text-xs leading-snug tracking-wide text-pretty sm:block",
             onDark ? "text-royal-200" : "text-muted-ink group-data-[condensed=true]/header:hidden",
           )}
         >

@@ -55,11 +55,15 @@ export function FeastCalendar({
       </div>
       <p className="mt-3 text-sm text-muted-ink">{labels.note}</p>
 
-      <section aria-labelledby="pascha" className="on-dark relative mt-8 overflow-hidden rounded-lg bg-royal-900 p-6 text-white sm:p-10">
-        <OrthodoxCross className="pointer-events-none absolute -bottom-6 end-4 h-52 w-auto text-gold-400/15 sm:end-10" />
-        <p id="pascha" className="eyebrow">{labels.feastOfFeasts}</p>
-        <p className="display-text mt-2 text-3xl text-gold-300 sm:text-5xl">{names.pascha}</p>
-        <p className="mt-3 text-xl text-royal-100">{long.format(pascha.date)}</p>
+      <section aria-labelledby="pascha" className="on-dark relative mt-8 rounded-lg bg-royal-900 p-6 text-white sm:p-10">
+        <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-lg" aria-hidden>
+          <OrthodoxCross className="absolute -bottom-6 end-4 h-52 w-auto text-gold-400/15 sm:end-10" />
+        </div>
+        <div className="relative">
+          <p id="pascha" className="eyebrow">{labels.feastOfFeasts}</p>
+          <p className="display-text mt-2 text-3xl leading-snug text-gold-300 sm:text-5xl">{names.pascha}</p>
+          <p className="mt-3 text-xl leading-snug text-royal-100">{long.format(pascha.date)}</p>
+        </div>
       </section>
 
       <div className="mt-10 grid gap-10 lg:grid-cols-[1.5fr_1fr]">
@@ -69,7 +73,7 @@ export function FeastCalendar({
             {great.map((f) => (
               <li key={f.key} className={cn("flex items-center gap-4 p-4", f.key === nextKey && "bg-gold-300/20")}>
                 <span className="flex w-14 shrink-0 flex-col items-center rounded-md border border-gold-500/50 py-1.5 text-center">
-                  <span className="font-heading text-2xl leading-none text-royal-900">{day.format(f.date)}</span>
+                  <span className="font-heading text-2xl leading-tight text-royal-900">{day.format(f.date)}</span>
                   <span className="mt-0.5 text-[0.68rem] font-bold uppercase tracking-wider text-gold-700">{month.format(f.date).replace(".", "")}</span>
                 </span>
                 <span className="min-w-0">
