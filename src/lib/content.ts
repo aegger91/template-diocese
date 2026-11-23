@@ -43,6 +43,7 @@ export const diocese = dioceseJson as unknown as {
     biography: LocalizedParagraphs;
     milestones: { year: string; text: Localized }[];
   };
+  welcomeBlock: { title: Localized; text: Localized };
   history: {
     intro: Localized;
     timeline: { year: string; title: Localized; text: Localized; image?: string }[];

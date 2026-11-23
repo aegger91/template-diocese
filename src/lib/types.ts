@@ -19,6 +19,7 @@ export interface NavItem {
 
 export type HomeSectionId =
   | "hero"
+  | "welcome"
   | "announcements"
   | "events"
   | "bishopSchedule"

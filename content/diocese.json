@@ -18,157 +18,230 @@
       "el": "Χαιρετισμός του Επισκόπου μας"
     },
     "welcomeShort": {
-      "en": "Beloved in the Lord, thank you for visiting. Our parishes, missions and monastery are spread across many towns, yet we pray as one Church around one altar. Whether you are a lifelong Orthodox Christian or visiting for the first time, you are welcome among us.",
-      "ru": "Возлюбленные о Господе, благодарю вас за посещение нашего сайта. Наши приходы, миссии и монастырь находятся в разных городах, но мы молимся как одна Церковь у одного престола. Кем бы вы ни были, православным с детства или впервые пришедшим в храм, мы рады вам.",
-      "el": "Αγαπητοί εν Κυρίω, σας ευχαριστούμε για την επίσκεψή σας. Οι ενορίες, οι ιεραποστολές και η μονή μας βρίσκονται σε πολλές πόλεις, όμως προσευχόμαστε ως μία Εκκλησία γύρω από ένα θυσιαστήριο. Είτε είστε Ορθόδοξος από παιδί είτε μας επισκέπτεστε για πρώτη φορά, είστε ευπρόσδεκτος."
+      "en": "A short welcome from the ruling bishop. Sample text of one or two lines.",
+      "ru": "Краткое приветствие правящего архиерея. Образец текста в одну-две строки.",
+      "el": "Σύντομος χαιρετισμός του Επισκόπου. Δείγμα κειμένου μίας ή δύο γραμμών."
     },
     "welcomeFull": {
       "en": [
-        "Beloved in the Lord, thank you for visiting the website of our diocese. Our parishes, missions and monastery are spread across many towns and two languages of prayer, yet we stand together as one Church, gathered around one altar and one chalice.",
-        "On these pages you will find the parishes nearest you, the clergy who serve them, the work of our diocesan ministries, and news of the life we share. I hope it helps you find your way to a church on Sunday morning.",
-        "If you are visiting an Orthodox church for the first time, please come as you are. Introduce yourself to the priest after the Divine Liturgy. He will be glad to meet you.",
-        "With love in Christ, and asking your prayers,"
+        "Sample welcome from the ruling bishop. Replace it with the bishop's own words.",
+        "With love in Christ,"
       ],
       "ru": [
-        "Возлюбленные о Господе, благодарю вас за посещение сайта нашей епархии. Наши приходы, миссии и монастырь находятся во многих городах, богослужения совершаются на двух языках, но мы стоим вместе как одна Церковь, собранная вокруг одного престола и одной Чаши.",
-        "Здесь вы найдёте ближайшие к вам приходы, служащее в них духовенство, труды епархиальных отделов и новости нашей общей жизни. Надеюсь, сайт поможет вам прийти в храм в воскресное утро.",
-        "Если вы впервые идёте в православный храм, приходите таким, какой вы есть. Подойдите к священнику после Божественной литургии. Он будет рад знакомству.",
-        "С любовью о Христе и прося ваших молитв,"
+        "Образец приветственного слова правящего архиерея. Замените его словами владыки.",
+        "С любовью о Христе,"
       ],
       "el": [
-        "Αγαπητοί εν Κυρίω, σας ευχαριστώ που επισκέπτεστε την ιστοσελίδα της Επισκοπής μας. Οι ενορίες, οι ιεραποστολές και η μονή μας βρίσκονται σε πολλές πόλεις και προσεύχονται σε δύο γλώσσες, όμως στεκόμαστε μαζί ως μία Εκκλησία, γύρω από ένα θυσιαστήριο και ένα Ποτήριο.",
-        "Σε αυτές τις σελίδες θα βρείτε τις ενορίες κοντά σας, τους κληρικούς που τις διακονούν, το έργο των διακονιών της Επισκοπής και τα νέα της κοινής μας ζωής. Εύχομαι να σας βοηθήσουν να βρείτε τον δρόμο προς έναν ναό την Κυριακή το πρωί.",
-        "Αν επισκέπτεστε Ορθόδοξο ναό για πρώτη φορά, ελάτε όπως είστε. Συστηθείτε στον ιερέα μετά τη Θεία Λειτουργία. Θα χαρεί να σας γνωρίσει.",
-        "Με αγάπη Χριστού και ζητώντας τις προσευχές σας,"
+        "Δείγμα χαιρετισμού του Επισκόπου. Αντικαταστήστε το με τα δικά του λόγια.",
+        "Με αγάπη Χριστού,"
       ]
     },
     "biography": {
       "en": [
-        "This is a sample biography. Replace it with the life of your ruling hierarch, written in the plain style your diocese prefers.",
-        "Bishop Example was born in a small town within the diocese and was baptized in his home parish as an infant. He sang in the parish choir as a boy and served in the altar through his school years.",
-        "After university studies in history, he completed his theological education at a sample seminary and spent several years at a monastery, where he was tonsured a monk.",
-        "He served as a priest in two parishes of the diocese and as diocesan chancellor before his election to the episcopacy by the Holy Synod. He was consecrated bishop at the cathedral and enthroned as ruling bishop of the diocese.",
-        "His Grace gives particular attention to clergy formation, to the life of small mission parishes and to the work of diocesan charity. He serves in English and Church Slavonic and reads Greek."
+        "Sample biography of the ruling bishop. Replace it with a short account of his life and service."
       ],
       "ru": [
-        "Это образец биографии. Замените его жизнеописанием вашего правящего архиерея, написанным в принятом в епархии простом стиле.",
-        "Епископ Пример родился в небольшом городе на территории епархии и был крещён в младенчестве в родном приходе. В детстве он пел на клиросе, а в школьные годы прислуживал в алтаре.",
-        "Получив университетское образование по истории, он окончил образцовую духовную семинарию и несколько лет подвизался в монастыре, где принял монашеский постриг.",
-        "Он служил священником на двух приходах епархии и был секретарём епархиального управления, а затем был избран Священным Синодом во епископа. Хиротония состоялась в кафедральном соборе, после чего владыка вступил в управление епархией.",
-        "Особое внимание владыка уделяет подготовке духовенства, жизни малых миссионерских приходов и делам епархиальной благотворительности. Он служит на английском и церковнославянском языках и читает по-гречески."
+        "Образец биографии правящего архиерея. Замените его кратким жизнеописанием."
       ],
       "el": [
-        "Αυτό είναι ένα δείγμα βιογραφίας. Αντικαταστήστε το με τον βίο του Επισκόπου σας, γραμμένο με το απλό ύφος που προτιμά η Επισκοπή σας.",
-        "Ο Επίσκοπος Παράδειγμα γεννήθηκε σε μια μικρή πόλη της Επισκοπής και βαπτίστηκε βρέφος στην ενορία του. Ως παιδί έψαλλε στο αναλόγιο και στα σχολικά του χρόνια διακονούσε στο ιερό.",
-        "Μετά από σπουδές Ιστορίας στο πανεπιστήμιο, ολοκλήρωσε τις θεολογικές του σπουδές σε ένα υποδειγματικό ιεροδιδασκαλείο και έζησε μερικά χρόνια σε μονή, όπου εκάρη μοναχός.",
-        "Διακόνησε ως ιερέας σε δύο ενορίες της Επισκοπής και ως Γραμματέας της Επισκοπής, πριν εκλεγεί Επίσκοπος από την Ιερά Σύνοδο. Χειροτονήθηκε στον καθεδρικό ναό και ενθρονίστηκε ως Επίσκοπος της Επισκοπής.",
-        "Ο Θεοφιλέστατος δίνει ιδιαίτερη προσοχή στην κατάρτιση των κληρικών, στη ζωή των μικρών ιεραποστολικών ενοριών και στο φιλανθρωπικό έργο. Λειτουργεί στα αγγλικά και στα εκκλησιαστικά σλαβονικά και διαβάζει ελληνικά."
+        "Δείγμα βιογραφίας του Επισκόπου. Αντικαταστήστε το με σύντομο βιογραφικό."
       ]
     },
     "milestones": [
-      { "year": "1968", "text": { "en": "Born (sample date)", "ru": "Родился (образец даты)", "el": "Γέννηση (δείγμα ημερομηνίας)" } },
-      { "year": "1994", "text": { "en": "Ordained to the priesthood", "ru": "Рукоположен во иерея", "el": "Χειροτονία εις πρεσβύτερον" } },
-      { "year": "2009", "text": { "en": "Tonsured a monk", "ru": "Пострижен в монашество", "el": "Κουρά μοναχού" } },
-      { "year": "2015", "text": { "en": "Consecrated bishop", "ru": "Хиротонисан во епископа", "el": "Χειροτονία εις επίσκοπον" } },
-      { "year": "2018", "text": { "en": "Enthroned as ruling bishop", "ru": "Вступил в управление епархией", "el": "Ενθρόνιση ως Επισκόπου" } }
+      {
+        "year": "1968",
+        "text": {
+          "en": "Born (sample date)",
+          "ru": "Родился (образец даты)",
+          "el": "Γέννηση (δείγμα ημερομηνίας)"
+        }
+      },
+      {
+        "year": "1994",
+        "text": {
+          "en": "Ordained to the priesthood",
+          "ru": "Рукоположен во иерея",
+          "el": "Χειροτονία εις πρεσβύτερον"
+        }
+      },
+      {
+        "year": "2009",
+        "text": {
+          "en": "Tonsured a monk",
+          "ru": "Пострижен в монашество",
+          "el": "Κουρά μοναχού"
+        }
+      },
+      {
+        "year": "2015",
+        "text": {
+          "en": "Consecrated bishop",
+          "ru": "Хиротонисан во епископа",
+          "el": "Χειροτονία εις επίσκοπον"
+        }
+      },
+      {
+        "year": "2018",
+        "text": {
+          "en": "Enthroned as ruling bishop",
+          "ru": "Вступил в управление епархией",
+          "el": "Ενθρόνιση ως Επισκόπου"
+        }
+      }
     ]
+  },
+  "welcomeBlock": {
+    "title": {
+      "en": "About the diocese",
+      "ru": "О епархии",
+      "el": "Η Επισκοπή"
+    },
+    "text": {
+      "en": "Sample introduction to the diocese. Replace it with one or two lines.",
+      "ru": "Образец краткого рассказа о епархии. Замените одной-двумя строками.",
+      "el": "Δείγμα σύντομης παρουσίασης της Επισκοπής. Αντικαταστήστε το με μία ή δύο γραμμές."
+    }
   },
   "history": {
     "intro": {
-      "en": "This sample history shows the shape of the page. Replace each entry with the real story of your diocese, its first communities and the people who built it.",
-      "ru": "Этот образец истории показывает устройство страницы. Замените каждую запись подлинной историей вашей епархии, её первых общин и тех, кто её созидал.",
-      "el": "Αυτό το δείγμα ιστορίας δείχνει τη μορφή της σελίδας. Αντικαταστήστε κάθε εγγραφή με την πραγματική ιστορία της Επισκοπής σας, των πρώτων κοινοτήτων και των ανθρώπων που την έχτισαν."
+      "en": "Sample timeline. Replace each entry with the history of your diocese.",
+      "ru": "Образец хронологии. Замените записи историей вашей епархии.",
+      "el": "Δείγμα χρονολογίου. Αντικαταστήστε τις εγγραφές με την ιστορία της Επισκοπής σας."
     },
     "timeline": [
       {
         "year": "1905",
-        "title": { "en": "The first sample community", "ru": "Первая община (образец)", "el": "Η πρώτη κοινότητα (δείγμα)" },
+        "title": {
+          "en": "The first sample community",
+          "ru": "Первая община (образец)",
+          "el": "Η πρώτη κοινότητα (δείγμα)"
+        },
         "text": {
-          "en": "A handful of immigrant families gather for Vespers in a rented hall and write to the Church at home asking for a priest.",
-          "ru": "Несколько семей переселенцев собираются на вечерню в арендованном зале и пишут на родину с просьбой прислать священника.",
-          "el": "Λίγες οικογένειες μεταναστών συγκεντρώνονται για τον Εσπερινό σε μια νοικιασμένη αίθουσα και γράφουν στην Εκκλησία της πατρίδας ζητώντας ιερέα."
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
         },
         "image": "/images/pd/st-nicholas-pensky.jpg"
       },
       {
         "year": "1921",
-        "title": { "en": "A cathedral is built", "ru": "Строительство собора", "el": "Ανέγερση του καθεδρικού" },
+        "title": {
+          "en": "A cathedral is built",
+          "ru": "Строительство собора",
+          "el": "Ανέγερση του καθεδρικού"
+        },
         "text": {
-          "en": "The growing parish builds its church with donated labor. It later becomes the cathedral of the diocese.",
-          "ru": "Растущий приход строит храм трудами прихожан. Позже он становится кафедральным собором епархии.",
-          "el": "Η ενορία που μεγαλώνει χτίζει τον ναό της με την εθελοντική εργασία των πιστών. Αργότερα γίνεται ο καθεδρικός ναός της Επισκοπής."
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
         }
       },
       {
         "year": "1952",
-        "title": { "en": "The diocese is established", "ru": "Учреждение епархии", "el": "Ίδρυση της Επισκοπής" },
+        "title": {
+          "en": "The diocese is established",
+          "ru": "Учреждение епархии",
+          "el": "Ίδρυση της Επισκοπής"
+        },
         "text": {
-          "en": "The Holy Synod gathers the parishes of the region into one diocese and appoints its first ruling bishop.",
-          "ru": "Священный Синод объединяет приходы края в одну епархию и назначает первого правящего архиерея.",
-          "el": "Η Ιερά Σύνοδος ενώνει τις ενορίες της περιοχής σε μία Επισκοπή και διορίζει τον πρώτο Επίσκοπό της."
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
         },
         "image": "/images/pd/korovniki-ensemble.jpg"
       },
       {
         "year": "1979",
-        "title": { "en": "A monastery is founded", "ru": "Основание монастыря", "el": "Ίδρυση της μονής" },
+        "title": {
+          "en": "A monastery is founded",
+          "ru": "Основание монастыря",
+          "el": "Ίδρυση της μονής"
+        },
         "text": {
-          "en": "Three monks settle on donated farmland and begin the daily cycle of services that continues today.",
-          "ru": "Три инока поселяются на пожертвованной земле и начинают совершать суточный круг богослужений, который не прерывается и сегодня.",
-          "el": "Τρεις μοναχοί εγκαθίστανται σε δωρισμένη αγροτική γη και αρχίζουν τον καθημερινό κύκλο των ακολουθιών που συνεχίζεται έως σήμερα."
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
         },
         "image": "/images/pd/stolobny-monastery.jpg"
       },
       {
         "year": "2008",
-        "title": { "en": "Mission parishes", "ru": "Миссионерские приходы", "el": "Ιεραποστολικές ενορίες" },
+        "title": {
+          "en": "Mission parishes",
+          "ru": "Миссионерские приходы",
+          "el": "Ιεραποστολικές ενορίες"
+        },
         "text": {
-          "en": "The diocese opens its first English-language missions in college towns, served by priests who travel each weekend.",
-          "ru": "Епархия открывает первые англоязычные миссии в университетских городах, куда священники приезжают каждые выходные.",
-          "el": "Η Επισκοπή ιδρύει τις πρώτες αγγλόφωνες ιεραποστολές σε πανεπιστημιουπόλεις, όπου ιερείς ταξιδεύουν κάθε Σαββατοκύριακο."
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
         }
       },
       {
         "year": "2026",
-        "title": { "en": "Today", "ru": "Сегодня", "el": "Σήμερα" },
+        "title": {
+          "en": "Today",
+          "ru": "Сегодня",
+          "el": "Σήμερα"
+        },
         "text": {
-          "en": "Sample parishes, missions, a monastery and chapels across several states, with services in English, Church Slavonic, Greek, Romanian and Arabic.",
-          "ru": "Приходы, миссии, монастырь и часовни (образец) в нескольких штатах, с богослужениями на английском, церковнославянском, греческом, румынском и арабском языках.",
-          "el": "Ενορίες, ιεραποστολές, μία μονή και παρεκκλήσια (δείγμα) σε πολλές πολιτείες, με ακολουθίες στα αγγλικά, σλαβονικά, ελληνικά, ρουμανικά και αραβικά."
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
         }
       }
     ]
   },
   "structure": {
     "intro": {
-      "en": "The diocese is a family of parishes under one bishop. For pastoral care and shared work, parishes are grouped into deaneries, and the bishop is assisted by the diocesan council, the chancery and the departments.",
-      "ru": "Епархия есть семья приходов под омофором одного архиерея. Для пастырского окормления и общих трудов приходы объединены в благочиния, а архиерею помогают епархиальный совет, канцелярия и отделы.",
-      "el": "Η Επισκοπή είναι μια οικογένεια ενοριών υπό έναν Επίσκοπο. Για την ποιμαντική φροντίδα και το κοινό έργο, οι ενορίες ομαδοποιούνται σε αρχιερατικές περιφέρειες, ενώ τον Επίσκοπο βοηθούν το Επισκοπικό Συμβούλιο, τα γραφεία και οι διακονίες."
+      "en": "Sample overview of the deaneries, offices and departments of the diocese.",
+      "ru": "Образец описания благочиний, управления и отделов епархии.",
+      "el": "Δείγμα περιγραφής των περιφερειών, των γραφείων και των διακονιών της Επισκοπής."
     },
     "deaneries": [
       {
         "id": "great-lakes",
-        "name": { "en": "Great Lakes Deanery (sample)", "ru": "Приозёрное благочиние (образец)", "el": "Περιφέρεια Μεγάλων Λιμνών (δείγμα)" },
+        "name": {
+          "en": "Great Lakes Deanery (sample)",
+          "ru": "Приозёрное благочиние (образец)",
+          "el": "Περιφέρεια Μεγάλων Λιμνών (δείγμα)"
+        },
         "deanId": "andrew-sample"
       },
       {
         "id": "prairie",
-        "name": { "en": "Prairie Deanery (sample)", "ru": "Степное благочиние (образец)", "el": "Περιφέρεια Πεδιάδων (δείγμα)" },
+        "name": {
+          "en": "Prairie Deanery (sample)",
+          "ru": "Степное благочиние (образец)",
+          "el": "Περιφέρεια Πεδιάδων (δείγμα)"
+        },
         "deanId": "peter-example"
       },
       {
         "id": "river",
-        "name": { "en": "River Deanery (sample)", "ru": "Приречное благочиние (образец)", "el": "Περιφέρεια Ποταμού (δείγμα)" },
+        "name": {
+          "en": "River Deanery (sample)",
+          "ru": "Приречное благочиние (образец)",
+          "el": "Περιφέρεια Ποταμού (δείγμα)"
+        },
         "deanId": "john-template"
       }
     ],
     "offices": [
       {
-        "title": { "en": "Chancellor", "ru": "Секретарь епархии", "el": "Γραμματέας της Επισκοπής" },
+        "title": {
+          "en": "Chancellor",
+          "ru": "Секретарь епархии",
+          "el": "Γραμματέας της Επισκοπής"
+        },
         "clergyId": "andrew-sample"
       },
       {
-        "title": { "en": "Diocesan council", "ru": "Епархиальный совет", "el": "Επισκοπικό Συμβούλιο" },
+        "title": {
+          "en": "Diocesan council",
+          "ru": "Епархиальный совет",
+          "el": "Επισκοπικό Συμβούλιο"
+        },
         "text": {
           "en": "Clergy and lay members elected at the diocesan assembly. Meets four times a year.",
           "ru": "Клирики и миряне, избранные епархиальным собранием. Собирается четыре раза в год.",
@@ -176,7 +249,11 @@
         }
       },
       {
-        "title": { "en": "Treasurer", "ru": "Казначей", "el": "Ταμίας" },
+        "title": {
+          "en": "Treasurer",
+          "ru": "Казначей",
+          "el": "Ταμίας"
+        },
         "text": {
           "en": "A lay volunteer position. Reports to the council at each meeting.",
           "ru": "Мирянин, несущий послушание на общественных началах. Отчитывается перед советом на каждом заседании.",
@@ -184,7 +261,11 @@
         }
       },
       {
-        "title": { "en": "Ecclesiastical court", "ru": "Епархиальный суд", "el": "Επισκοπικό Δικαστήριο" },
+        "title": {
+          "en": "Ecclesiastical court",
+          "ru": "Епархиальный суд",
+          "el": "Επισκοπικό Δικαστήριο"
+        },
         "text": {
           "en": "Three senior priests appointed by the bishop.",
           "ru": "Три старших священника, назначенных архиереем.",
@@ -206,19 +287,13 @@
     },
     "text": {
       "en": [
-        "This page names the Church and Synod your diocese belongs to. The text below is sample content.",
-        "The Diocese of St. Example is one of several dioceses of the Sample Orthodox Church. Its ruling bishop is a member of the Holy Synod, which meets twice a year under the presidency of the primate.",
-        "The Sample Orthodox Church is in full communion with the local Orthodox Churches throughout the world. We share one faith, the same sacraments and the same Holy Tradition, received from the Apostles and kept by the Fathers and the Ecumenical Councils."
+        "Sample text about the Church and Synod this diocese belongs to. One or two lines."
       ],
       "ru": [
-        "На этой странице указываются Церковь и Синод, к которым принадлежит ваша епархия. Текст ниже является образцом.",
-        "Епархия святого Примера является одной из епархий Образцовой Православной Церкви. Её правящий архиерей входит в Священный Синод, который собирается дважды в год под председательством Предстоятеля.",
-        "Образцовая Православная Церковь пребывает в полном общении с Поместными Православными Церквами всего мира. Мы исповедуем одну веру, причащаемся одних Таинств и храним одно Священное Предание, принятое от апостолов и сохранённое святыми отцами и Вселенскими Соборами."
+        "Образец текста о Церкви и Синоде, к которым принадлежит епархия. Одна-две строки."
       ],
       "el": [
-        "Αυτή η σελίδα αναφέρει την Εκκλησία και τη Σύνοδο στην οποία ανήκει η Επισκοπή σας. Το παρακάτω κείμενο είναι δείγμα.",
-        "Η Επισκοπή Αγίου Παραδείγματος είναι μία από τις επισκοπές της Υποδειγματικής Ορθοδόξου Εκκλησίας. Ο Επίσκοπός της είναι μέλος της Ιεράς Συνόδου, η οποία συνέρχεται δύο φορές τον χρόνο υπό την προεδρία του Προκαθημένου.",
-        "Η Υποδειγματική Ορθόδοξη Εκκλησία βρίσκεται σε πλήρη κοινωνία με τις τοπικές Ορθόδοξες Εκκλησίες σε όλο τον κόσμο. Μοιραζόμαστε μία πίστη, τα ίδια μυστήρια και την ίδια Ιερά Παράδοση, που παραλάβαμε από τους Αποστόλους και διαφύλαξαν οι Πατέρες και οι Οικουμενικές Σύνοδοι."
+        "Δείγμα κειμένου για την Εκκλησία και τη Σύνοδο στην οποία ανήκει η Επισκοπή. Μία ή δύο γραμμές."
       ]
     },
     "website": "https://church.example"

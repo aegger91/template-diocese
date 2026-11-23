@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "dictionary.schema.json",
+  "title": "UI dictionary",
+  "description": "Interface text for one language. Keys missing here fall back to the default language file.",
+  "type": "object",
+  "additionalProperties": {
+    "oneOf": [
+      {
+        "type": "string"
+      },
+      {
+        "$ref": "#"
+      }
+    ]
+  }
+}

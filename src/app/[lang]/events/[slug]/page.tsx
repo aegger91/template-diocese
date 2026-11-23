@@ -33,7 +33,7 @@ export default async function EventPage({ params }: Props) {
   const t = getDictionary(lang);
   const parish = parishById(ev.location.parishId);
   const place = eventPlace(ev, lang);
-  const description = ev.description ? locParagraphs(ev.description, lang) : [loc(ev.summary, lang)];
+  const description = ev.description ? locParagraphs(ev.description, lang) : [];
 
   return (
     <>
@@ -57,7 +57,7 @@ export default async function EventPage({ params }: Props) {
             // eslint-disable-next-line @next/next/no-img-element
             <img src={asset(ev.image)} alt="" className="mb-8 aspect-[16/7] w-full rounded-md object-cover" />
           ) : null}
-          <Prose paragraphs={description} className="max-w-3xl" />
+          {description.length ? <Prose paragraphs={description} className="max-w-3xl" /> : null}
           {ev.livestream && siteConfig.features.livestream ? (
             <p className="mt-8 flex max-w-3xl items-start gap-3 rounded-md border border-royal-200 bg-royal-50 p-4 text-royal-900">
               <Radio className="mt-0.5 size-5 shrink-0 text-royal-700" aria-hidden />

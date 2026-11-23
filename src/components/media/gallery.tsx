@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Dialog, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
+import { ChevronLeft, ChevronRight, X } from "lucide-react";
+import { Dialog, DialogClose, DialogContent, DialogDescription, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 
 export interface GalleryItem {
@@ -21,7 +21,7 @@ export function Gallery({
 }: {
   albums: { id: string; name: string }[];
   items: GalleryItem[];
-  labels: { all: string; previous: string; next: string; credit: string; album: string };
+  labels: { all: string; previous: string; next: string; credit: string; album: string; close: string };
 }) {
   const [album, setAlbum] = useState("");
   const [open, setOpen] = useState<number | null>(null);
@@ -78,15 +78,21 @@ export function Gallery({
       <Dialog open={current !== null} onOpenChange={(o) => !o && setOpen(null)}>
         {current ? (
           <DialogContent
+            showCloseButton={false}
             className="max-h-[94svh] w-[min(96vw,68rem)] max-w-none gap-3 overflow-y-auto border-royal-800 bg-royal-950 p-3 text-white sm:max-w-none sm:p-5"
             onKeyDown={(e) => {
               if (e.key === "ArrowRight") step(document.dir === "rtl" ? -1 : 1);
               if (e.key === "ArrowLeft") step(document.dir === "rtl" ? 1 : -1);
             }}
           >
+            <DialogClose asChild>
+              <Button variant="ghost" size="icon" className="absolute end-2 top-2 z-10 size-10 bg-royal-950/70 text-white hover:bg-royal-800 hover:text-white" aria-label={labels.close}>
+                <X className="size-5" aria-hidden />
+              </Button>
+            </DialogClose>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={current.src} alt={current.alt} className="mx-auto max-h-[72svh] w-auto max-w-full object-contain" />
-            <div className="flex flex-wrap items-end justify-between gap-3 pe-8">
+            <div className="flex flex-wrap items-end justify-between gap-3">
               <div className="min-w-0">
                 <DialogTitle className="font-heading text-xl font-normal text-gold-300">{current.caption}</DialogTitle>
                 <DialogDescription className="text-xs text-royal-200">

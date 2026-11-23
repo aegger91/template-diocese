@@ -1,0 +1,89 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.schema.json",
+  "title": "Shared definitions",
+  "$defs": {
+    "languageCode": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)?$"
+    },
+    "localized": {
+      "description": "Plain text, or one text per language code. Missing languages fall back to the default language.",
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)?$"
+          },
+          "additionalProperties": {
+            "type": "string"
+          },
+          "minProperties": 1
+        }
+      ]
+    },
+    "localizedParagraphs": {
+      "description": "A list of paragraphs, or one list per language code.",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        {
+          "type": "object",
+          "propertyNames": {
+            "pattern": "^[a-z]{2,3}(-[A-Za-z0-9]+)?$"
+          },
+          "additionalProperties": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "minProperties": 1
+        }
+      ]
+    },
+    "navItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "href"
+      ],
+      "properties": {
+        "label": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "href": {
+          "type": "string",
+          "pattern": "^(/|https?://|mailto:)",
+          "description": "Site path starting with / (without the language prefix), or a full URL."
+        },
+        "children": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/navItem"
+          }
+        }
+      }
+    },
+    "eventCategory": {
+      "enum": [
+        "assembly",
+        "retreat",
+        "service",
+        "youth",
+        "education",
+        "music",
+        "charity",
+        "clergy"
+      ]
+    }
+  }
+}

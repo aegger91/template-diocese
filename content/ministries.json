@@ -4,7 +4,11 @@
     {
       "id": "youth",
       "icon": "youth",
-      "name": { "en": "Youth ministry", "ru": "Молодёжный отдел", "el": "Διακονία Νεότητας" },
+      "name": {
+        "en": "Youth ministry",
+        "ru": "Молодёжный отдел",
+        "el": "Διακονία Νεότητας"
+      },
       "summary": {
         "en": "Retreats, summer camp and a youth council that helps plan them.",
         "ru": "Слёты, летний лагерь и молодёжный совет, который помогает их готовить.",
@@ -12,26 +16,29 @@
       },
       "body": {
         "en": [
-          "The youth ministry helps parishes care for their teenagers and young adults. It runs a winter retreat, a summer camp and an annual pilgrimage to the monastery.",
-          "Every adult who works with youth completes the diocesan safe environment training before the first event. Forms are in the resources library."
+          "Sample description of this department. One or two lines."
         ],
         "ru": [
-          "Молодёжный отдел помогает приходам заботиться о подростках и молодёжи. Он проводит зимний слёт, летний лагерь и ежегодное паломничество в монастырь.",
-          "Каждый взрослый, работающий с молодёжью, проходит епархиальное обучение по безопасности до первого мероприятия. Формы находятся в разделе ресурсов."
+          "Образец описания отдела. Одна-две строки."
         ],
         "el": [
-          "Η Διακονία Νεότητας βοηθά τις ενορίες να φροντίζουν τους εφήβους και τους νέους τους. Οργανώνει χειμερινή σύναξη, θερινή κατασκήνωση και ετήσιο προσκύνημα στη μονή.",
-          "Κάθε ενήλικας που εργάζεται με νέους ολοκληρώνει την εκπαίδευση ασφάλειας της Επισκοπής πριν από την πρώτη εκδήλωση. Τα έντυπα βρίσκονται στη βιβλιοθήκη εγγράφων."
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
         ]
       },
       "contactClergyId": "michael-mockup",
       "email": "youth@diocese.example",
-      "eventCategories": ["youth"]
+      "eventCategories": [
+        "youth"
+      ]
     },
     {
       "id": "education",
       "icon": "education",
-      "name": { "en": "Christian education", "ru": "Отдел религиозного образования", "el": "Κατήχηση και Παιδεία" },
+      "name": {
+        "en": "Christian education",
+        "ru": "Отдел религиозного образования",
+        "el": "Κατήχηση και Παιδεία"
+      },
       "summary": {
         "en": "Church school lessons, teacher training and adult classes on the faith.",
         "ru": "Уроки воскресной школы, обучение учителей и занятия о вере для взрослых.",
@@ -39,26 +46,29 @@
       },
       "body": {
         "en": [
-          "The education department supports church school teachers with lesson plans for each age group and a yearly training day.",
-          "Adult classes on the Creed, the Divine Liturgy and the Church Fathers are offered in each deanery during Great Lent."
+          "Sample description of this department. One or two lines."
         ],
         "ru": [
-          "Отдел образования помогает учителям воскресных школ планами уроков для каждого возраста и ежегодным семинаром.",
-          "Занятия для взрослых о Символе веры, Божественной литургии и святых отцах проходят в каждом благочинии Великим постом."
+          "Образец описания отдела. Одна-две строки."
         ],
         "el": [
-          "Η Διακονία Παιδείας στηρίζει τους κατηχητές με σχέδια μαθημάτων για κάθε ηλικία και μια ετήσια ημέρα επιμόρφωσης.",
-          "Μαθήματα για ενήλικες για το Σύμβολο της Πίστεως, τη Θεία Λειτουργία και τους Πατέρες γίνονται σε κάθε περιφέρεια τη Μεγάλη Τεσσαρακοστή."
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
         ]
       },
       "contactClergyId": "nicholas-draft",
       "email": "education@diocese.example",
-      "eventCategories": ["education"]
+      "eventCategories": [
+        "education"
+      ]
     },
     {
       "id": "missions",
       "icon": "missions",
-      "name": { "en": "Missions and evangelism", "ru": "Миссионерский отдел", "el": "Ιεραποστολή" },
+      "name": {
+        "en": "Missions and evangelism",
+        "ru": "Миссионерский отдел",
+        "el": "Ιεραποστολή"
+      },
       "summary": {
         "en": "Starting and supporting new communities in towns without an Orthodox church.",
         "ru": "Открытие и поддержка новых общин в городах, где нет православного храма.",
@@ -66,16 +76,13 @@
       },
       "body": {
         "en": [
-          "The missions department helps small groups of Orthodox Christians become parishes. It provides service books, a travelling priest and a small grant for rent in the first years.",
-          "If you live far from a parish and would like to gather others for prayer, please write to the department."
+          "Sample description of this department. One or two lines."
         ],
         "ru": [
-          "Миссионерский отдел помогает небольшим группам православных стать приходами. Он даёт богослужебные книги, направляет разъездного священника и в первые годы помогает с арендой.",
-          "Если вы живёте далеко от прихода и хотели бы собирать людей на молитву, напишите в отдел."
+          "Образец описания отдела. Одна-две строки."
         ],
         "el": [
-          "Η Διακονία Ιεραποστολής βοηθά μικρές ομάδες Ορθοδόξων να γίνουν ενορίες. Παρέχει λειτουργικά βιβλία, ιερέα που ταξιδεύει και μικρή ενίσχυση για ενοίκιο τα πρώτα χρόνια.",
-          "Αν ζείτε μακριά από ενορία και θέλετε να συγκεντρώσετε άλλους για προσευχή, γράψτε στη διακονία."
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
         ]
       },
       "contactClergyId": "peter-example",
@@ -85,7 +92,11 @@
     {
       "id": "music",
       "icon": "music",
-      "name": { "en": "Church music", "ru": "Певческий отдел", "el": "Εκκλησιαστική μουσική" },
+      "name": {
+        "en": "Church music",
+        "ru": "Певческий отдел",
+        "el": "Εκκλησιαστική μουσική"
+      },
       "summary": {
         "en": "Training for choir directors and chanters, and a shared library of scores.",
         "ru": "Обучение регентов и певчих и общая нотная библиотека.",
@@ -93,26 +104,29 @@
       },
       "body": {
         "en": [
-          "The music department serves choirs singing in Slavonic, Greek, Byzantine and English traditions. It hosts a yearly workshop and keeps a library of scores approved for use in the diocese.",
-          "Choir directors may request scores and recordings for learning by email."
+          "Sample description of this department. One or two lines."
         ],
         "ru": [
-          "Певческий отдел помогает хорам, поющим в славянской, греческой, византийской и английской традициях. Он проводит ежегодный семинар и ведёт нотную библиотеку, одобренную для епархии.",
-          "Регенты могут запросить ноты и учебные записи по электронной почте."
+          "Образец описания отдела. Одна-две строки."
         ],
         "el": [
-          "Η Διακονία Μουσικής στηρίζει χορωδίες και ψάλτες σε σλαβική, βυζαντινή και αγγλόφωνη παράδοση. Οργανώνει ετήσιο σεμινάριο και διατηρεί βιβλιοθήκη εγκεκριμένων παρτιτούρων.",
-          "Οι χοράρχες μπορούν να ζητήσουν παρτιτούρες και ηχογραφήσεις μελέτης με email."
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
         ]
       },
       "contactClergyId": "luke-example",
       "email": "music@diocese.example",
-      "eventCategories": ["music"]
+      "eventCategories": [
+        "music"
+      ]
     },
     {
       "id": "charity",
       "icon": "charity",
-      "name": { "en": "Charity and outreach", "ru": "Отдел церковной благотворительности", "el": "Φιλανθρωπία" },
+      "name": {
+        "en": "Charity and outreach",
+        "ru": "Отдел церковной благотворительности",
+        "el": "Φιλανθρωπία"
+      },
       "summary": {
         "en": "Food drives, visits to the sick and help for families in hard times.",
         "ru": "Сбор продуктов, посещение больных и помощь семьям в трудное время.",
@@ -120,21 +134,20 @@
       },
       "body": {
         "en": [
-          "The charity department coordinates the food drives of our parishes, supports parish visitors to hospitals and care homes, and keeps a small fund for families in sudden need.",
-          "Requests for help are confidential. Speak with your parish priest or write to the department."
+          "Sample description of this department. One or two lines."
         ],
         "ru": [
-          "Отдел благотворительности объединяет продуктовые сборы приходов, помогает тем, кто навещает больницы и дома престарелых, и распоряжается небольшим фондом для семей, оказавшихся в нужде.",
-          "Просьбы о помощи рассматриваются конфиденциально. Обратитесь к своему священнику или напишите в отдел."
+          "Образец описания отдела. Одна-две строки."
         ],
         "el": [
-          "Η Διακονία Φιλανθρωπίας συντονίζει τις συλλογές τροφίμων των ενοριών, στηρίζει όσους επισκέπτονται νοσοκομεία και γηροκομεία και διαχειρίζεται ένα μικρό ταμείο για οικογένειες σε ξαφνική ανάγκη.",
-          "Τα αιτήματα βοήθειας είναι εμπιστευτικά. Μιλήστε με τον ιερέα σας ή γράψτε στη διακονία."
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
         ]
       },
       "contactClergyId": "james-template",
       "email": "charity@diocese.example",
-      "eventCategories": ["charity"]
+      "eventCategories": [
+        "charity"
+      ]
     }
   ]
 }

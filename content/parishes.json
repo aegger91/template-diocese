@@ -3,285 +3,664 @@
   "parishes": [
     {
       "id": "st-example-cathedral",
-      "name": { "en": "Cathedral of St. Example", "ru": "Кафедральный собор святого Примера", "el": "Καθεδρικός Ναός Αγίου Παραδείγματος" },
+      "name": {
+        "en": "Cathedral of St. Example",
+        "ru": "Кафедральный собор святого Примера",
+        "el": "Καθεδρικός Ναός Αγίου Παραδείγματος"
+      },
       "type": "parish",
       "isCathedral": true,
       "deanery": "great-lakes",
-      "patronalFeast": { "en": "St. Example, December 1 (sample)", "ru": "Святой Пример, 1 декабря (образец)", "el": "Άγιος Παράδειγμα, 1 Δεκεμβρίου (δείγμα)" },
-      "address": { "street": "1 Example Plaza", "city": "Chicago", "region": "IL", "postalCode": "00000" },
-      "coordinates": { "lat": 41.8881, "lng": -87.6398 },
-      "languages": ["en", "cu"],
+      "patronalFeast": {
+        "en": "St. Example, December 1 (sample)",
+        "ru": "Святой Пример, 1 декабря (образец)",
+        "el": "Άγιος Παράδειγμα, 1 Δεκεμβρίου (δείγμα)"
+      },
+      "address": {
+        "street": "1 Example Plaza",
+        "city": "Chicago",
+        "region": "IL",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 41.8881,
+        "lng": -87.6398
+      },
+      "languages": [
+        "en",
+        "cu"
+      ],
       "services": [
-        { "day": "sat", "time": "18:00", "service": "vigil" },
-        { "day": "sun", "time": "09:30", "service": "liturgy" },
-        { "day": "wed", "time": "18:30", "service": "akathist" }
+        {
+          "day": "sat",
+          "time": "18:00",
+          "service": "vigil"
+        },
+        {
+          "day": "sun",
+          "time": "09:30",
+          "service": "liturgy"
+        },
+        {
+          "day": "wed",
+          "time": "18:30",
+          "service": "akathist"
+        }
       ],
       "phone": "(555) 010-0101",
       "email": "office@cathedral.example",
       "website": "https://cathedral.example",
       "about": {
-        "en": "The mother church of the diocese, where the bishop serves on Sundays and major feasts. Sample parish for demonstration only.",
-        "ru": "Главный храм епархии, где архиерей служит по воскресеньям и в великие праздники. Образец прихода для демонстрации.",
-        "el": "Ο μητρικός ναός της Επισκοπής, όπου λειτουργεί ο Επίσκοπος τις Κυριακές και τις μεγάλες εορτές. Δείγμα ενορίας για επίδειξη."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       },
       "image": "/images/pd/st-nicholas-pensky.jpg"
     },
     {
       "id": "holy-protection-sample",
-      "name": { "en": "Holy Protection Sample Parish", "ru": "Покровский приход (образец)", "el": "Ενορία Αγίας Σκέπης (δείγμα)" },
+      "name": {
+        "en": "Holy Protection Sample Parish",
+        "ru": "Покровский приход (образец)",
+        "el": "Ενορία Αγίας Σκέπης (δείγμα)"
+      },
       "type": "parish",
       "deanery": "great-lakes",
-      "patronalFeast": { "en": "Protection of the Theotokos, October 1", "ru": "Покров Пресвятой Богородицы, 1 октября", "el": "Αγία Σκέπη, 1 Οκτωβρίου" },
-      "address": { "street": "200 Sample Street", "city": "Milwaukee", "region": "WI", "postalCode": "00000" },
-      "coordinates": { "lat": 43.0489, "lng": -87.9165 },
-      "languages": ["en", "cu"],
+      "patronalFeast": {
+        "en": "Protection of the Theotokos, October 1",
+        "ru": "Покров Пресвятой Богородицы, 1 октября",
+        "el": "Αγία Σκέπη, 1 Οκτωβρίου"
+      },
+      "address": {
+        "street": "200 Sample Street",
+        "city": "Milwaukee",
+        "region": "WI",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 43.0489,
+        "lng": -87.9165
+      },
+      "languages": [
+        "en",
+        "cu"
+      ],
       "services": [
-        { "day": "sat", "time": "17:00", "service": "vigil" },
-        { "day": "sun", "time": "10:00", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "17:00",
+          "service": "vigil"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0102",
       "email": "office@holyprotection.example",
       "website": "https://holyprotection.example",
       "about": {
-        "en": "A sample parish with a strong choir tradition and a Sunday church school.",
-        "ru": "Приход-образец с хорошими клиросными традициями и воскресной школой.",
-        "el": "Δείγμα ενορίας με καλή παράδοση χορωδίας και κατηχητικό σχολείο την Κυριακή."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "st-nicholas-sample",
-      "name": { "en": "St. Nicholas Sample Parish", "ru": "Никольский приход (образец)", "el": "Ενορία Αγίου Νικολάου (δείγμα)" },
+      "name": {
+        "en": "St. Nicholas Sample Parish",
+        "ru": "Никольский приход (образец)",
+        "el": "Ενορία Αγίου Νικολάου (δείγμα)"
+      },
       "type": "parish",
       "deanery": "prairie",
-      "patronalFeast": { "en": "St. Nicholas, December 6", "ru": "Святитель Николай, 6 декабря", "el": "Άγιος Νικόλαος, 6 Δεκεμβρίου" },
-      "address": { "street": "300 Example Avenue", "city": "Minneapolis", "region": "MN", "postalCode": "00000" },
-      "coordinates": { "lat": 44.9878, "lng": -93.2550 },
-      "languages": ["en", "cu", "ru"],
+      "patronalFeast": {
+        "en": "St. Nicholas, December 6",
+        "ru": "Святитель Николай, 6 декабря",
+        "el": "Άγιος Νικόλαος, 6 Δεκεμβρίου"
+      },
+      "address": {
+        "street": "300 Example Avenue",
+        "city": "Minneapolis",
+        "region": "MN",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 44.9878,
+        "lng": -93.255
+      },
+      "languages": [
+        "en",
+        "cu",
+        "ru"
+      ],
       "services": [
-        { "day": "sat", "time": "18:00", "service": "vigil" },
-        { "day": "sun", "time": "09:00", "service": "hours" },
-        { "day": "sun", "time": "09:30", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "18:00",
+          "service": "vigil"
+        },
+        {
+          "day": "sun",
+          "time": "09:00",
+          "service": "hours"
+        },
+        {
+          "day": "sun",
+          "time": "09:30",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0103",
       "email": "office@stnicholas.example",
       "website": "https://stnicholas.example",
       "about": {
-        "en": "Sample parish. Russian is spoken at coffee hour and in confession by request.",
-        "ru": "Приход-образец. На трапезе говорят по-русски, исповедь на русском возможна по просьбе.",
-        "el": "Δείγμα ενορίας. Στο κέρασμα μιλούν ρωσικά, και η εξομολόγηση στα ρωσικά γίνεται κατόπιν αιτήματος."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "annunciation-sample",
-      "name": { "en": "Annunciation Sample Parish", "ru": "Благовещенский приход (образец)", "el": "Ενορία Ευαγγελισμού (δείγμα)" },
+      "name": {
+        "en": "Annunciation Sample Parish",
+        "ru": "Благовещенский приход (образец)",
+        "el": "Ενορία Ευαγγελισμού (δείγμα)"
+      },
       "type": "parish",
       "deanery": "great-lakes",
-      "patronalFeast": { "en": "Annunciation, March 25", "ru": "Благовещение, 25 марта", "el": "Ευαγγελισμός, 25 Μαρτίου" },
-      "address": { "street": "400 Sample Boulevard", "city": "Detroit", "region": "MI", "postalCode": "00000" },
-      "coordinates": { "lat": 42.3414, "lng": -83.0558 },
-      "languages": ["en", "el"],
+      "patronalFeast": {
+        "en": "Annunciation, March 25",
+        "ru": "Благовещение, 25 марта",
+        "el": "Ευαγγελισμός, 25 Μαρτίου"
+      },
+      "address": {
+        "street": "400 Sample Boulevard",
+        "city": "Detroit",
+        "region": "MI",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 42.3414,
+        "lng": -83.0558
+      },
+      "languages": [
+        "en",
+        "el"
+      ],
       "services": [
-        { "day": "sat", "time": "17:00", "service": "vespers" },
-        { "day": "sun", "time": "08:45", "service": "matins" },
-        { "day": "sun", "time": "10:00", "service": "liturgy" },
-        { "day": "fri", "time": "18:30", "service": "paraklesis" }
+        {
+          "day": "sat",
+          "time": "17:00",
+          "service": "vespers"
+        },
+        {
+          "day": "sun",
+          "time": "08:45",
+          "service": "matins"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        },
+        {
+          "day": "fri",
+          "time": "18:30",
+          "service": "paraklesis"
+        }
       ],
       "phone": "(555) 010-0104",
       "email": "office@annunciation.example",
       "website": "https://annunciation.example",
       "about": {
-        "en": "Sample parish with services in Greek and English and a Byzantine chant choir.",
-        "ru": "Приход-образец с богослужениями на греческом и английском языках и хором византийского пения.",
-        "el": "Δείγμα ενορίας με ακολουθίες στα ελληνικά και αγγλικά και χορό βυζαντινής μουσικής."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "holy-trinity-sample-mission",
-      "name": { "en": "Holy Trinity Sample Mission", "ru": "Свято-Троицкая миссия (образец)", "el": "Ιεραποστολή Αγίας Τριάδος (δείγμα)" },
+      "name": {
+        "en": "Holy Trinity Sample Mission",
+        "ru": "Свято-Троицкая миссия (образец)",
+        "el": "Ιεραποστολή Αγίας Τριάδος (δείγμα)"
+      },
       "type": "mission",
       "deanery": "great-lakes",
-      "patronalFeast": { "en": "Pentecost", "ru": "День Святой Троицы", "el": "Πεντηκοστή" },
-      "address": { "street": "500 Example Lane", "city": "Madison", "region": "WI", "postalCode": "00000" },
-      "coordinates": { "lat": 43.0831, "lng": -89.3912 },
-      "languages": ["en"],
+      "patronalFeast": {
+        "en": "Pentecost",
+        "ru": "День Святой Троицы",
+        "el": "Πεντηκοστή"
+      },
+      "address": {
+        "street": "500 Example Lane",
+        "city": "Madison",
+        "region": "WI",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 43.0831,
+        "lng": -89.3912
+      },
+      "languages": [
+        "en"
+      ],
       "services": [
-        { "day": "sat", "time": "17:30", "service": "vespers" },
-        { "day": "sun", "time": "10:00", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "17:30",
+          "service": "vespers"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        }
       ],
       "email": "mission@holytrinity.example",
       "about": {
-        "en": "A young sample mission near the university. Services are held in a rented chapel.",
-        "ru": "Молодая миссия-образец рядом с университетом. Богослужения совершаются в арендованной часовне.",
-        "el": "Νέα ιεραποστολή (δείγμα) κοντά στο πανεπιστήμιο. Οι ακολουθίες τελούνται σε νοικιασμένο παρεκκλήσι."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "st-herman-sample-mission",
-      "name": { "en": "St. Herman Sample Mission", "ru": "Миссия святого Германа (образец)", "el": "Ιεραποστολή Αγίου Γερμανού (δείγμα)" },
+      "name": {
+        "en": "St. Herman Sample Mission",
+        "ru": "Миссия святого Германа (образец)",
+        "el": "Ιεραποστολή Αγίου Γερμανού (δείγμα)"
+      },
       "type": "mission",
       "deanery": "prairie",
-      "patronalFeast": { "en": "St. Herman of Alaska, December 13", "ru": "Преподобный Герман Аляскинский, 13 декабря", "el": "Άγιος Γερμανός της Αλάσκας, 13 Δεκεμβρίου" },
-      "address": { "street": "600 Sample Road", "city": "Des Moines", "region": "IA", "postalCode": "00000" },
-      "coordinates": { "lat": 41.5968, "lng": -93.6150 },
-      "languages": ["en"],
+      "patronalFeast": {
+        "en": "St. Herman of Alaska, December 13",
+        "ru": "Преподобный Герман Аляскинский, 13 декабря",
+        "el": "Άγιος Γερμανός της Αλάσκας, 13 Δεκεμβρίου"
+      },
+      "address": {
+        "street": "600 Sample Road",
+        "city": "Des Moines",
+        "region": "IA",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 41.5968,
+        "lng": -93.615
+      },
+      "languages": [
+        "en"
+      ],
       "services": [
-        { "day": "sun", "time": "10:00", "service": "liturgy" },
-        { "day": "sun", "time": "10:00", "service": "typika", "note": { "en": "When no priest is visiting", "ru": "Когда нет священника", "el": "Όταν δεν υπάρχει ιερέας" } }
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "typika",
+          "note": {
+            "en": "When no priest is visiting",
+            "ru": "Когда нет священника",
+            "el": "Όταν δεν υπάρχει ιερέας"
+          }
+        }
       ],
       "email": "mission@stherman.example",
       "about": {
-        "en": "Sample mission served by a visiting priest twice a month. Reader services on other Sundays.",
-        "ru": "Миссия-образец, которую дважды в месяц посещает священник. В остальные воскресенья совершаются мирянские чины.",
-        "el": "Δείγμα ιεραποστολής που επισκέπτεται ιερέας δύο φορές τον μήνα. Τις άλλες Κυριακές τελείται Τυπικά από αναγνώστη."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "st-george-sample",
-      "name": { "en": "St. George Sample Parish", "ru": "Георгиевский приход (образец)", "el": "Ενορία Αγίου Γεωργίου (δείγμα)" },
+      "name": {
+        "en": "St. George Sample Parish",
+        "ru": "Георгиевский приход (образец)",
+        "el": "Ενορία Αγίου Γεωργίου (δείγμα)"
+      },
       "type": "parish",
       "deanery": "river",
-      "patronalFeast": { "en": "St. George, April 23", "ru": "Великомученик Георгий, 23 апреля", "el": "Άγιος Γεώργιος, 23 Απριλίου" },
-      "address": { "street": "700 Example Court", "city": "Cleveland", "region": "OH", "postalCode": "00000" },
-      "coordinates": { "lat": 41.5093, "lng": -81.6844 },
-      "languages": ["en", "ar"],
+      "patronalFeast": {
+        "en": "St. George, April 23",
+        "ru": "Великомученик Георгий, 23 апреля",
+        "el": "Άγιος Γεώργιος, 23 Απριλίου"
+      },
+      "address": {
+        "street": "700 Example Court",
+        "city": "Cleveland",
+        "region": "OH",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 41.5093,
+        "lng": -81.6844
+      },
+      "languages": [
+        "en",
+        "ar"
+      ],
       "services": [
-        { "day": "sat", "time": "17:00", "service": "vespers" },
-        { "day": "sun", "time": "09:00", "service": "matins" },
-        { "day": "sun", "time": "10:00", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "17:00",
+          "service": "vespers"
+        },
+        {
+          "day": "sun",
+          "time": "09:00",
+          "service": "matins"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0107",
       "email": "office@stgeorge.example",
       "website": "https://stgeorge.example",
       "about": {
-        "en": "Sample parish where hymns are sung in English and Arabic.",
-        "ru": "Приход-образец, где песнопения звучат на английском и арабском языках.",
-        "el": "Δείγμα ενορίας όπου οι ύμνοι ψάλλονται στα αγγλικά και αραβικά."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "st-paraskeva-sample",
-      "name": { "en": "St. Paraskeva Sample Parish", "ru": "Приход святой Параскевы (образец)", "el": "Ενορία Αγίας Παρασκευής (δείγμα)" },
+      "name": {
+        "en": "St. Paraskeva Sample Parish",
+        "ru": "Приход святой Параскевы (образец)",
+        "el": "Ενορία Αγίας Παρασκευής (δείγμα)"
+      },
       "type": "parish",
       "deanery": "river",
-      "patronalFeast": { "en": "St. Paraskeva, October 14", "ru": "Преподобная Параскева, 14 октября", "el": "Οσία Παρασκευή, 14 Οκτωβρίου" },
-      "address": { "street": "800 Sample Way", "city": "Columbus", "region": "OH", "postalCode": "00000" },
-      "coordinates": { "lat": 39.9712, "lng": -82.9888 },
-      "languages": ["en", "ro"],
+      "patronalFeast": {
+        "en": "St. Paraskeva, October 14",
+        "ru": "Преподобная Параскева, 14 октября",
+        "el": "Οσία Παρασκευή, 14 Οκτωβρίου"
+      },
+      "address": {
+        "street": "800 Sample Way",
+        "city": "Columbus",
+        "region": "OH",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 39.9712,
+        "lng": -82.9888
+      },
+      "languages": [
+        "en",
+        "ro"
+      ],
       "services": [
-        { "day": "sat", "time": "18:00", "service": "vespers" },
-        { "day": "sun", "time": "10:00", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "18:00",
+          "service": "vespers"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0108",
       "email": "office@stparaskeva.example",
       "about": {
-        "en": "Sample parish with services in Romanian and English.",
-        "ru": "Приход-образец с богослужениями на румынском и английском языках.",
-        "el": "Δείγμα ενορίας με ακολουθίες στα ρουμανικά και αγγλικά."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "transfiguration-sample",
-      "name": { "en": "Transfiguration Sample Parish", "ru": "Преображенский приход (образец)", "el": "Ενορία Μεταμορφώσεως (δείγμα)" },
+      "name": {
+        "en": "Transfiguration Sample Parish",
+        "ru": "Преображенский приход (образец)",
+        "el": "Ενορία Μεταμορφώσεως (δείγμα)"
+      },
       "type": "parish",
       "deanery": "river",
-      "patronalFeast": { "en": "Transfiguration, August 6", "ru": "Преображение Господне, 6 августа", "el": "Μεταμόρφωση του Σωτήρος, 6 Αυγούστου" },
-      "address": { "street": "900 Example Street", "city": "St. Louis", "region": "MO", "postalCode": "00000" },
-      "coordinates": { "lat": 38.6370, "lng": -90.2094 },
-      "languages": ["en", "el"],
+      "patronalFeast": {
+        "en": "Transfiguration, August 6",
+        "ru": "Преображение Господне, 6 августа",
+        "el": "Μεταμόρφωση του Σωτήρος, 6 Αυγούστου"
+      },
+      "address": {
+        "street": "900 Example Street",
+        "city": "St. Louis",
+        "region": "MO",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 38.637,
+        "lng": -90.2094
+      },
+      "languages": [
+        "en",
+        "el"
+      ],
       "services": [
-        { "day": "sat", "time": "17:00", "service": "vespers" },
-        { "day": "sun", "time": "09:30", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "17:00",
+          "service": "vespers"
+        },
+        {
+          "day": "sun",
+          "time": "09:30",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0109",
       "email": "office@transfiguration.example",
       "website": "https://transfiguration.example",
       "about": {
-        "en": "Sample parish on the river. Food pantry open Thursday mornings.",
-        "ru": "Приход-образец у реки. По четвергам утром работает продуктовая помощь.",
-        "el": "Δείγμα ενορίας κοντά στο ποτάμι. Η τράπεζα τροφίμων λειτουργεί Πέμπτη πρωί."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "sts-cyril-methodius-sample",
-      "name": { "en": "Sts. Cyril and Methodius Sample Parish", "ru": "Кирилло-Мефодиевский приход (образец)", "el": "Ενορία Αγίων Κυρίλλου και Μεθοδίου (δείγμα)" },
+      "name": {
+        "en": "Sts. Cyril and Methodius Sample Parish",
+        "ru": "Кирилло-Мефодиевский приход (образец)",
+        "el": "Ενορία Αγίων Κυρίλλου και Μεθοδίου (δείγμα)"
+      },
       "type": "parish",
       "deanery": "river",
-      "patronalFeast": { "en": "Sts. Cyril and Methodius, May 11", "ru": "Равноапостольные Кирилл и Мефодий, 11 мая", "el": "Άγιοι Κύριλλος και Μεθόδιος, 11 Μαΐου" },
-      "address": { "street": "1000 Sample Avenue", "city": "Indianapolis", "region": "IN", "postalCode": "00000" },
-      "coordinates": { "lat": 39.7784, "lng": -86.1481 },
-      "languages": ["en", "cu"],
+      "patronalFeast": {
+        "en": "Sts. Cyril and Methodius, May 11",
+        "ru": "Равноапостольные Кирилл и Мефодий, 11 мая",
+        "el": "Άγιοι Κύριλλος και Μεθόδιος, 11 Μαΐου"
+      },
+      "address": {
+        "street": "1000 Sample Avenue",
+        "city": "Indianapolis",
+        "region": "IN",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 39.7784,
+        "lng": -86.1481
+      },
+      "languages": [
+        "en",
+        "cu"
+      ],
       "services": [
-        { "day": "sat", "time": "18:00", "service": "vigil" },
-        { "day": "sun", "time": "10:00", "service": "liturgy" }
+        {
+          "day": "sat",
+          "time": "18:00",
+          "service": "vigil"
+        },
+        {
+          "day": "sun",
+          "time": "10:00",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0110",
       "email": "office@cyrilmethodius.example",
       "about": {
-        "en": "Sample parish founded by Carpatho-Rusyn families. Prostopinije chant on Sundays.",
-        "ru": "Приход-образец, основанный карпаторусскими семьями. По воскресеньям звучит простопение.",
-        "el": "Δείγμα ενορίας που ίδρυσαν οικογένειες από τα Καρπάθια. Τις Κυριακές ψάλλεται το καρπαθικό μέλος (prostopinije)."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "dormition-sample-monastery",
-      "name": { "en": "Dormition Sample Monastery", "ru": "Успенский монастырь (образец)", "el": "Ιερά Μονή Κοιμήσεως Θεοτόκου (δείγμα)" },
+      "name": {
+        "en": "Dormition Sample Monastery",
+        "ru": "Успенский монастырь (образец)",
+        "el": "Ιερά Μονή Κοιμήσεως Θεοτόκου (δείγμα)"
+      },
       "type": "monastery",
       "deanery": "great-lakes",
-      "patronalFeast": { "en": "Dormition of the Theotokos, August 15", "ru": "Успение Пресвятой Богородицы, 15 августа", "el": "Κοίμηση της Θεοτόκου, 15 Αυγούστου" },
-      "address": { "street": "1100 Example Ridge Road", "city": "Marquette", "region": "MI", "postalCode": "00000" },
-      "coordinates": { "lat": 46.5336, "lng": -87.4054 },
-      "languages": ["en", "cu"],
+      "patronalFeast": {
+        "en": "Dormition of the Theotokos, August 15",
+        "ru": "Успение Пресвятой Богородицы, 15 августа",
+        "el": "Κοίμηση της Θεοτόκου, 15 Αυγούστου"
+      },
+      "address": {
+        "street": "1100 Example Ridge Road",
+        "city": "Marquette",
+        "region": "MI",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 46.5336,
+        "lng": -87.4054
+      },
+      "languages": [
+        "en",
+        "cu"
+      ],
       "services": [
-        { "day": "daily", "time": "06:00", "service": "matins" },
-        { "day": "daily", "time": "17:00", "service": "vespers" },
-        { "day": "sun", "time": "09:00", "service": "liturgy" }
+        {
+          "day": "daily",
+          "time": "06:00",
+          "service": "matins"
+        },
+        {
+          "day": "daily",
+          "time": "17:00",
+          "service": "vespers"
+        },
+        {
+          "day": "sun",
+          "time": "09:00",
+          "service": "liturgy"
+        }
       ],
       "phone": "(555) 010-0111",
-      "email": "guestmaster@dormition.example",
+      "email": "office@dormition.example",
       "about": {
-        "en": "A sample men's monastery. Pilgrims are welcome by arrangement with the guestmaster.",
-        "ru": "Мужской монастырь (образец). Паломников принимают по договорённости с гостиником.",
-        "el": "Δείγμα ανδρικής μονής. Οι προσκυνητές είναι ευπρόσδεκτοι κατόπιν συνεννόησης με τον αρχοντάρη."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       },
       "image": "/images/pd/stolobny-monastery.jpg"
     },
     {
       "id": "st-innocent-sample-chapel",
-      "name": { "en": "St. Innocent Sample Chapel", "ru": "Часовня святителя Иннокентия (образец)", "el": "Παρεκκλήσι Αγίου Ιννοκεντίου (δείγμα)" },
+      "name": {
+        "en": "St. Innocent Sample Chapel",
+        "ru": "Часовня святителя Иннокентия (образец)",
+        "el": "Παρεκκλήσι Αγίου Ιννοκεντίου (δείγμα)"
+      },
       "type": "chapel",
       "deanery": "great-lakes",
-      "patronalFeast": { "en": "St. Innocent of Alaska, March 31", "ru": "Святитель Иннокентий Московский, 31 марта", "el": "Άγιος Ιννοκέντιος της Αλάσκας, 31 Μαρτίου" },
-      "address": { "street": "1200 Campus Example Drive", "city": "Ann Arbor", "region": "MI", "postalCode": "00000" },
-      "coordinates": { "lat": 42.2908, "lng": -83.7330 },
-      "languages": ["en"],
+      "patronalFeast": {
+        "en": "St. Innocent of Alaska, March 31",
+        "ru": "Святитель Иннокентий Московский, 31 марта",
+        "el": "Άγιος Ιννοκέντιος της Αλάσκας, 31 Μαρτίου"
+      },
+      "address": {
+        "street": "1200 Campus Example Drive",
+        "city": "Ann Arbor",
+        "region": "MI",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 42.2908,
+        "lng": -83.733
+      },
+      "languages": [
+        "en"
+      ],
       "services": [
-        { "day": "wed", "time": "19:00", "service": "vespers" },
-        { "day": "thu", "time": "07:00", "service": "liturgy", "note": { "en": "During the school year", "ru": "В учебный год", "el": "Κατά τη σχολική χρονιά" } }
+        {
+          "day": "wed",
+          "time": "19:00",
+          "service": "vespers"
+        },
+        {
+          "day": "thu",
+          "time": "07:00",
+          "service": "liturgy",
+          "note": {
+            "en": "During the school year",
+            "ru": "В учебный год",
+            "el": "Κατά τη σχολική χρονιά"
+          }
+        }
       ],
       "email": "chapel@stinnocent.example",
       "about": {
-        "en": "A sample campus chapel for students and hospital staff.",
-        "ru": "Студенческая часовня (образец) для студентов и сотрудников больницы.",
-        "el": "Δείγμα φοιτητικού παρεκκλησίου για φοιτητές και προσωπικό νοσοκομείου."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     },
     {
       "id": "st-seraphim-sample-chapel",
-      "name": { "en": "St. Seraphim Sample Chapel", "ru": "Серафимовская часовня (образец)", "el": "Παρεκκλήσι Αγίου Σεραφείμ (δείγμα)" },
+      "name": {
+        "en": "St. Seraphim Sample Chapel",
+        "ru": "Серафимовская часовня (образец)",
+        "el": "Παρεκκλήσι Αγίου Σεραφείμ (δείγμα)"
+      },
       "type": "chapel",
       "deanery": "river",
-      "patronalFeast": { "en": "St. Seraphim of Sarov, January 2", "ru": "Преподобный Серафим Саровский, 2 января", "el": "Άγιος Σεραφείμ του Σάρωφ, 2 Ιανουαρίου" },
-      "address": { "street": "1300 Sample Park", "city": "Fort Wayne", "region": "IN", "postalCode": "00000" },
-      "coordinates": { "lat": 41.0893, "lng": -85.1294 },
-      "languages": ["en", "cu"],
+      "patronalFeast": {
+        "en": "St. Seraphim of Sarov, January 2",
+        "ru": "Преподобный Серафим Саровский, 2 января",
+        "el": "Άγιος Σεραφείμ του Σάρωφ, 2 Ιανουαρίου"
+      },
+      "address": {
+        "street": "1300 Sample Park",
+        "city": "Fort Wayne",
+        "region": "IN",
+        "postalCode": "00000"
+      },
+      "coordinates": {
+        "lat": 41.0893,
+        "lng": -85.1294
+      },
+      "languages": [
+        "en",
+        "cu"
+      ],
       "services": [
-        { "day": "sat", "time": "10:00", "service": "akathist" }
+        {
+          "day": "sat",
+          "time": "10:00",
+          "service": "akathist"
+        }
       ],
       "email": "chapel@stseraphim.example",
       "about": {
-        "en": "A small sample chapel at a care home. Served monthly by the dean.",
-        "ru": "Небольшая часовня (образец) при доме престарелых. Благочинный служит здесь раз в месяц.",
-        "el": "Μικρό παρεκκλήσι (δείγμα) σε οίκο ευγηρίας. Ο αρχιερατικός επίτροπος λειτουργεί εδώ μία φορά τον μήνα."
+        "en": "Sample description of this community. One or two lines.",
+        "ru": "Образец описания общины. Одна-две строки.",
+        "el": "Δείγμα περιγραφής της κοινότητας. Μία ή δύο γραμμές."
       }
     }
   ]

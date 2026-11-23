@@ -30,6 +30,7 @@ export default async function HomePage({ params }: Props) {
   const buildTime = nowLocal().toISOString();
   const sections: Record<HomeSectionId, React.ReactNode> = {
     hero: <Hero lang={lang} buildTime={buildTime} />,
+    welcome: <WelcomeBlock lang={lang} />,
     announcements: <Announcements lang={lang} />,
     events: <EventsSection lang={lang} buildTime={buildTime} />,
     bishopSchedule: <ScheduleSection lang={lang} buildTime={buildTime} />,
@@ -50,6 +51,29 @@ export default async function HomePage({ params }: Props) {
           </div>
         ))}
     </>
+  );
+}
+
+function WelcomeBlock({ lang }: { lang: string }) {
+  const t = getDictionary(lang);
+  const { welcomeBlock } = diocese;
+  return (
+    <section aria-labelledby="welcome-title" className="border-b border-line bg-parchment">
+      <div className="container-site flex flex-col items-center py-12 text-center sm:py-16">
+        <h2 id="welcome-title" className="text-3xl text-royal-900 sm:text-4xl">
+          {loc(welcomeBlock.title, lang)}
+        </h2>
+        <Ornament className="mt-4 w-full max-w-56" />
+        <p className="mt-5 max-w-2xl text-lg leading-relaxed text-ink">{loc(welcomeBlock.text, lang)}</p>
+        <Link
+          href={localHref(lang, "/about/")}
+          className="mt-5 inline-flex items-center gap-1.5 font-semibold text-royal-700 underline-offset-4 hover:underline"
+        >
+          {t.home.welcomeMore}
+          <ArrowRight className="size-4 rtl:rotate-180" aria-hidden />
+        </Link>
+      </div>
+    </section>
   );
 }
 

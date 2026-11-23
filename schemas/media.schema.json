@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "media.schema.json",
+  "title": "Media gallery",
+  "description": "Albums and images. Every image needs alt text and a credit.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "albums",
+    "items"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "albums": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          }
+        }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "album",
+          "src",
+          "alt",
+          "caption",
+          "credit"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+          },
+          "album": {
+            "type": "string"
+          },
+          "src": {
+            "type": "string",
+            "pattern": "^/",
+            "description": "File in /public, e.g. /images/pd/photo.jpg."
+          },
+          "alt": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "caption": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "credit": {
+            "type": "string",
+            "minLength": 3
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "clergy.schema.json",
+  "title": "Clergy directory",
+  "description": "Bishops, priests and deacons with their assignments.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "clergy"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "clergy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "rank",
+          "name",
+          "status",
+          "assignments"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+          },
+          "rank": {
+            "enum": [
+              "bishop",
+              "archimandrite",
+              "archpriest",
+              "priest",
+              "hieromonk",
+              "protodeacon",
+              "deacon"
+            ]
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "status": {
+            "enum": [
+              "active",
+              "retired"
+            ]
+          },
+          "assignments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "role"
+              ],
+              "properties": {
+                "role": {
+                  "enum": [
+                    "rulingBishop",
+                    "auxiliaryBishop",
+                    "rector",
+                    "assistantPriest",
+                    "priestInCharge",
+                    "deacon",
+                    "abbot",
+                    "chaplain",
+                    "dean",
+                    "chancellor",
+                    "attached"
+                  ]
+                },
+                "parishId": {
+                  "type": "string"
+                },
+                "deanery": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          }
+        }
+      }
+    }
+  }
+}

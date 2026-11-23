@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "funds.schema.json",
+  "title": "Giving funds",
+  "description": "The appeal text and the funds a donor can choose. Raised totals are never stored here: they come from the payment provider.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "appeal",
+    "funds"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "appeal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "text"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "text": {
+          "$ref": "common.schema.json#/$defs/localized"
+        }
+      }
+    },
+    "funds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "description": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "isDefault": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

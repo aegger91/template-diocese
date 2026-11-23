@@ -14,9 +14,24 @@
   "showSampleNotice": true,
   "defaultLanguage": "en",
   "languages": [
-    { "code": "en", "label": "English", "direction": "ltr", "displayFont": "none" },
-    { "code": "ru", "label": "Русский", "direction": "ltr", "displayFont": "slavonic" },
-    { "code": "el", "label": "Ελληνικά", "direction": "ltr", "displayFont": "greek" }
+    {
+      "code": "en",
+      "label": "English",
+      "direction": "ltr",
+      "displayFont": "none"
+    },
+    {
+      "code": "ru",
+      "label": "Русский",
+      "direction": "ltr",
+      "displayFont": "slavonic"
+    },
+    {
+      "code": "el",
+      "label": "Ελληνικά",
+      "direction": "ltr",
+      "displayFont": "greek"
+    }
   ],
   "logo": {
     "style": "seal",
@@ -31,15 +46,46 @@
   "churchCalendar": "revised-julian",
   "weekStartsOn": "sunday",
   "homeSections": [
-    { "id": "hero", "enabled": true },
-    { "id": "announcements", "enabled": true },
-    { "id": "events", "enabled": true },
-    { "id": "bishopSchedule", "enabled": true },
-    { "id": "parishFinder", "enabled": true },
-    { "id": "ministries", "enabled": true },
-    { "id": "livestream", "enabled": true },
-    { "id": "donateAppeal", "enabled": true },
-    { "id": "gallery", "enabled": true }
+    {
+      "id": "hero",
+      "enabled": true
+    },
+    {
+      "id": "welcome",
+      "enabled": true
+    },
+    {
+      "id": "announcements",
+      "enabled": true
+    },
+    {
+      "id": "events",
+      "enabled": true
+    },
+    {
+      "id": "bishopSchedule",
+      "enabled": true
+    },
+    {
+      "id": "parishFinder",
+      "enabled": true
+    },
+    {
+      "id": "ministries",
+      "enabled": true
+    },
+    {
+      "id": "livestream",
+      "enabled": true
+    },
+    {
+      "id": "donateAppeal",
+      "enabled": true
+    },
+    {
+      "id": "gallery",
+      "enabled": true
+    }
   ],
   "features": {
     "donate": true,
@@ -51,51 +97,221 @@
   },
   "navigation": [
     {
-      "label": { "en": "About", "ru": "О епархии", "el": "Η Επισκοπή" },
+      "label": {
+        "en": "About",
+        "ru": "О епархии",
+        "el": "Η Επισκοπή"
+      },
       "href": "/about/",
       "children": [
-        { "label": { "en": "Our Bishop", "ru": "Правящий архиерей", "el": "Ο Επίσκοπος" }, "href": "/about/bishop/" },
-        { "label": { "en": "History", "ru": "История", "el": "Ιστορία" }, "href": "/about/history/" },
-        { "label": { "en": "Diocesan structure", "ru": "Структура епархии", "el": "Διοικητική δομή" }, "href": "/about/structure/" },
-        { "label": { "en": "Our Church and Synod", "ru": "Церковь и Синод", "el": "Εκκλησία και Σύνοδος" }, "href": "/about/church/" },
-        { "label": { "en": "Clergy directory", "ru": "Духовенство", "el": "Κατάλογος κληρικών" }, "href": "/clergy/" },
-        { "label": { "en": "Diocesan archives", "ru": "Архив епархии", "el": "Αρχείο επισκοπής" }, "href": "/about/archives/" }
+        {
+          "label": {
+            "en": "Our Bishop",
+            "ru": "Правящий архиерей",
+            "el": "Ο Επίσκοπος"
+          },
+          "href": "/about/bishop/"
+        },
+        {
+          "label": {
+            "en": "History",
+            "ru": "История",
+            "el": "Ιστορία"
+          },
+          "href": "/about/history/"
+        },
+        {
+          "label": {
+            "en": "Diocesan structure",
+            "ru": "Структура епархии",
+            "el": "Διοικητική δομή"
+          },
+          "href": "/about/structure/"
+        },
+        {
+          "label": {
+            "en": "Our Church and Synod",
+            "ru": "Церковь и Синод",
+            "el": "Εκκλησία και Σύνοδος"
+          },
+          "href": "/about/church/"
+        },
+        {
+          "label": {
+            "en": "Clergy directory",
+            "ru": "Духовенство",
+            "el": "Κατάλογος κληρικών"
+          },
+          "href": "/clergy/"
+        },
+        {
+          "label": {
+            "en": "Diocesan archives",
+            "ru": "Архив епархии",
+            "el": "Αρχείο επισκοπής"
+          },
+          "href": "/about/archives/"
+        }
       ]
     },
-    { "label": { "en": "Parishes", "ru": "Приходы", "el": "Ενορίες" }, "href": "/parishes/" },
     {
-      "label": { "en": "News", "ru": "Новости", "el": "Ειδήσεις" },
+      "label": {
+        "en": "Parishes",
+        "ru": "Приходы",
+        "el": "Ενορίες"
+      },
+      "href": "/parishes/"
+    },
+    {
+      "label": {
+        "en": "News",
+        "ru": "Новости",
+        "el": "Ειδήσεις"
+      },
       "href": "/news/",
       "children": [
-        { "label": { "en": "All news", "ru": "Все новости", "el": "Όλες οι ειδήσεις" }, "href": "/news/" },
-        { "label": { "en": "Encyclicals and letters", "ru": "Послания", "el": "Εγκύκλιοι και επιστολές" }, "href": "/news/?type=letters" },
-        { "label": { "en": "Bishop's schedule", "ru": "Расписание архиерея", "el": "Πρόγραμμα του Επισκόπου" }, "href": "/news/schedule/" }
+        {
+          "label": {
+            "en": "All news",
+            "ru": "Все новости",
+            "el": "Όλες οι ειδήσεις"
+          },
+          "href": "/news/"
+        },
+        {
+          "label": {
+            "en": "Encyclicals and letters",
+            "ru": "Послания",
+            "el": "Εγκύκλιοι και επιστολές"
+          },
+          "href": "/news/?type=letters"
+        },
+        {
+          "label": {
+            "en": "Bishop's schedule",
+            "ru": "Расписание архиерея",
+            "el": "Πρόγραμμα του Επισκόπου"
+          },
+          "href": "/news/schedule/"
+        }
       ]
     },
-    { "label": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" }, "href": "/events/" },
     {
-      "label": { "en": "Ministries", "ru": "Служения", "el": "Διακονίες" },
+      "label": {
+        "en": "Events",
+        "ru": "События",
+        "el": "Εκδηλώσεις"
+      },
+      "href": "/events/"
+    },
+    {
+      "label": {
+        "en": "Ministries",
+        "ru": "Служения",
+        "el": "Διακονίες"
+      },
       "href": "/ministries/",
       "children": [
-        { "label": { "en": "Youth", "ru": "Молодёжь", "el": "Νεότητα" }, "href": "/ministries/youth/" },
-        { "label": { "en": "Education", "ru": "Образование", "el": "Κατήχηση" }, "href": "/ministries/education/" },
-        { "label": { "en": "Missions", "ru": "Миссия", "el": "Ιεραποστολή" }, "href": "/ministries/missions/" },
-        { "label": { "en": "Church music", "ru": "Церковное пение", "el": "Βυζαντινή μουσική" }, "href": "/ministries/music/" },
-        { "label": { "en": "Charity", "ru": "Милосердие", "el": "Φιλανθρωπία" }, "href": "/ministries/charity/" }
+        {
+          "label": {
+            "en": "Youth",
+            "ru": "Молодёжь",
+            "el": "Νεότητα"
+          },
+          "href": "/ministries/youth/"
+        },
+        {
+          "label": {
+            "en": "Education",
+            "ru": "Образование",
+            "el": "Κατήχηση"
+          },
+          "href": "/ministries/education/"
+        },
+        {
+          "label": {
+            "en": "Missions",
+            "ru": "Миссия",
+            "el": "Ιεραποστολή"
+          },
+          "href": "/ministries/missions/"
+        },
+        {
+          "label": {
+            "en": "Church music",
+            "ru": "Церковное пение",
+            "el": "Βυζαντινή μουσική"
+          },
+          "href": "/ministries/music/"
+        },
+        {
+          "label": {
+            "en": "Charity",
+            "ru": "Милосердие",
+            "el": "Φιλανθρωπία"
+          },
+          "href": "/ministries/charity/"
+        }
       ]
     },
     {
-      "label": { "en": "Resources", "ru": "Ресурсы", "el": "Υλικό" },
+      "label": {
+        "en": "Resources",
+        "ru": "Ресурсы",
+        "el": "Υλικό"
+      },
       "href": "/resources/",
       "children": [
-        { "label": { "en": "Forms and documents", "ru": "Формы и документы", "el": "Έντυπα και έγγραφα" }, "href": "/resources/" },
-        { "label": { "en": "Calendar of feasts", "ru": "Календарь праздников", "el": "Εορτολόγιο" }, "href": "/resources/feasts/" },
-        { "label": { "en": "Open assignments", "ru": "Вакансии", "el": "Θέσεις διακονίας" }, "href": "/careers/" },
-        { "label": { "en": "Media gallery", "ru": "Фотогалерея", "el": "Φωτογραφίες" }, "href": "/media/" },
-        { "label": { "en": "Livestream", "ru": "Трансляции", "el": "Ζωντανή μετάδοση" }, "href": "/live/" }
+        {
+          "label": {
+            "en": "Forms and documents",
+            "ru": "Формы и документы",
+            "el": "Έντυπα και έγγραφα"
+          },
+          "href": "/resources/"
+        },
+        {
+          "label": {
+            "en": "Calendar of feasts",
+            "ru": "Календарь праздников",
+            "el": "Εορτολόγιο"
+          },
+          "href": "/resources/feasts/"
+        },
+        {
+          "label": {
+            "en": "Open assignments",
+            "ru": "Вакансии",
+            "el": "Θέσεις διακονίας"
+          },
+          "href": "/careers/"
+        },
+        {
+          "label": {
+            "en": "Media gallery",
+            "ru": "Фотогалерея",
+            "el": "Φωτογραφίες"
+          },
+          "href": "/media/"
+        },
+        {
+          "label": {
+            "en": "Livestream",
+            "ru": "Трансляции",
+            "el": "Ζωντανή μετάδοση"
+          },
+          "href": "/live/"
+        }
       ]
     },
-    { "label": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" }, "href": "/contact/" }
+    {
+      "label": {
+        "en": "Contact",
+        "ru": "Контакты",
+        "el": "Επικοινωνία"
+      },
+      "href": "/contact/"
+    }
   ],
   "contact": {
     "officeName": {
@@ -126,7 +342,12 @@
   "donations": {
     "paymentProvider": "none",
     "currency": "USD",
-    "suggestedAmounts": [25, 50, 100, 250],
+    "suggestedAmounts": [
+      25,
+      50,
+      100,
+      250
+    ],
     "fundTotalsProvider": "none",
     "fundTotalsEndpoint": "/api/funds/{fundId}/totals"
   },
@@ -139,7 +360,13 @@
     "channelUrl": ""
   },
   "social": [
-    { "label": "YouTube", "href": "https://youtube.example/sample-diocese" },
-    { "label": "Facebook", "href": "https://facebook.example/sample-diocese" }
+    {
+      "label": "YouTube",
+      "href": "https://youtube.example/sample-diocese"
+    },
+    {
+      "label": "Facebook",
+      "href": "https://facebook.example/sample-diocese"
+    }
   ]
 }

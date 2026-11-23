@@ -29,7 +29,7 @@ export default async function MediaPage({ params }: Props) {
             caption: loc(m.caption, lang),
             credit: m.credit,
           }))}
-          labels={{ all: t.common.all, previous: t.media.previous, next: t.media.next, credit: t.media.credit, album: t.media.album }}
+          labels={{ all: t.common.all, previous: t.media.previous, next: t.media.next, credit: t.media.credit, album: t.media.album, close: t.media.close }}
         />
       </div>
     </>

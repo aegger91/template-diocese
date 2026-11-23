@@ -1,0 +1,376 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "site.config.schema.json",
+  "title": "Site configuration",
+  "description": "Names, languages, logo, home page sections, features, menu, contact details and integrations.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "siteName",
+    "defaultLanguage",
+    "languages",
+    "logo",
+    "homeSections",
+    "features",
+    "navigation",
+    "contact",
+    "orthodoxConnect",
+    "donations",
+    "map",
+    "livestream"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "templateSlug": {
+      "type": "string",
+      "description": "Template id. Leave as is."
+    },
+    "siteName": {
+      "$ref": "common.schema.json#/$defs/localized"
+    },
+    "siteTagline": {
+      "$ref": "common.schema.json#/$defs/localized"
+    },
+    "showSampleNotice": {
+      "type": "boolean",
+      "description": "Show the yellow 'sample website' bar. Turn off for a real site."
+    },
+    "defaultLanguage": {
+      "$ref": "common.schema.json#/$defs/languageCode",
+      "description": "Used for the root redirect and as the fallback for missing translations."
+    },
+    "languages": {
+      "type": "array",
+      "minItems": 1,
+      "description": "Any number of languages. Add a dictionary file in content/i18n for each.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "code",
+          "label",
+          "direction",
+          "displayFont"
+        ],
+        "properties": {
+          "code": {
+            "$ref": "common.schema.json#/$defs/languageCode"
+          },
+          "label": {
+            "type": "string",
+            "description": "Name shown in the language switcher, in that language."
+          },
+          "direction": {
+            "enum": [
+              "ltr",
+              "rtl"
+            ]
+          },
+          "displayFont": {
+            "enum": [
+              "none",
+              "slavonic",
+              "greek"
+            ],
+            "description": "Optional display face for large headings."
+          }
+        }
+      }
+    },
+    "logo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "style",
+        "sealText"
+      ],
+      "properties": {
+        "style": {
+          "enum": [
+            "seal",
+            "kiot",
+            "square",
+            "wordmark"
+          ],
+          "description": "seal: circular episcopal seal. kiot: icon-case frame. square: your image file. wordmark: text only."
+        },
+        "image": {
+          "type": "string",
+          "pattern": "^/",
+          "description": "Image used when style is 'square'."
+        },
+        "sealText": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "sealYear": {
+          "type": "string",
+          "description": "Year shown at the bottom of the seal (optional)."
+        }
+      }
+    },
+    "churchCalendar": {
+      "enum": [
+        "revised-julian",
+        "julian"
+      ],
+      "description": "Calendar used for fixed feasts."
+    },
+    "weekStartsOn": {
+      "enum": [
+        "sunday",
+        "monday"
+      ]
+    },
+    "homeSections": {
+      "type": "array",
+      "description": "Home page sections in display order. Reorder the list or set enabled to false.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "enabled"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "hero",
+              "welcome",
+              "announcements",
+              "events",
+              "bishopSchedule",
+              "parishFinder",
+              "ministries",
+              "livestream",
+              "donateAppeal",
+              "gallery"
+            ]
+          },
+          "enabled": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "donate",
+        "careers",
+        "mediaGallery",
+        "livestream",
+        "newsletter",
+        "fundTotals"
+      ],
+      "properties": {
+        "donate": {
+          "type": "boolean"
+        },
+        "careers": {
+          "type": "boolean"
+        },
+        "mediaGallery": {
+          "type": "boolean"
+        },
+        "livestream": {
+          "type": "boolean"
+        },
+        "newsletter": {
+          "type": "boolean",
+          "description": "Footer signup. Also needs orthodoxConnect.enabled."
+        },
+        "fundTotals": {
+          "type": "boolean",
+          "description": "Optional. Show provider-reported totals on the Donate page. Off by default."
+        }
+      }
+    },
+    "navigation": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/navItem"
+      }
+    },
+    "contact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "officeName",
+        "street",
+        "city",
+        "region",
+        "postalCode",
+        "country",
+        "phone",
+        "email",
+        "officeHours"
+      ],
+      "properties": {
+        "officeName": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "postalCode": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        },
+        "officeHours": {
+          "$ref": "common.schema.json#/$defs/localized"
+        }
+      }
+    },
+    "orthodoxConnect": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "enabled",
+        "baseUrl",
+        "organizationId",
+        "eventRegistrationPath",
+        "newsletterSignupPath"
+      ],
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "baseUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "organizationId": {
+          "type": "string"
+        },
+        "eventRegistrationPath": {
+          "type": "string",
+          "description": "Path template. {organizationId} and {eventId} are filled in."
+        },
+        "newsletterSignupPath": {
+          "type": "string",
+          "description": "Path template. {organizationId} is filled in."
+        }
+      }
+    },
+    "donations": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "paymentProvider",
+        "currency",
+        "suggestedAmounts",
+        "fundTotalsProvider",
+        "fundTotalsEndpoint"
+      ],
+      "properties": {
+        "paymentProvider": {
+          "enum": [
+            "none",
+            "stripe",
+            "authorizenet",
+            "tithely"
+          ]
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        },
+        "suggestedAmounts": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "minItems": 1,
+          "maxItems": 6
+        },
+        "fundTotalsProvider": {
+          "enum": [
+            "none",
+            "mock",
+            "stripe",
+            "authorizenet",
+            "tithely"
+          ],
+          "description": "Where fund totals come from. Never typed in by hand."
+        },
+        "fundTotalsEndpoint": {
+          "type": "string",
+          "description": "Endpoint returning { raised, donors, updatedAt }. {fundId} is filled in."
+        }
+      }
+    },
+    "map": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tileUrl",
+        "tileAttribution"
+      ],
+      "properties": {
+        "tileUrl": {
+          "type": "string"
+        },
+        "tileAttribution": {
+          "type": "string"
+        }
+      }
+    },
+    "livestream": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "embedUrl",
+        "channelUrl"
+      ],
+      "properties": {
+        "embedUrl": {
+          "type": "string",
+          "description": "Player embed URL. Leave empty to show the 'no broadcast' panel."
+        },
+        "channelUrl": {
+          "type": "string",
+          "description": "Link to the channel. Optional."
+        }
+      }
+    },
+    "social": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "href"
+        ],
+        "properties": {
+          "label": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  }
+}

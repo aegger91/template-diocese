@@ -1,64 +1,100 @@
 {
   "$schema": "../schemas/bishop-schedule.schema.json",
   "note": {
-    "en": "The bishop's schedule can change. Please confirm with the parish before travelling. All entries are sample data.",
-    "ru": "Расписание архиерея может меняться. Пожалуйста, уточняйте в приходе перед поездкой. Все записи являются образцом.",
-    "el": "Το πρόγραμμα του Επισκόπου μπορεί να αλλάξει. Επιβεβαιώστε με την ενορία πριν ταξιδέψετε. Όλες οι εγγραφές είναι δείγμα."
+    "en": "Sample schedule. Dates may change.",
+    "ru": "Образец расписания. Даты могут измениться.",
+    "el": "Δείγμα προγράμματος. Οι ημερομηνίες μπορεί να αλλάξουν."
   },
   "entries": [
     {
       "date": "2026-11-29T09:30",
       "kind": "visitation",
       "parishId": "holy-protection-sample",
-      "title": { "en": "Archpastoral visit and Divine Liturgy", "ru": "Архипастырский визит и Божественная литургия", "el": "Ποιμαντική επίσκεψη και Θεία Λειτουργία" }
+      "title": {
+        "en": "Archpastoral visit and Divine Liturgy",
+        "ru": "Архипастырский визит и Божественная литургия",
+        "el": "Ποιμαντική επίσκεψη και Θεία Λειτουργία"
+      }
     },
     {
       "date": "2026-12-01T09:00",
       "kind": "liturgy",
       "parishId": "st-example-cathedral",
-      "title": { "en": "Patronal feast of the cathedral", "ru": "Престольный праздник собора", "el": "Θρονική εορτή του καθεδρικού" }
+      "title": {
+        "en": "Patronal feast of the cathedral",
+        "ru": "Престольный праздник собора",
+        "el": "Θρονική εορτή του καθεδρικού"
+      }
     },
     {
       "date": "2026-12-06T09:30",
       "kind": "visitation",
       "parishId": "st-nicholas-sample",
-      "title": { "en": "Patronal feast: St. Nicholas", "ru": "Престольный праздник: святитель Николай", "el": "Πανήγυρις: Άγιος Νικόλαος" }
+      "title": {
+        "en": "Patronal feast: St. Nicholas",
+        "ru": "Престольный праздник: святитель Николай",
+        "el": "Πανήγυρις: Άγιος Νικόλαος"
+      }
     },
     {
       "date": "2026-12-08T17:00",
       "kind": "meeting",
       "parishId": "dormition-sample-monastery",
-      "title": { "en": "Clergy retreat", "ru": "Говение духовенства", "el": "Σύναξη κληρικών" }
+      "title": {
+        "en": "Clergy retreat",
+        "ru": "Говение духовенства",
+        "el": "Σύναξη κληρικών"
+      }
     },
     {
       "date": "2026-12-13T10:00",
       "kind": "visitation",
       "parishId": "st-herman-sample-mission",
-      "title": { "en": "First hierarchical Liturgy at the mission", "ru": "Первая архиерейская литургия в миссии", "el": "Πρώτη Αρχιερατική Λειτουργία στην ιεραποστολή" }
+      "title": {
+        "en": "First hierarchical Liturgy at the mission",
+        "ru": "Первая архиерейская литургия в миссии",
+        "el": "Πρώτη Αρχιερατική Λειτουργία στην ιεραποστολή"
+      }
     },
     {
       "date": "2026-12-20T09:30",
       "kind": "ordination",
       "parishId": "st-example-cathedral",
-      "title": { "en": "Ordination to the diaconate (sample)", "ru": "Диаконская хиротония (образец)", "el": "Χειροτονία διακόνου (δείγμα)" }
+      "title": {
+        "en": "Ordination to the diaconate (sample)",
+        "ru": "Диаконская хиротония (образец)",
+        "el": "Χειροτονία διακόνου (δείγμα)"
+      }
     },
     {
       "date": "2026-12-25T09:30",
       "kind": "liturgy",
       "parishId": "st-example-cathedral",
-      "title": { "en": "Nativity of Christ", "ru": "Рождество Христово", "el": "Χριστούγεννα" }
+      "title": {
+        "en": "Nativity of Christ",
+        "ru": "Рождество Христово",
+        "el": "Χριστούγεννα"
+      }
     },
     {
       "date": "2027-01-10T10:00",
       "kind": "visitation",
       "parishId": "st-george-sample",
-      "title": { "en": "Archpastoral visit", "ru": "Архипастырский визит", "el": "Ποιμαντική επίσκεψη" }
+      "title": {
+        "en": "Archpastoral visit",
+        "ru": "Архипастырский визит",
+        "el": "Ποιμαντική επίσκεψη"
+      }
     },
     {
       "date": "2027-01-24T10:00",
       "kind": "visitation",
       "parishId": "annunciation-sample",
-      "title": { "en": "Archpastoral visit", "ru": "Архипастырский визит", "el": "Ποιμαντική επίσκεψη" }
+      "title": {
+        "en": "Archpastoral visit",
+        "ru": "Архипастырский визит",
+        "el": "Ποιμαντική επίσκεψη"
+      }
     }
   ]
 }

@@ -4,11 +4,8 @@ import { siteConfig } from "@/lib/content";
 import { loc } from "@/lib/i18n";
 import { asset } from "@/lib/links";
 
-const defaultPath = asset(`/${siteConfig.defaultLanguage}/`);
-
 export const metadata: Metadata = {
   title: loc(siteConfig.siteName, siteConfig.defaultLanguage),
-  other: { refresh: `0; url=${defaultPath}` },
 };
 
 // A static host has no server redirects, so the root page picks a language in the browser.

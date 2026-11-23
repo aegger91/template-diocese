@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { ChevronDown, Globe, HeartHandshake, Menu } from "lucide-react";
+import { ChevronDown, Globe, HeartHandshake, Menu, X } from "lucide-react";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,7 +12,7 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -228,15 +228,20 @@ export function SiteHeader({ lang, dir, languages, nav, utilityLinks, donateHref
                   <Menu className="size-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side={dir === "rtl" ? "left" : "right"} className="w-[min(22rem,88vw)] gap-0 overflow-y-auto p-0">
-                <SheetHeader className="border-b border-line bg-royal-900 px-5 py-4 text-white">
+              <SheetContent side={dir === "rtl" ? "left" : "right"} className="w-[min(22rem,88vw)] gap-0 overflow-y-auto p-0" showCloseButton={false}>
+                <SheetHeader className="flex-row items-center justify-between gap-3 border-b border-line bg-royal-900 px-5 py-3 text-white">
                   <SheetTitle className="text-white">{labels.menu}</SheetTitle>
+                  <SheetClose asChild>
+                    <Button variant="ghost" size="icon" className="size-10 text-white hover:bg-white/10 hover:text-white" aria-label={labels.closeMenu}>
+                      <X className="size-5" aria-hidden />
+                    </Button>
+                  </SheetClose>
                 </SheetHeader>
                 <div className="border-b border-line px-5 py-4">
                   <p className="eyebrow mb-2">{labels.language}</p>
                   <LanguageLinks lang={lang} languages={languages} variant="full" className="flex-wrap gap-2" onNavigate={() => setOpen(false)} />
                 </div>
-                <nav aria-label="Mobile" className="px-3 py-3">
+                <nav aria-label={labels.menu} className="px-3 py-3">
                   <ul className="grid gap-0.5">
                     {nav.map((item) => (
                       <li key={item.href}>
