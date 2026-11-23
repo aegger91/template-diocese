@@ -1,0 +1,140 @@
+{
+  "$schema": "../schemas/clergy.schema.json",
+  "clergy": [
+    {
+      "id": "bishop-example",
+      "rank": "bishop",
+      "name": { "en": "Example", "ru": "Пример", "el": "Παράδειγμα" },
+      "status": "active",
+      "assignments": [
+        { "role": "rulingBishop" },
+        { "role": "rector", "parishId": "st-example-cathedral" }
+      ],
+      "email": "bishop@diocese.example"
+    },
+    {
+      "id": "bishop-sample",
+      "rank": "bishop",
+      "name": { "en": "Sample", "ru": "Образец", "el": "Δείγμα" },
+      "status": "active",
+      "assignments": [
+        { "role": "auxiliaryBishop" },
+        { "role": "abbot", "parishId": "dormition-sample-monastery" }
+      ]
+    },
+    {
+      "id": "andrew-sample",
+      "rank": "archpriest",
+      "name": { "en": "Andrew Sample", "ru": "Андрей Образцов", "el": "Ανδρέας Δειγματόπουλος" },
+      "status": "active",
+      "assignments": [
+        { "role": "chancellor" },
+        { "role": "dean", "deanery": "great-lakes" },
+        { "role": "assistantPriest", "parishId": "st-example-cathedral" }
+      ],
+      "email": "chancellor@diocese.example"
+    },
+    {
+      "id": "peter-example",
+      "rank": "archpriest",
+      "name": { "en": "Peter Example", "ru": "Пётр Примеров", "el": "Πέτρος Παραδειγματίδης" },
+      "status": "active",
+      "assignments": [
+        { "role": "dean", "deanery": "prairie" },
+        { "role": "rector", "parishId": "st-nicholas-sample" },
+        { "role": "priestInCharge", "parishId": "st-herman-sample-mission" }
+      ]
+    },
+    {
+      "id": "john-template",
+      "rank": "archpriest",
+      "name": { "en": "John Template", "ru": "Иоанн Шаблонов", "el": "Ιωάννης Προτυπάκης" },
+      "status": "active",
+      "assignments": [
+        { "role": "dean", "deanery": "river" },
+        { "role": "rector", "parishId": "sts-cyril-methodius-sample" },
+        { "role": "chaplain", "parishId": "st-seraphim-sample-chapel" }
+      ]
+    },
+    {
+      "id": "nicholas-draft",
+      "rank": "priest",
+      "name": { "en": "Nicholas Draft", "ru": "Николай Черновиков", "el": "Νικόλαος Σχεδιάκης" },
+      "status": "active",
+      "assignments": [{ "role": "rector", "parishId": "holy-protection-sample" }]
+    },
+    {
+      "id": "michael-mockup",
+      "rank": "priest",
+      "name": { "en": "Michael Mockup", "ru": "Михаил Макетов", "el": "Μιχαήλ Μακετάκης" },
+      "status": "active",
+      "assignments": [
+        { "role": "priestInCharge", "parishId": "holy-trinity-sample-mission" },
+        { "role": "chaplain", "parishId": "st-innocent-sample-chapel" }
+      ]
+    },
+    {
+      "id": "luke-example",
+      "rank": "priest",
+      "name": { "en": "Luke Example", "ru": "Лука Примеров", "el": "Λουκάς Παραδειγματίδης" },
+      "status": "active",
+      "assignments": [{ "role": "rector", "parishId": "annunciation-sample" }]
+    },
+    {
+      "id": "basil-sample",
+      "rank": "priest",
+      "name": { "en": "Basil Sample", "ru": "Василий Образцов", "el": "Βασίλειος Δειγματόπουλος" },
+      "status": "active",
+      "assignments": [{ "role": "rector", "parishId": "st-george-sample" }]
+    },
+    {
+      "id": "constantine-draft",
+      "rank": "priest",
+      "name": { "en": "Constantine Draft", "ru": "Константин Черновиков", "el": "Κωνσταντίνος Σχεδιάκης" },
+      "status": "active",
+      "assignments": [{ "role": "rector", "parishId": "st-paraskeva-sample" }]
+    },
+    {
+      "id": "james-template",
+      "rank": "priest",
+      "name": { "en": "James Template", "ru": "Иаков Шаблонов", "el": "Ιάκωβος Προτυπάκης" },
+      "status": "active",
+      "assignments": [{ "role": "rector", "parishId": "transfiguration-sample" }]
+    },
+    {
+      "id": "seraphim-sample",
+      "rank": "hieromonk",
+      "name": { "en": "Seraphim (Sample)", "ru": "Серафим (Образцов)", "el": "Σεραφείμ (Δειγματόπουλος)" },
+      "status": "active",
+      "assignments": [{ "role": "assistantPriest", "parishId": "dormition-sample-monastery" }]
+    },
+    {
+      "id": "gregory-placeholder",
+      "rank": "protodeacon",
+      "name": { "en": "Gregory Placeholder", "ru": "Григорий Заглушкин", "el": "Γρηγόριος Υποκαταστάτης" },
+      "status": "active",
+      "assignments": [{ "role": "deacon", "parishId": "st-example-cathedral" }]
+    },
+    {
+      "id": "stephen-demo",
+      "rank": "deacon",
+      "name": { "en": "Stephen Demo", "ru": "Стефан Демов", "el": "Στέφανος Δεμάκης" },
+      "status": "active",
+      "assignments": [{ "role": "deacon", "parishId": "st-nicholas-sample" }]
+    },
+    {
+      "id": "thomas-draft",
+      "rank": "deacon",
+      "name": { "en": "Thomas Draft", "ru": "Фома Черновиков", "el": "Θωμάς Σχεδιάκης" },
+      "status": "active",
+      "assignments": [{ "role": "deacon", "parishId": "annunciation-sample" }]
+    },
+    {
+      "id": "paul-template",
+      "rank": "archpriest",
+      "name": { "en": "Paul Template", "ru": "Павел Шаблонов", "el": "Παύλος Προτυπάκης" },
+      "status": "retired",
+      "assignments": [{ "role": "attached", "parishId": "holy-protection-sample" }]
+    }
+  ]
+}

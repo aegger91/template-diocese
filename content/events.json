@@ -1,0 +1,302 @@
+{
+  "$schema": "../schemas/events.schema.json",
+  "events": [
+    {
+      "id": "clergy-synaxis-autumn-2026",
+      "title": {
+        "en": "Autumn clergy synaxis",
+        "ru": "Осеннее собрание духовенства",
+        "el": "Φθινοπωρινή σύναξη κληρικών"
+      },
+      "summary": {
+        "en": "The bishop meets with all clergy of the diocese. Sample event.",
+        "ru": "Архиерей встречается со всем духовенством епархии. Образец события.",
+        "el": "Ο Επίσκοπος συναντά όλους τους κληρικούς της Επισκοπής. Δείγμα εκδήλωσης."
+      },
+      "start": "2026-11-07T10:00",
+      "end": "2026-11-07T15:00",
+      "category": "clergy",
+      "major": false,
+      "location": {
+        "parishId": "st-example-cathedral"
+      }
+    },
+    {
+      "id": "advent-food-drive-2026",
+      "title": {
+        "en": "Nativity Fast food drive",
+        "ru": "Сбор продуктов в Рождественский пост",
+        "el": "Συλλογή τροφίμων της Σαρακοστής των Χριστουγέννων"
+      },
+      "summary": {
+        "en": "Parishes bring food to the cathedral hall for local pantries. Sample event.",
+        "ru": "Приходы привозят продукты в соборный зал для местных пунктов помощи. Образец события.",
+        "el": "Οι ενορίες φέρνουν τρόφιμα στην αίθουσα του καθεδρικού για τις τοπικές τράπεζες τροφίμων. Δείγμα εκδήλωσης."
+      },
+      "start": "2026-12-05T09:00",
+      "end": "2026-12-05T13:00",
+      "category": "charity",
+      "major": false,
+      "location": {
+        "parishId": "st-example-cathedral"
+      }
+    },
+    {
+      "id": "clergy-advent-retreat-2026",
+      "title": {
+        "en": "Clergy retreat for the Nativity Fast",
+        "ru": "Говение духовенства в Рождественский пост",
+        "el": "Πνευματική σύναξη κληρικών της Σαρακοστής"
+      },
+      "summary": {
+        "en": "Three days of prayer, confession and talks at the monastery. Registration required.",
+        "ru": "Три дня молитвы, исповеди и бесед в монастыре. Нужна регистрация.",
+        "el": "Τρεις ημέρες προσευχής, εξομολόγησης και ομιλιών στη μονή. Απαιτείται εγγραφή."
+      },
+      "start": "2026-12-08T17:00",
+      "end": "2026-12-10T12:00",
+      "category": "retreat",
+      "major": false,
+      "location": {
+        "parishId": "dormition-sample-monastery"
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1001",
+        "deadline": "2026-12-01"
+      },
+      "image": "/images/pd/stolobny-monastery.jpg"
+    },
+    {
+      "id": "advent-day-of-prayer-2026",
+      "title": {
+        "en": "Diocesan day of prayer",
+        "ru": "Епархиальный день молитвы",
+        "el": "Ημέρα προσευχής της Επισκοπής"
+      },
+      "summary": {
+        "en": "Hierarchical Divine Liturgy and a shared lunch at the cathedral.",
+        "ru": "Архиерейская Божественная литургия и общая трапеза в соборе.",
+        "el": "Αρχιερατική Θεία Λειτουργία και κοινό γεύμα στον καθεδρικό ναό."
+      },
+      "start": "2026-12-12T09:30",
+      "end": "2026-12-12T14:00",
+      "category": "service",
+      "major": true,
+      "location": {
+        "parishId": "st-example-cathedral"
+      },
+      "image": "/images/pd/rostov-iconostasis.jpg"
+    },
+    {
+      "id": "nativity-hierarchical-liturgy-2026",
+      "title": {
+        "en": "Nativity of Christ: Hierarchical Divine Liturgy",
+        "ru": "Рождество Христово: архиерейское богослужение",
+        "el": "Χριστούγεννα: Αρχιερατική Θεία Λειτουργία"
+      },
+      "summary": {
+        "en": "The bishop serves the Nativity Liturgy at the cathedral. Broadcast on the diocesan livestream.",
+        "ru": "Архиерей совершает Рождественскую литургию в кафедральном соборе. Прямая трансляция на сайте.",
+        "el": "Ο Επίσκοπος λειτουργεί τα Χριστούγεννα στον καθεδρικό ναό. Μετάδοση στη ζωντανή μετάδοση της Επισκοπής."
+      },
+      "start": "2026-12-25T09:30",
+      "end": "2026-12-25T12:30",
+      "category": "service",
+      "major": true,
+      "location": {
+        "parishId": "st-example-cathedral"
+      },
+      "livestream": true
+    },
+    {
+      "id": "theophany-waters-2027",
+      "title": {
+        "en": "Theophany: Great Blessing of Waters at the lake",
+        "ru": "Богоявление: великое освящение воды на озере",
+        "el": "Θεοφάνεια: Μέγας Αγιασμός στη λίμνη"
+      },
+      "summary": {
+        "en": "Great Blessing of Waters with the bishop after the Liturgy.",
+        "ru": "Великое освящение воды с архиереем после литургии.",
+        "el": "Μέγας Αγιασμός των υδάτων με τον Επίσκοπο μετά τη Λειτουργία."
+      },
+      "start": "2027-01-06T12:00",
+      "end": "2027-01-06T13:00",
+      "category": "service",
+      "major": false,
+      "location": {
+        "name": {
+          "en": "Lakeshore park, Chicago (sample)",
+          "ru": "Парк на берегу озера, Чикаго (образец)",
+          "el": "Πάρκο στην όχθη της λίμνης, Σικάγο (δείγμα)"
+        }
+      }
+    },
+    {
+      "id": "youth-winter-retreat-2027",
+      "title": {
+        "en": "Youth winter retreat",
+        "ru": "Зимний молодёжный слёт",
+        "el": "Χειμερινή κατασκήνωση νέων"
+      },
+      "summary": {
+        "en": "Winter retreat for ages 14 to 18. Registration required.",
+        "ru": "Зимний выезд для молодёжи от 14 до 18 лет. Нужна регистрация.",
+        "el": "Χειμερινή σύναξη για ηλικίες 14 έως 18. Απαιτείται εγγραφή."
+      },
+      "start": "2027-01-15T18:00",
+      "end": "2027-01-17T13:00",
+      "category": "youth",
+      "major": false,
+      "location": {
+        "parishId": "dormition-sample-monastery"
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1002",
+        "deadline": "2027-01-08"
+      }
+    },
+    {
+      "id": "music-workshop-2027",
+      "title": {
+        "en": "Church music workshop",
+        "ru": "Семинар по церковному пению",
+        "el": "Σεμινάριο εκκλησιαστικής μουσικής"
+      },
+      "summary": {
+        "en": "A one-day workshop for choir directors and chanters.",
+        "ru": "Однодневный семинар для регентов и певчих.",
+        "el": "Ημερήσιο σεμινάριο για χοράρχες και ψάλτες."
+      },
+      "start": "2027-02-13T09:00",
+      "end": "2027-02-13T16:00",
+      "category": "music",
+      "major": false,
+      "location": {
+        "parishId": "annunciation-sample"
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1003"
+      }
+    },
+    {
+      "id": "teacher-training-2027",
+      "title": {
+        "en": "Church school teacher training",
+        "ru": "Семинар для учителей воскресных школ",
+        "el": "Επιμόρφωση κατηχητών"
+      },
+      "summary": {
+        "en": "A training day for church school teachers.",
+        "ru": "Учебный день для преподавателей воскресных школ.",
+        "el": "Ημέρα επιμόρφωσης για κατηχητές."
+      },
+      "start": "2027-02-27T09:30",
+      "end": "2027-02-27T15:00",
+      "category": "education",
+      "major": false,
+      "location": {
+        "parishId": "holy-protection-sample"
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1004"
+      }
+    },
+    {
+      "id": "sunday-of-orthodoxy-2027",
+      "title": {
+        "en": "Sunday of Orthodoxy Vespers",
+        "ru": "Вечерня в Неделю Торжества Православия",
+        "el": "Εσπερινός της Κυριακής της Ορθοδοξίας"
+      },
+      "summary": {
+        "en": "All clergy and faithful gather for Vespers and the procession with icons.",
+        "ru": "Всё духовенство и верующие собираются на вечерню и крестный ход с иконами.",
+        "el": "Όλοι οι κληρικοί και οι πιστοί συγκεντρώνονται για τον Εσπερινό και τη λιτάνευση των εικόνων."
+      },
+      "start": "2027-03-21T17:00",
+      "end": "2027-03-21T19:00",
+      "category": "service",
+      "major": true,
+      "location": {
+        "parishId": "st-example-cathedral"
+      },
+      "livestream": true
+    },
+    {
+      "id": "lenten-retreat-2027",
+      "title": {
+        "en": "Lenten retreat for parishioners",
+        "ru": "Великопостный день для прихожан",
+        "el": "Πνευματική σύναξη της Μεγάλης Τεσσαρακοστής"
+      },
+      "summary": {
+        "en": "A quiet Saturday of talks, confession and the Presanctified Liturgy.",
+        "ru": "Тихая суббота: беседы, исповедь и Литургия Преждеосвященных Даров.",
+        "el": "Ένα ήσυχο Σάββατο με ομιλίες, εξομολόγηση και Προηγιασμένη Θεία Λειτουργία."
+      },
+      "start": "2027-03-27T09:00",
+      "end": "2027-03-27T15:00",
+      "category": "retreat",
+      "major": false,
+      "location": {
+        "parishId": "transfiguration-sample"
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1005"
+      }
+    },
+    {
+      "id": "diocesan-assembly-2027",
+      "title": {
+        "en": "Diocesan Assembly 2027",
+        "ru": "Епархиальное собрание 2027 года",
+        "el": "Συνέλευση της Επισκοπής 2027"
+      },
+      "summary": {
+        "en": "Annual meeting of clergy and lay delegates with the bishop.",
+        "ru": "Ежегодное собрание духовенства и мирян-делегатов с архиереем.",
+        "el": "Ετήσια συνέλευση κληρικών και λαϊκών αντιπροσώπων με τον Επίσκοπο."
+      },
+      "start": "2027-06-08T09:00",
+      "end": "2027-06-10T13:00",
+      "category": "assembly",
+      "major": true,
+      "location": {
+        "parishId": "st-example-cathedral"
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1006",
+        "deadline": "2027-05-15"
+      }
+    },
+    {
+      "id": "youth-summer-camp-2027",
+      "title": {
+        "en": "Diocesan summer camp",
+        "ru": "Епархиальный летний лагерь",
+        "el": "Θερινή κατασκήνωση της Επισκοπής"
+      },
+      "summary": {
+        "en": "A week of camp for ages 9 to 17, with daily services and a priest on site.",
+        "ru": "Неделя в лагере для детей 9-17 лет, с ежедневными богослужениями и священником.",
+        "el": "Μια εβδομάδα κατασκήνωσης για ηλικίες 9 έως 17, με καθημερινές ακολουθίες και ιερέα."
+      },
+      "start": "2027-07-11T15:00",
+      "end": "2027-07-17T11:00",
+      "category": "youth",
+      "major": false,
+      "location": {
+        "name": {
+          "en": "Sample camp grounds, Wisconsin",
+          "ru": "Лагерь (образец), Висконсин",
+          "el": "Κατασκήνωση (δείγμα), Ουισκόνσιν"
+        }
+      },
+      "registration": {
+        "connectEventId": "sample-evt-1007",
+        "deadline": "2027-06-01"
+      }
+    }
+  ]
+}

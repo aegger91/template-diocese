@@ -1,0 +1,141 @@
+{
+  "$schema": "../schemas/pages.schema.json",
+  "pages": [
+    {
+      "path": "about/archives",
+      "title": {
+        "en": "Diocesan archives",
+        "ru": "Архив епархии",
+        "el": "Αρχείο της Επισκοπής"
+      },
+      "intro": {
+        "en": "Sample page added in the builder. Pages can live anywhere in the site.",
+        "ru": "Образец страницы из конструктора. Страницы можно размещать в любом разделе.",
+        "el": "Δείγμα σελίδας από το εργαλείο κατασκευής. Οι σελίδες μπορούν να μπουν οπουδήποτε."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "heading": {
+            "en": "About the archives",
+            "ru": "Об архиве",
+            "el": "Σχετικά με το αρχείο"
+          },
+          "body": {
+            "en": [
+              "Sample text block. One or two lines."
+            ],
+            "ru": [
+              "Образец текстового блока. Одна-две строки."
+            ],
+            "el": [
+              "Δείγμα μπλοκ κειμένου. Μία ή δύο γραμμές."
+            ]
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/pd/korovniki-wallpainting.jpg",
+          "alt": {
+            "en": "Painted wall above a church doorway",
+            "ru": "Стенопись над входом в храм",
+            "el": "Τοιχογραφία πάνω από την είσοδο ναού"
+          },
+          "caption": {
+            "en": "Sergei Prokudin-Gorskii, 1911. Public domain.",
+            "ru": "С. М. Прокудин-Горский, 1911. Общественное достояние.",
+            "el": "Σεργκέι Προκούντιν-Γκόρσκι, 1911. Κοινό κτήμα."
+          }
+        },
+        {
+          "type": "callout",
+          "heading": {
+            "en": "Contact",
+            "ru": "Связаться",
+            "el": "Επικοινωνία"
+          },
+          "body": {
+            "en": [
+              "Sample callout with a link."
+            ],
+            "ru": [
+              "Образец выделенного блока со ссылкой."
+            ],
+            "el": [
+              "Δείγμα πλαισίου με σύνδεσμο."
+            ]
+          },
+          "link": {
+            "label": {
+              "en": "Contact the chancery",
+              "ru": "Написать в канцелярию",
+              "el": "Επικοινωνία με τα γραφεία"
+            },
+            "href": "/contact/"
+          }
+        }
+      ]
+    },
+    {
+      "path": "assembly",
+      "title": {
+        "en": "Diocesan Assembly",
+        "ru": "Епархиальное собрание",
+        "el": "Συνέλευση της Επισκοπής"
+      },
+      "intro": {
+        "en": "Sample page added in the builder. Pages can live anywhere in the site.",
+        "ru": "Образец страницы из конструктора. Страницы можно размещать в любом разделе.",
+        "el": "Δείγμα σελίδας από το εργαλείο κατασκευής. Οι σελίδες μπορούν να μπουν οπουδήποτε."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "heading": {
+            "en": "About the assembly",
+            "ru": "О собрании",
+            "el": "Σχετικά με τη Συνέλευση"
+          },
+          "body": {
+            "en": [
+              "Sample text block. One or two lines."
+            ],
+            "ru": [
+              "Образец текстового блока. Одна-две строки."
+            ],
+            "el": [
+              "Δείγμα μπλοκ κειμένου. Μία ή δύο γραμμές."
+            ]
+          }
+        },
+        {
+          "type": "callout",
+          "heading": {
+            "en": "Next assembly",
+            "ru": "Ближайшее собрание",
+            "el": "Επόμενη Συνέλευση"
+          },
+          "body": {
+            "en": [
+              "Sample callout with a link."
+            ],
+            "ru": [
+              "Образец выделенного блока со ссылкой."
+            ],
+            "el": [
+              "Δείγμα πλαισίου με σύνδεσμο."
+            ]
+          },
+          "link": {
+            "label": {
+              "en": "Event details",
+              "ru": "Подробнее о событии",
+              "el": "Λεπτομέρειες"
+            },
+            "href": "/events/diocesan-assembly-2027/"
+          }
+        }
+      ]
+    }
+  ]
+}

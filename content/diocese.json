@@ -1,0 +1,301 @@
+{
+  "$schema": "../schemas/diocese.schema.json",
+  "bishop": {
+    "clergyId": "bishop-example",
+    "styledName": {
+      "en": "His Grace Bishop Example of St. Example",
+      "ru": "Преосвященнейший Пример, епископ святого Примера",
+      "el": "Ο Θεοφιλέστατος Επίσκοπος Αγίου Παραδείγματος κ. Παράδειγμα"
+    },
+    "signature": {
+      "en": "Bishop Example",
+      "ru": "Епископ Пример",
+      "el": "Ο Επίσκοπος Παράδειγμα"
+    },
+    "welcomeTitle": {
+      "en": "Welcome from our bishop",
+      "ru": "Приветственное слово архиерея",
+      "el": "Χαιρετισμός του Επισκόπου μας"
+    },
+    "welcomeShort": {
+      "en": "A short welcome from the ruling bishop. Sample text of one or two lines.",
+      "ru": "Краткое приветствие правящего архиерея. Образец текста в одну-две строки.",
+      "el": "Σύντομος χαιρετισμός του Επισκόπου. Δείγμα κειμένου μίας ή δύο γραμμών."
+    },
+    "welcomeFull": {
+      "en": [
+        "Sample welcome from the ruling bishop. Replace it with the bishop's own words.",
+        "With love in Christ,"
+      ],
+      "ru": [
+        "Образец приветственного слова правящего архиерея. Замените его словами владыки.",
+        "С любовью о Христе,"
+      ],
+      "el": [
+        "Δείγμα χαιρετισμού του Επισκόπου. Αντικαταστήστε το με τα δικά του λόγια.",
+        "Με αγάπη Χριστού,"
+      ]
+    },
+    "biography": {
+      "en": [
+        "Sample biography of the ruling bishop. Replace it with a short account of his life and service."
+      ],
+      "ru": [
+        "Образец биографии правящего архиерея. Замените его кратким жизнеописанием."
+      ],
+      "el": [
+        "Δείγμα βιογραφίας του Επισκόπου. Αντικαταστήστε το με σύντομο βιογραφικό."
+      ]
+    },
+    "milestones": [
+      {
+        "year": "1968",
+        "text": {
+          "en": "Born (sample date)",
+          "ru": "Родился (образец даты)",
+          "el": "Γέννηση (δείγμα ημερομηνίας)"
+        }
+      },
+      {
+        "year": "1994",
+        "text": {
+          "en": "Ordained to the priesthood",
+          "ru": "Рукоположен во иерея",
+          "el": "Χειροτονία εις πρεσβύτερον"
+        }
+      },
+      {
+        "year": "2009",
+        "text": {
+          "en": "Tonsured a monk",
+          "ru": "Пострижен в монашество",
+          "el": "Κουρά μοναχού"
+        }
+      },
+      {
+        "year": "2015",
+        "text": {
+          "en": "Consecrated bishop",
+          "ru": "Хиротонисан во епископа",
+          "el": "Χειροτονία εις επίσκοπον"
+        }
+      },
+      {
+        "year": "2018",
+        "text": {
+          "en": "Enthroned as ruling bishop",
+          "ru": "Вступил в управление епархией",
+          "el": "Ενθρόνιση ως Επισκόπου"
+        }
+      }
+    ]
+  },
+  "welcomeBlock": {
+    "title": {
+      "en": "About the diocese",
+      "ru": "О епархии",
+      "el": "Η Επισκοπή"
+    },
+    "text": {
+      "en": "Sample introduction to the diocese. Replace it with one or two lines.",
+      "ru": "Образец краткого рассказа о епархии. Замените одной-двумя строками.",
+      "el": "Δείγμα σύντομης παρουσίασης της Επισκοπής. Αντικαταστήστε το με μία ή δύο γραμμές."
+    }
+  },
+  "history": {
+    "intro": {
+      "en": "Sample timeline. Replace each entry with the history of your diocese.",
+      "ru": "Образец хронологии. Замените записи историей вашей епархии.",
+      "el": "Δείγμα χρονολογίου. Αντικαταστήστε τις εγγραφές με την ιστορία της Επισκοπής σας."
+    },
+    "timeline": [
+      {
+        "year": "1905",
+        "title": {
+          "en": "The first sample community",
+          "ru": "Первая община (образец)",
+          "el": "Η πρώτη κοινότητα (δείγμα)"
+        },
+        "text": {
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
+        },
+        "image": "/images/pd/st-nicholas-pensky.jpg"
+      },
+      {
+        "year": "1921",
+        "title": {
+          "en": "A cathedral is built",
+          "ru": "Строительство собора",
+          "el": "Ανέγερση του καθεδρικού"
+        },
+        "text": {
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
+        }
+      },
+      {
+        "year": "1952",
+        "title": {
+          "en": "The diocese is established",
+          "ru": "Учреждение епархии",
+          "el": "Ίδρυση της Επισκοπής"
+        },
+        "text": {
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
+        },
+        "image": "/images/pd/korovniki-ensemble.jpg"
+      },
+      {
+        "year": "1979",
+        "title": {
+          "en": "A monastery is founded",
+          "ru": "Основание монастыря",
+          "el": "Ίδρυση της μονής"
+        },
+        "text": {
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
+        },
+        "image": "/images/pd/stolobny-monastery.jpg"
+      },
+      {
+        "year": "2008",
+        "title": {
+          "en": "Mission parishes",
+          "ru": "Миссионерские приходы",
+          "el": "Ιεραποστολικές ενορίες"
+        },
+        "text": {
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
+        }
+      },
+      {
+        "year": "2026",
+        "title": {
+          "en": "Today",
+          "ru": "Сегодня",
+          "el": "Σήμερα"
+        },
+        "text": {
+          "en": "Sample entry. One or two lines about this year.",
+          "ru": "Образец записи. Одна-две строки об этом годе.",
+          "el": "Δείγμα εγγραφής. Μία ή δύο γραμμές για αυτό το έτος."
+        }
+      }
+    ]
+  },
+  "structure": {
+    "intro": {
+      "en": "Sample overview of the deaneries, offices and departments of the diocese.",
+      "ru": "Образец описания благочиний, управления и отделов епархии.",
+      "el": "Δείγμα περιγραφής των περιφερειών, των γραφείων και των διακονιών της Επισκοπής."
+    },
+    "deaneries": [
+      {
+        "id": "great-lakes",
+        "name": {
+          "en": "Great Lakes Deanery (sample)",
+          "ru": "Приозёрное благочиние (образец)",
+          "el": "Περιφέρεια Μεγάλων Λιμνών (δείγμα)"
+        },
+        "deanId": "andrew-sample"
+      },
+      {
+        "id": "prairie",
+        "name": {
+          "en": "Prairie Deanery (sample)",
+          "ru": "Степное благочиние (образец)",
+          "el": "Περιφέρεια Πεδιάδων (δείγμα)"
+        },
+        "deanId": "peter-example"
+      },
+      {
+        "id": "river",
+        "name": {
+          "en": "River Deanery (sample)",
+          "ru": "Приречное благочиние (образец)",
+          "el": "Περιφέρεια Ποταμού (δείγμα)"
+        },
+        "deanId": "john-template"
+      }
+    ],
+    "offices": [
+      {
+        "title": {
+          "en": "Chancellor",
+          "ru": "Секретарь епархии",
+          "el": "Γραμματέας της Επισκοπής"
+        },
+        "clergyId": "andrew-sample"
+      },
+      {
+        "title": {
+          "en": "Diocesan council",
+          "ru": "Епархиальный совет",
+          "el": "Επισκοπικό Συμβούλιο"
+        },
+        "text": {
+          "en": "Clergy and lay members elected at the diocesan assembly. Meets four times a year.",
+          "ru": "Клирики и миряне, избранные епархиальным собранием. Собирается четыре раза в год.",
+          "el": "Κληρικοί και λαϊκοί που εκλέγονται από τη Συνέλευση της Επισκοπής. Συνεδριάζει τέσσερις φορές τον χρόνο."
+        }
+      },
+      {
+        "title": {
+          "en": "Treasurer",
+          "ru": "Казначей",
+          "el": "Ταμίας"
+        },
+        "text": {
+          "en": "A lay volunteer position. Reports to the council at each meeting.",
+          "ru": "Мирянин, несущий послушание на общественных началах. Отчитывается перед советом на каждом заседании.",
+          "el": "Εθελοντική θέση λαϊκού. Λογοδοτεί στο Συμβούλιο σε κάθε συνεδρίαση."
+        }
+      },
+      {
+        "title": {
+          "en": "Ecclesiastical court",
+          "ru": "Епархиальный суд",
+          "el": "Επισκοπικό Δικαστήριο"
+        },
+        "text": {
+          "en": "Three senior priests appointed by the bishop.",
+          "ru": "Три старших священника, назначенных архиереем.",
+          "el": "Τρεις πρεσβύτεροι ιερείς που διορίζονται από τον Επίσκοπο."
+        }
+      }
+    ]
+  },
+  "parentChurch": {
+    "name": {
+      "en": "The Sample Orthodox Church",
+      "ru": "Образцовая Православная Церковь",
+      "el": "Η Υποδειγματική Ορθόδοξη Εκκλησία"
+    },
+    "synodName": {
+      "en": "Holy Synod of Bishops (sample)",
+      "ru": "Священный Синод (образец)",
+      "el": "Ιερά Σύνοδος (δείγμα)"
+    },
+    "text": {
+      "en": [
+        "Sample text about the Church and Synod this diocese belongs to. One or two lines."
+      ],
+      "ru": [
+        "Образец текста о Церкви и Синоде, к которым принадлежит епархия. Одна-две строки."
+      ],
+      "el": [
+        "Δείγμα κειμένου για την Εκκλησία και τη Σύνοδο στην οποία ανήκει η Επισκοπή. Μία ή δύο γραμμές."
+      ]
+    },
+    "website": "https://church.example"
+  }
+}

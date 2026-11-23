@@ -1,0 +1,153 @@
+{
+  "$schema": "../schemas/ministries.schema.json",
+  "ministries": [
+    {
+      "id": "youth",
+      "icon": "youth",
+      "name": {
+        "en": "Youth ministry",
+        "ru": "Молодёжный отдел",
+        "el": "Διακονία Νεότητας"
+      },
+      "summary": {
+        "en": "Retreats, summer camp and a youth council that helps plan them.",
+        "ru": "Слёты, летний лагерь и молодёжный совет, который помогает их готовить.",
+        "el": "Συνάξεις, θερινή κατασκήνωση και ένα Συμβούλιο Νεότητας που βοηθά στον σχεδιασμό τους."
+      },
+      "body": {
+        "en": [
+          "Sample description of this department. One or two lines."
+        ],
+        "ru": [
+          "Образец описания отдела. Одна-две строки."
+        ],
+        "el": [
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
+        ]
+      },
+      "contactClergyId": "michael-mockup",
+      "email": "youth@diocese.example",
+      "eventCategories": [
+        "youth"
+      ]
+    },
+    {
+      "id": "education",
+      "icon": "education",
+      "name": {
+        "en": "Christian education",
+        "ru": "Отдел религиозного образования",
+        "el": "Κατήχηση και Παιδεία"
+      },
+      "summary": {
+        "en": "Church school lessons, teacher training and adult classes on the faith.",
+        "ru": "Уроки воскресной школы, обучение учителей и занятия о вере для взрослых.",
+        "el": "Μαθήματα κατηχητικού, επιμόρφωση κατηχητών και μαθήματα πίστης για ενήλικες."
+      },
+      "body": {
+        "en": [
+          "Sample description of this department. One or two lines."
+        ],
+        "ru": [
+          "Образец описания отдела. Одна-две строки."
+        ],
+        "el": [
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
+        ]
+      },
+      "contactClergyId": "nicholas-draft",
+      "email": "education@diocese.example",
+      "eventCategories": [
+        "education"
+      ]
+    },
+    {
+      "id": "missions",
+      "icon": "missions",
+      "name": {
+        "en": "Missions and evangelism",
+        "ru": "Миссионерский отдел",
+        "el": "Ιεραποστολή"
+      },
+      "summary": {
+        "en": "Starting and supporting new communities in towns without an Orthodox church.",
+        "ru": "Открытие и поддержка новых общин в городах, где нет православного храма.",
+        "el": "Ίδρυση και στήριξη νέων κοινοτήτων σε πόλεις χωρίς Ορθόδοξο ναό."
+      },
+      "body": {
+        "en": [
+          "Sample description of this department. One or two lines."
+        ],
+        "ru": [
+          "Образец описания отдела. Одна-две строки."
+        ],
+        "el": [
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
+        ]
+      },
+      "contactClergyId": "peter-example",
+      "email": "missions@diocese.example",
+      "eventCategories": []
+    },
+    {
+      "id": "music",
+      "icon": "music",
+      "name": {
+        "en": "Church music",
+        "ru": "Певческий отдел",
+        "el": "Εκκλησιαστική μουσική"
+      },
+      "summary": {
+        "en": "Training for choir directors and chanters, and a shared library of scores.",
+        "ru": "Обучение регентов и певчих и общая нотная библиотека.",
+        "el": "Εκπαίδευση χοραρχών και ψαλτών και κοινή βιβλιοθήκη παρτιτούρων."
+      },
+      "body": {
+        "en": [
+          "Sample description of this department. One or two lines."
+        ],
+        "ru": [
+          "Образец описания отдела. Одна-две строки."
+        ],
+        "el": [
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
+        ]
+      },
+      "contactClergyId": "luke-example",
+      "email": "music@diocese.example",
+      "eventCategories": [
+        "music"
+      ]
+    },
+    {
+      "id": "charity",
+      "icon": "charity",
+      "name": {
+        "en": "Charity and outreach",
+        "ru": "Отдел церковной благотворительности",
+        "el": "Φιλανθρωπία"
+      },
+      "summary": {
+        "en": "Food drives, visits to the sick and help for families in hard times.",
+        "ru": "Сбор продуктов, посещение больных и помощь семьям в трудное время.",
+        "el": "Συλλογές τροφίμων, επισκέψεις σε ασθενείς και βοήθεια σε οικογένειες σε δύσκολους καιρούς."
+      },
+      "body": {
+        "en": [
+          "Sample description of this department. One or two lines."
+        ],
+        "ru": [
+          "Образец описания отдела. Одна-две строки."
+        ],
+        "el": [
+          "Δείγμα περιγραφής της διακονίας. Μία ή δύο γραμμές."
+        ]
+      },
+      "contactClergyId": "james-template",
+      "email": "charity@diocese.example",
+      "eventCategories": [
+        "charity"
+      ]
+    }
+  ]
+}

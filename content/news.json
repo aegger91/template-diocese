@@ -1,0 +1,218 @@
+{
+  "$schema": "../schemas/news.schema.json",
+  "news": [
+    {
+      "id": "nativity-fast-pastoral-letter-2026",
+      "date": "2026-11-20",
+      "category": "pastoralLetter",
+      "title": {
+        "en": "Pastoral letter for the Nativity Fast",
+        "ru": "Архипастырское послание на Рождественский пост",
+        "el": "Ποιμαντική επιστολή για τη Σαρακοστή των Χριστουγέννων"
+      },
+      "summary": {
+        "en": "Sample pastoral letter for the Nativity Fast.",
+        "ru": "Образец пастырского послания на Рождественский пост.",
+        "el": "Δείγμα ποιμαντορικής επιστολής για τη Σαρακοστή των Χριστουγέννων."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      },
+      "pdf": "/files/sample-pastoral-letter-nativity-fast.pdf"
+    },
+    {
+      "id": "office-holiday-hours-2026",
+      "date": "2026-11-18",
+      "category": "announcement",
+      "title": {
+        "en": "Chancery office hours for the holidays",
+        "ru": "Часы работы канцелярии в праздничные дни",
+        "el": "Ωράριο γραφείων κατά τις γιορτές"
+      },
+      "summary": {
+        "en": "Sample notice of chancery hours over the holidays.",
+        "ru": "Образец объявления о графике работы канцелярии в праздники.",
+        "el": "Δείγμα ανακοίνωσης για το ωράριο των γραφείων στις εορτές."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      }
+    },
+    {
+      "id": "appeal-encyclical-2026",
+      "date": "2026-11-14",
+      "category": "encyclical",
+      "title": {
+        "en": "Encyclical on the annual diocesan appeal",
+        "ru": "Окружное послание о ежегодном епархиальном сборе",
+        "el": "Εγκύκλιος για την ετήσια έκκληση της Επισκοπής"
+      },
+      "summary": {
+        "en": "Sample encyclical announcing the annual diocesan appeal.",
+        "ru": "Образец окружного послания о ежегодном епархиальном сборе.",
+        "el": "Δείγμα εγκυκλίου για την ετήσια έκκληση της Επισκοπής."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      },
+      "pdf": "/files/sample-encyclical-diocesan-appeal.pdf"
+    },
+    {
+      "id": "new-mission-received-2026",
+      "date": "2026-11-10",
+      "category": "announcement",
+      "title": {
+        "en": "A new mission is received into the diocese",
+        "ru": "В епархию принята новая миссия",
+        "el": "Μια νέα ιεραποστολή εντάσσεται στην Επισκοπή"
+      },
+      "summary": {
+        "en": "Sample announcement of a new mission parish.",
+        "ru": "Образец объявления о новой миссии.",
+        "el": "Δείγμα ανακοίνωσης για νέα ιεραποστολή."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      },
+      "image": "/images/pd/rostov-yakovlevsky.jpg"
+    },
+    {
+      "id": "clergy-assignments-2026",
+      "date": "2026-11-02",
+      "category": "announcement",
+      "title": {
+        "en": "Clergy assignments for the coming year",
+        "ru": "Назначения духовенства на будущий год",
+        "el": "Τοποθετήσεις κληρικών για το νέο έτος"
+      },
+      "summary": {
+        "en": "Sample list of clergy assignments.",
+        "ru": "Образец списка назначений духовенства.",
+        "el": "Δείγμα καταλόγου τοποθετήσεων κληρικών."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      }
+    },
+    {
+      "id": "protection-pastoral-letter-2026",
+      "date": "2026-10-01",
+      "category": "pastoralLetter",
+      "title": {
+        "en": "Letter on the feast of the Protection",
+        "ru": "Послание на праздник Покрова",
+        "el": "Επιστολή για την εορτή της Αγίας Σκέπης"
+      },
+      "summary": {
+        "en": "Sample letter for the feast of the Protection.",
+        "ru": "Образец послания на праздник Покрова.",
+        "el": "Δείγμα επιστολής για την εορτή της Αγίας Σκέπης."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      },
+      "pdf": "/files/sample-pastoral-letter-protection.pdf"
+    },
+    {
+      "id": "church-new-year-encyclical-2026",
+      "date": "2026-09-01",
+      "category": "encyclical",
+      "title": {
+        "en": "Encyclical for the beginning of the church year",
+        "ru": "Послание к началу церковного года",
+        "el": "Εγκύκλιος για την αρχή της Ινδίκτου"
+      },
+      "summary": {
+        "en": "Sample encyclical for the church new year.",
+        "ru": "Образец послания на церковное новолетие.",
+        "el": "Δείγμα εγκυκλίου για την αρχή της Ινδίκτου."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      },
+      "pdf": "/files/sample-encyclical-church-new-year.pdf"
+    },
+    {
+      "id": "youth-council-formed-2026",
+      "date": "2026-10-26",
+      "category": "announcement",
+      "title": {
+        "en": "Diocesan youth council formed",
+        "ru": "Создан епархиальный молодёжный совет",
+        "el": "Συγκροτήθηκε το Συμβούλιο Νεότητας"
+      },
+      "summary": {
+        "en": "Sample announcement about the new youth council.",
+        "ru": "Образец объявления о молодёжном совете.",
+        "el": "Δείγμα ανακοίνωσης για το νέο συμβούλιο νεότητας."
+      },
+      "body": {
+        "en": [
+          "Sample text. The full text of this item goes here."
+        ],
+        "ru": [
+          "Образец текста. Здесь размещается полный текст."
+        ],
+        "el": [
+          "Δείγμα κειμένου. Εδώ τοποθετείται το πλήρες κείμενο."
+        ]
+      }
+    }
+  ]
+}

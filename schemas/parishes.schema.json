@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "parishes.schema.json",
+  "title": "Parish directory",
+  "description": "Parishes, missions, monasteries and chapels.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "parishes"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "parishes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "type",
+          "deanery",
+          "address",
+          "coordinates",
+          "languages",
+          "services"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "type": {
+            "enum": [
+              "parish",
+              "mission",
+              "monastery",
+              "chapel"
+            ]
+          },
+          "isCathedral": {
+            "type": "boolean"
+          },
+          "deanery": {
+            "type": "string",
+            "description": "Deanery id from diocese.json."
+          },
+          "patronalFeast": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "address": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "street",
+              "city",
+              "region",
+              "postalCode"
+            ],
+            "properties": {
+              "street": {
+                "type": "string"
+              },
+              "city": {
+                "type": "string"
+              },
+              "region": {
+                "type": "string"
+              },
+              "postalCode": {
+                "type": "string"
+              }
+            }
+          },
+          "coordinates": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "lat",
+              "lng"
+            ],
+            "properties": {
+              "lat": {
+                "type": "number",
+                "minimum": -90,
+                "maximum": 90
+              },
+              "lng": {
+                "type": "number",
+                "minimum": -180,
+                "maximum": 180
+              }
+            }
+          },
+          "languages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1,
+            "description": "Worship language codes (en, cu, ru, el, ro, ar...)."
+          },
+          "services": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "day",
+                "time",
+                "service"
+              ],
+              "properties": {
+                "day": {
+                  "enum": [
+                    "sun",
+                    "mon",
+                    "tue",
+                    "wed",
+                    "thu",
+                    "fri",
+                    "sat",
+                    "daily"
+                  ]
+                },
+                "time": {
+                  "type": "string",
+                  "pattern": "^\\d{2}:\\d{2}$"
+                },
+                "service": {
+                  "enum": [
+                    "vigil",
+                    "vespers",
+                    "matins",
+                    "hours",
+                    "liturgy",
+                    "akathist",
+                    "paraklesis",
+                    "typika",
+                    "confession"
+                  ]
+                },
+                "note": {
+                  "$ref": "common.schema.json#/$defs/localized"
+                }
+              }
+            }
+          },
+          "phone": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "website": {
+            "type": "string",
+            "format": "uri"
+          },
+          "about": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "image": {
+            "type": "string",
+            "pattern": "^/",
+            "description": "File in /public, e.g. /images/pd/photo.jpg."
+          }
+        }
+      }
+    }
+  }
+}

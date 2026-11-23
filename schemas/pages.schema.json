@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pages.schema.json",
+  "title": "Builder pages",
+  "description": "Extra pages made of simple blocks. A page can live at any path, e.g. about/archives or pilgrimage.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pages"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "path",
+          "title",
+          "blocks"
+        ],
+        "properties": {
+          "path": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+(/[a-z0-9-]+)*$",
+            "description": "Path without language or slashes at the ends."
+          },
+          "title": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "intro": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "blocks": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "body"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "text"
+                    },
+                    "heading": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    },
+                    "body": {
+                      "$ref": "common.schema.json#/$defs/localizedParagraphs"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "src",
+                    "alt"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "image"
+                    },
+                    "src": {
+                      "type": "string",
+                      "pattern": "^/",
+                      "description": "File in /public, e.g. /images/pd/photo.jpg."
+                    },
+                    "alt": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    },
+                    "caption": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    }
+                  }
+                },
+                {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "type",
+                    "body"
+                  ],
+                  "properties": {
+                    "type": {
+                      "const": "callout"
+                    },
+                    "heading": {
+                      "$ref": "common.schema.json#/$defs/localized"
+                    },
+                    "body": {
+                      "$ref": "common.schema.json#/$defs/localizedParagraphs"
+                    },
+                    "link": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "label",
+                        "href"
+                      ],
+                      "properties": {
+                        "label": {
+                          "$ref": "common.schema.json#/$defs/localized"
+                        },
+                        "href": {
+                          "type": "string",
+                          "pattern": "^(/|https?://|mailto:)",
+                          "description": "Site path starting with / (without the language prefix), or a full URL."
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

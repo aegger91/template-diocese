@@ -1,0 +1,76 @@
+{
+  "$schema": "../schemas/careers.schema.json",
+  "intro": {
+    "en": "Sample listings of clergy assignments, staff and volunteer roles.",
+    "ru": "Образец объявлений о назначениях духовенства, работе и волонтёрстве.",
+    "el": "Δείγμα αγγελιών για θέσεις κληρικών, προσωπικού και εθελοντών."
+  },
+  "openings": [
+    {
+      "id": "rector-sample-mission",
+      "kind": "clergyAssignment",
+      "title": {
+        "en": "Priest in charge, Holy Trinity Sample Mission",
+        "ru": "Настоятель Свято-Троицкой миссии (образец)",
+        "el": "Υπεύθυνος ιερέας, Ιεραποστολή Αγίας Τριάδος (δείγμα)"
+      },
+      "parishId": "holy-trinity-sample-mission",
+      "summary": {
+        "en": "Part-time assignment for a priest able to serve Sundays and two weeknights. Housing help available.",
+        "ru": "Назначение на неполное время для священника, который может служить по воскресеньям и два вечера в неделю. Возможна помощь с жильём.",
+        "el": "Θέση μερικής απασχόλησης για ιερέα που μπορεί να λειτουργεί Κυριακές και δύο βράδια την εβδομάδα. Υπάρχει βοήθεια για στέγαση."
+      },
+      "posted": "2026-11-02",
+      "contactEmail": "chancellor@diocese.example"
+    },
+    {
+      "id": "second-priest-cathedral",
+      "kind": "clergyAssignment",
+      "title": {
+        "en": "Assistant priest, Cathedral of St. Example",
+        "ru": "Штатный священник кафедрального собора",
+        "el": "Βοηθός ιερέας, Καθεδρικός Ναός"
+      },
+      "parishId": "st-example-cathedral",
+      "summary": {
+        "en": "Full-time assignment. English and Church Slavonic required.",
+        "ru": "Полная занятость. Требуется знание английского и церковнославянского.",
+        "el": "Πλήρης απασχόληση. Απαιτούνται αγγλικά και εκκλησιαστικά σλαβονικά."
+      },
+      "posted": "2026-10-20",
+      "contactEmail": "chancellor@diocese.example"
+    },
+    {
+      "id": "office-administrator",
+      "kind": "staff",
+      "title": {
+        "en": "Chancery office administrator",
+        "ru": "Администратор канцелярии",
+        "el": "Διοικητικός υπάλληλος γραφείων"
+      },
+      "summary": {
+        "en": "Twenty hours a week. Records, correspondence and support for the chancellor.",
+        "ru": "Двадцать часов в неделю. Документы, переписка и помощь секретарю епархии.",
+        "el": "Είκοσι ώρες την εβδομάδα. Αρχεία, αλληλογραφία και υποστήριξη του Γραμματέα."
+      },
+      "posted": "2026-11-12",
+      "contactEmail": "chancery@diocese.example"
+    },
+    {
+      "id": "camp-counselors",
+      "kind": "volunteer",
+      "title": {
+        "en": "Summer camp counselors",
+        "ru": "Вожатые летнего лагеря",
+        "el": "Ομαδάρχες θερινής κατασκήνωσης"
+      },
+      "summary": {
+        "en": "Volunteers aged 18 and over. Safe environment training required.",
+        "ru": "Добровольцы от 18 лет. Требуется обучение по безопасной среде.",
+        "el": "Εθελοντές 18 ετών και άνω. Απαιτείται εκπαίδευση ασφαλούς περιβάλλοντος."
+      },
+      "posted": "2026-11-05",
+      "contactEmail": "youth@diocese.example"
+    }
+  ]
+}

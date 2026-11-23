@@ -1,0 +1,217 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "diocese.schema.json",
+  "title": "Diocese",
+  "description": "The ruling bishop, the optional welcome block, history, structure and parent Church.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "bishop",
+    "welcomeBlock",
+    "history",
+    "structure",
+    "parentChurch"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "welcomeBlock": {
+      "type": "object",
+      "description": "Short generic text for the optional 'welcome' home section.",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "text"
+      ],
+      "properties": {
+        "title": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "text": {
+          "$ref": "common.schema.json#/$defs/localized"
+        }
+      }
+    },
+    "bishop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "clergyId",
+        "styledName",
+        "signature",
+        "welcomeTitle",
+        "welcomeShort",
+        "welcomeFull",
+        "biography"
+      ],
+      "properties": {
+        "clergyId": {
+          "type": "string",
+          "description": "Id of the bishop in clergy.json."
+        },
+        "styledName": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "signature": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "welcomeTitle": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "welcomeShort": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "welcomeFull": {
+          "$ref": "common.schema.json#/$defs/localizedParagraphs"
+        },
+        "biography": {
+          "$ref": "common.schema.json#/$defs/localizedParagraphs"
+        },
+        "milestones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "year",
+              "text"
+            ],
+            "properties": {
+              "year": {
+                "type": "string"
+              },
+              "text": {
+                "$ref": "common.schema.json#/$defs/localized"
+              }
+            }
+          }
+        }
+      }
+    },
+    "history": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intro",
+        "timeline"
+      ],
+      "properties": {
+        "intro": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "timeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "year",
+              "title",
+              "text"
+            ],
+            "properties": {
+              "year": {
+                "type": "string"
+              },
+              "title": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "text": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "image": {
+                "type": "string",
+                "pattern": "^/",
+                "description": "File in /public, e.g. /images/pd/photo.jpg."
+              }
+            }
+          }
+        }
+      }
+    },
+    "structure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intro",
+        "deaneries",
+        "offices"
+      ],
+      "properties": {
+        "intro": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "deaneries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "name"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+              },
+              "name": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "deanId": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "offices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "title"
+            ],
+            "properties": {
+              "title": {
+                "$ref": "common.schema.json#/$defs/localized"
+              },
+              "clergyId": {
+                "type": "string"
+              },
+              "text": {
+                "$ref": "common.schema.json#/$defs/localized"
+              }
+            }
+          }
+        }
+      }
+    },
+    "parentChurch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "synodName",
+        "text"
+      ],
+      "properties": {
+        "name": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "synodName": {
+          "$ref": "common.schema.json#/$defs/localized"
+        },
+        "text": {
+          "$ref": "common.schema.json#/$defs/localizedParagraphs"
+        },
+        "website": {
+          "type": "string",
+          "format": "uri"
+        }
+      }
+    }
+  }
+}

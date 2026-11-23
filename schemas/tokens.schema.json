@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "tokens.schema.json",
+  "title": "Design tokens",
+  "description": "Colors, fonts and sizes. Values become CSS variables (--token-*).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "color",
+    "font",
+    "radius",
+    "container",
+    "headerHeight"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "color": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "royal-950",
+        "royal-900",
+        "royal-800",
+        "royal-700",
+        "royal-600",
+        "royal-200",
+        "royal-100",
+        "royal-50",
+        "gold-300",
+        "gold-400",
+        "gold-500",
+        "gold-700",
+        "ink",
+        "muted-ink",
+        "paper",
+        "parchment",
+        "line"
+      ],
+      "patternProperties": {
+        "^[a-z0-9-]+$": {
+          "type": "string",
+          "pattern": "^#[0-9a-fA-F]{6}$"
+        }
+      }
+    },
+    "font": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "heading",
+        "body",
+        "display"
+      ],
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "display": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "none",
+            "slavonic",
+            "greek"
+          ],
+          "properties": {
+            "none": {
+              "type": "string"
+            },
+            "slavonic": {
+              "type": "string"
+            },
+            "greek": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "radius": {
+      "type": "string"
+    },
+    "container": {
+      "type": "string"
+    },
+    "headerHeight": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "full",
+        "condensed"
+      ],
+      "properties": {
+        "full": {
+          "type": "string"
+        },
+        "condensed": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

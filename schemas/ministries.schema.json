@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ministries.schema.json",
+  "title": "Departments and ministries",
+  "description": "Diocesan departments.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ministries"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "ministries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "icon",
+          "name",
+          "summary",
+          "body",
+          "eventCategories"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+            "description": "Lowercase id used in links, e.g. st-nicholas-sample."
+          },
+          "icon": {
+            "enum": [
+              "youth",
+              "education",
+              "missions",
+              "music",
+              "charity"
+            ]
+          },
+          "name": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "summary": {
+            "$ref": "common.schema.json#/$defs/localized"
+          },
+          "body": {
+            "$ref": "common.schema.json#/$defs/localizedParagraphs"
+          },
+          "contactClergyId": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string",
+            "format": "email"
+          },
+          "eventCategories": {
+            "type": "array",
+            "items": {
+              "$ref": "common.schema.json#/$defs/eventCategory"
+            },
+            "description": "Events in these categories are listed on the ministry page."
+          }
+        }
+      }
+    }
+  }
+}

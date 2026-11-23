@@ -1,0 +1,231 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@import "@fontsource/eb-garamond/400.css";
+@import "@fontsource/eb-garamond/500.css";
+@import "@fontsource/eb-garamond/600.css";
+@import "@fontsource/eb-garamond/400-italic.css";
+@import "@fontsource/source-sans-3/400.css";
+@import "@fontsource/source-sans-3/600.css";
+@import "@fontsource/source-sans-3/700.css";
+@import "@fontsource/ruslan-display/400.css";
+@import "@fontsource/gfs-didot/400.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Brand colors and fonts come from content/tokens.json (written as --token-* on <html> by the layout). */
+@theme {
+  --color-royal-950: var(--token-royal-950);
+  --color-royal-900: var(--token-royal-900);
+  --color-royal-800: var(--token-royal-800);
+  --color-royal-700: var(--token-royal-700);
+  --color-royal-600: var(--token-royal-600);
+  --color-royal-200: var(--token-royal-200);
+  --color-royal-100: var(--token-royal-100);
+  --color-royal-50: var(--token-royal-50);
+  --color-gold-300: var(--token-gold-300);
+  --color-gold-400: var(--token-gold-400);
+  --color-gold-500: var(--token-gold-500);
+  --color-gold-700: var(--token-gold-700);
+  --color-ink: var(--token-ink);
+  --color-muted-ink: var(--token-muted-ink);
+  --color-paper: var(--token-paper);
+  --color-parchment: var(--token-parchment);
+  --color-line: var(--token-line);
+  --font-heading: var(--token-font-heading);
+  --font-sans: var(--token-font-body);
+  --font-display: var(--token-font-display);
+  --container-site: var(--token-container);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-mono: ui-monospace, monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+}
+
+:root {
+  --radius: var(--token-radius, 0.375rem);
+  --background: var(--token-paper);
+  --foreground: var(--token-ink);
+  --card: var(--token-paper);
+  --card-foreground: var(--token-ink);
+  --popover: var(--token-paper);
+  --popover-foreground: var(--token-ink);
+  --primary: var(--token-royal-700);
+  --primary-foreground: #ffffff;
+  --secondary: var(--token-royal-50);
+  --secondary-foreground: var(--token-royal-800);
+  --muted: var(--token-royal-50);
+  --muted-foreground: var(--token-muted-ink);
+  --accent: var(--token-royal-100);
+  --accent-foreground: var(--token-royal-900);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: var(--token-line);
+  --input: var(--token-line);
+  --ring: var(--token-gold-500);
+  --header-full: 5.5rem;
+  --header-condensed: 4rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-padding-top: 6rem;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+    font-weight: 500;
+    letter-spacing: -0.005em;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    text-wrap: balance;
+  }
+  p,
+  li,
+  dd {
+    overflow-wrap: break-word;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  ::selection {
+    background: var(--token-gold-300);
+    color: var(--token-royal-950);
+  }
+}
+
+@layer components {
+  .container-site {
+    width: 100%;
+    max-width: var(--container-site);
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+  @media (min-width: 640px) {
+    .container-site {
+      padding-inline: 1.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .container-site {
+      padding-inline: 2rem;
+    }
+  }
+
+  .eyebrow {
+    font-family: var(--font-sans);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-gold-700);
+  }
+  .on-dark .eyebrow,
+  .eyebrow.on-dark {
+    color: var(--color-gold-300);
+  }
+
+  .display-text {
+    font-family: var(--font-display);
+  }
+
+  .prose-diocese p {
+    margin-block: 0 1rem;
+    line-height: 1.7;
+    font-size: 1.0625rem;
+    color: var(--color-ink);
+  }
+
+  /* Double rule framing used on official documents and the bishop's welcome. */
+  .frame-official {
+    border: 1px solid color-mix(in oklch, var(--color-gold-500) 55%, transparent);
+    outline: 1px solid color-mix(in oklch, var(--color-gold-500) 35%, transparent);
+    outline-offset: 4px;
+  }
+}
+
+/* Crosses, seals and icons are never mirrored, whatever the text direction. */
+[dir="rtl"] .orthodox-symbol,
+[dir="rtl"] img {
+  transform: none;
+}
+
+.leaflet-container {
+  font-family: var(--font-sans);
+  background: var(--color-royal-50);
+}
+.parish-pin {
+  background: transparent;
+  border: 0;
+}
+.parish-pin__dot {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 9999px;
+  background: var(--color-royal-800);
+  color: var(--color-gold-300);
+  border: 2px solid var(--color-gold-500);
+  box-shadow: 0 4px 10px -4px rgb(10 20 48 / 0.6);
+}
+.parish-pin__dot--mission {
+  background: var(--color-royal-600);
+}
+.parish-pin__dot--monastery {
+  background: var(--color-gold-500);
+  color: var(--color-royal-950);
+  border-color: var(--color-royal-800);
+}
+.parish-pin__dot--chapel {
+  background: #fff;
+  color: var(--color-royal-800);
+}
+.leaflet-popup-content {
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+.leaflet-popup-content a {
+  color: var(--color-royal-700);
+  font-weight: 600;
+}
+.parish-popup__name {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--color-royal-900);
+}

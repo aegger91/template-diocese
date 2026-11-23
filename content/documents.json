@@ -1,0 +1,86 @@
+{
+  "$schema": "../schemas/documents.schema.json",
+  "documents": [
+    {
+      "id": "baptism-record-form",
+      "title": { "en": "Baptism and chrismation record", "ru": "Запись о Крещении и Миропомазании", "el": "Έντυπο καταχώρισης Βαπτίσεως και Χρίσματος" },
+      "description": { "en": "For the parish register. Send a copy to the chancery.", "ru": "Для приходской книги. Копию направить в канцелярию.", "el": "Για το βιβλίο της ενορίας. Στείλτε αντίγραφο στα γραφεία." },
+      "category": "forms",
+      "audience": "clergy",
+      "file": "/files/sample-baptism-record-form.pdf",
+      "updated": "2026-09-01"
+    },
+    {
+      "id": "marriage-request-form",
+      "title": { "en": "Request for permission to marry", "ru": "Прошение о благословении на венчание", "el": "Αίτηση αδείας γάμου" },
+      "description": { "en": "Needed when one party was previously married or is not Orthodox.", "ru": "Требуется, если один из супругов ранее состоял в браке или не является православным.", "el": "Απαιτείται όταν ο ένας είχε προηγούμενο γάμο ή δεν είναι Ορθόδοξος." },
+      "category": "forms",
+      "audience": "clergy",
+      "file": "/files/sample-marriage-request-form.pdf",
+      "updated": "2026-09-01"
+    },
+    {
+      "id": "clergy-leave-form",
+      "title": { "en": "Clergy leave and supply request", "ru": "Прошение об отпуске и замене священника", "el": "Αίτηση αδείας και αναπληρωτή ιερέα" },
+      "description": { "en": "Submit four weeks before planned leave.", "ru": "Подаётся за четыре недели до отпуска.", "el": "Υποβάλλεται τέσσερις εβδομάδες πριν από την άδεια." },
+      "category": "forms",
+      "audience": "clergy",
+      "file": "/files/sample-clergy-leave-form.pdf",
+      "updated": "2026-06-15"
+    },
+    {
+      "id": "parish-annual-report",
+      "title": { "en": "Parish annual report", "ru": "Годовой отчёт прихода", "el": "Ετήσια έκθεση ενορίας" },
+      "description": { "en": "Due each year before the diocesan assembly.", "ru": "Сдаётся ежегодно до епархиального собрания.", "el": "Υποβάλλεται κάθε χρόνο πριν από τη Συνέλευση." },
+      "category": "finance",
+      "audience": "parishes",
+      "file": "/files/sample-parish-annual-report.pdf",
+      "updated": "2026-10-01"
+    },
+    {
+      "id": "assessment-guidelines",
+      "title": { "en": "Parish assessment guidelines", "ru": "Положение о взносах приходов", "el": "Οδηγίες εισφορών ενοριών" },
+      "description": { "en": "How the yearly parish contribution to the diocese is calculated.", "ru": "Как рассчитывается ежегодный взнос прихода в епархию.", "el": "Πώς υπολογίζεται η ετήσια εισφορά της ενορίας στην Επισκοπή." },
+      "category": "finance",
+      "audience": "parishes",
+      "file": "/files/sample-assessment-guidelines.pdf",
+      "updated": "2026-01-15"
+    },
+    {
+      "id": "safe-environment-policy",
+      "title": { "en": "Safe environment policy", "ru": "Правила безопасной среды", "el": "Πολιτική ασφαλούς περιβάλλοντος" },
+      "description": { "en": "Required reading for everyone who works with children and youth.", "ru": "Обязательно для всех, кто работает с детьми и молодёжью.", "el": "Υποχρεωτικό για όλους όσοι εργάζονται με παιδιά και νέους." },
+      "category": "policies",
+      "audience": "everyone",
+      "file": "/files/sample-safe-environment-policy.pdf",
+      "updated": "2026-03-01"
+    },
+    {
+      "id": "parish-bylaws-model",
+      "title": { "en": "Model parish bylaws", "ru": "Примерный устав прихода", "el": "Υπόδειγμα κανονισμού ενορίας" },
+      "description": { "en": "Approved by the diocesan council. Adapt for your parish and send for review.", "ru": "Одобрен епархиальным советом. Адаптируйте для своего прихода и направьте на рассмотрение.", "el": "Εγκεκριμένο από το Επισκοπικό Συμβούλιο. Προσαρμόστε το και στείλτε το για έγκριση." },
+      "category": "policies",
+      "audience": "parishes",
+      "file": "/files/sample-model-parish-bylaws.pdf",
+      "updated": "2025-11-20"
+    },
+    {
+      "id": "liturgical-guidelines",
+      "title": { "en": "Liturgical guidelines for the year", "ru": "Богослужебные указания на год", "el": "Λειτουργικές οδηγίες του έτους" },
+      "description": { "en": "Commemorations, fasting notes and the order for hierarchical visits.", "ru": "Поминовения, указания о посте и порядок встречи архиерея.", "el": "Μνημονεύσεις, οδηγίες νηστείας και τάξη υποδοχής του Επισκόπου." },
+      "category": "liturgical",
+      "audience": "clergy",
+      "file": "/files/sample-liturgical-guidelines.pdf",
+      "updated": "2026-09-01"
+    },
+    {
+      "id": "assembly-delegate-form",
+      "title": { "en": "Assembly delegate certificate", "ru": "Удостоверение делегата собрания", "el": "Πιστοποιητικό αντιπροσώπου Συνέλευσης" },
+      "description": { "en": "Signed by the rector and returned before the assembly.", "ru": "Подписывается настоятелем и возвращается до собрания.", "el": "Υπογράφεται από τον προϊστάμενο και επιστρέφεται πριν από τη Συνέλευση." },
+      "category": "assembly",
+      "audience": "parishes",
+      "file": "/files/sample-assembly-delegate-form.pdf",
+      "updated": "2026-11-01"
+    }
+  ]
+}
