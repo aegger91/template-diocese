@@ -1,0 +1,71 @@
+{
+  "$schema": "../schemas/pages.schema.json",
+  "pages": [
+    {
+      "path": "about/archives",
+      "title": { "en": "Diocesan archives", "ru": "Архив епархии", "el": "Αρχείο της Επισκοπής" },
+      "intro": {
+        "en": "This page was added through the builder to show that new pages can live anywhere in the site. It uses simple content blocks.",
+        "ru": "Эта страница добавлена через конструктор, чтобы показать, что новые страницы можно размещать в любом разделе сайта. Она собрана из простых блоков.",
+        "el": "Αυτή η σελίδα προστέθηκε μέσω του εργαλείου κατασκευής, για να δείξει ότι νέες σελίδες μπορούν να μπουν οπουδήποτε. Χρησιμοποιεί απλά μπλοκ περιεχομένου."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "heading": { "en": "What the archives keep", "ru": "Что хранится в архиве", "el": "Τι φυλάσσει το αρχείο" },
+          "body": {
+            "en": ["Parish registers, photographs, correspondence of past bishops and minutes of every diocesan assembly. Sample content."],
+            "ru": ["Приходские книги, фотографии, переписка прежних архиереев и протоколы всех епархиальных собраний. Образец текста."],
+            "el": ["Βιβλία ενοριών, φωτογραφίες, αλληλογραφία παλαιότερων Επισκόπων και πρακτικά κάθε Συνέλευσης. Δείγμα κειμένου."]
+          }
+        },
+        {
+          "type": "image",
+          "src": "/images/pd/korovniki-wallpainting.jpg",
+          "alt": { "en": "Painted wall above a church doorway", "ru": "Стенопись над входом в храм", "el": "Τοιχογραφία πάνω από την είσοδο ναού" },
+          "caption": { "en": "Sergei Prokudin-Gorskii, 1911. Public domain.", "ru": "С. М. Прокудин-Горский, 1911. Общественное достояние.", "el": "Σεργκέι Προκούντιν-Γκόρσκι, 1911. Κοινό κτήμα." }
+        },
+        {
+          "type": "callout",
+          "heading": { "en": "Research requests", "ru": "Запросы исследователей", "el": "Αιτήματα έρευνας" },
+          "body": {
+            "en": ["Write to the chancery with the parish, the years and the names you are looking for. Allow four weeks for a reply."],
+            "ru": ["Напишите в канцелярию, указав приход, годы и имена, которые вы ищете. Ответ готовится до четырёх недель."],
+            "el": ["Γράψτε στα γραφεία αναφέροντας την ενορία, τα έτη και τα ονόματα που αναζητάτε. Η απάντηση χρειάζεται έως τέσσερις εβδομάδες."]
+          },
+          "link": { "label": { "en": "Contact the chancery", "ru": "Написать в канцелярию", "el": "Επικοινωνία με τα γραφεία" }, "href": "/contact/" }
+        }
+      ]
+    },
+    {
+      "path": "pilgrimage",
+      "title": { "en": "Pilgrimage to the monastery", "ru": "Паломничество в монастырь", "el": "Προσκύνημα στη μονή" },
+      "intro": {
+        "en": "A second builder page, placed at the top level of the site. Sample content.",
+        "ru": "Вторая страница из конструктора, размещённая на верхнем уровне сайта. Образец текста.",
+        "el": "Μια δεύτερη σελίδα από το εργαλείο κατασκευής, στο ανώτερο επίπεδο του ιστότοπου. Δείγμα κειμένου."
+      },
+      "blocks": [
+        {
+          "type": "text",
+          "heading": { "en": "Before you go", "ru": "Перед поездкой", "el": "Πριν ξεκινήσετε" },
+          "body": {
+            "en": ["Write to the guestmaster at least two weeks ahead. Modest dress is expected. Guests join the services and share meals with the brotherhood."],
+            "ru": ["Напишите гостинику не позднее чем за две недели. Ожидается скромная одежда. Гости участвуют в богослужениях и разделяют трапезу с братией."],
+            "el": ["Γράψτε στον αρχοντάρη τουλάχιστον δύο εβδομάδες πριν. Απαιτείται σεμνή ενδυμασία. Οι επισκέπτες συμμετέχουν στις ακολουθίες και στην τράπεζα με την αδελφότητα."]
+          }
+        },
+        {
+          "type": "callout",
+          "heading": { "en": "Plan your visit", "ru": "Спланировать поездку", "el": "Οργανώστε την επίσκεψή σας" },
+          "body": {
+            "en": ["Find the address and service times on the monastery's page."],
+            "ru": ["Адрес и расписание богослужений есть на странице монастыря."],
+            "el": ["Βρείτε τη διεύθυνση και το πρόγραμμα ακολουθιών στη σελίδα της μονής."]
+          },
+          "link": { "label": { "en": "Dormition Sample Monastery", "ru": "Успенский монастырь (образец)", "el": "Ιερά Μονή Κοιμήσεως (δείγμα)" }, "href": "/parishes/dormition-sample-monastery/" }
+        }
+      ]
+    }
+  ]
+}

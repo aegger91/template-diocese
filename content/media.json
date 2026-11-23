@@ -1,0 +1,97 @@
+{
+  "$schema": "../schemas/media.schema.json",
+  "albums": [
+    { "id": "heritage", "name": { "en": "Our heritage", "ru": "Наше наследие", "el": "Η κληρονομιά μας" } },
+    { "id": "icons", "name": { "en": "Holy icons", "ru": "Святые иконы", "el": "Άγιες εικόνες" } }
+  ],
+  "items": [
+    {
+      "id": "stolobny",
+      "album": "heritage",
+      "src": "/images/pd/stolobny-monastery.jpg",
+      "alt": { "en": "A white monastery with domes on an island, reached by a long wooden bridge", "ru": "Белый монастырь с куполами на острове, к которому ведёт длинный деревянный мост", "el": "Λευκή μονή με τρούλους σε νησί, όπου οδηγεί μακριά ξύλινη γέφυρα" },
+      "caption": { "en": "Nilov Monastery on Lake Seliger, 1910", "ru": "Нилова пустынь на озере Селигер, 1910", "el": "Μονή του Αγίου Νείλου στη λίμνη Σελιγκέρ, 1910" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "trinity",
+      "album": "icons",
+      "src": "/images/pd/rublev-trinity.jpg",
+      "alt": { "en": "Icon of the Holy Trinity: three angels seated around a table", "ru": "Икона Святой Троицы: три ангела за трапезой", "el": "Εικόνα της Αγίας Τριάδος: τρεις άγγελοι γύρω από τράπεζα" },
+      "caption": { "en": "The Holy Trinity, St. Andrei Rublev, early 15th century", "ru": "Троица, преподобный Андрей Рублёв, начало XV века", "el": "Η Αγία Τριάδα, Άγιος Ανδρέας Ρουμπλιόφ, αρχές 15ου αιώνα" },
+      "credit": "Andrei Rublev, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "sinai-christ",
+      "album": "icons",
+      "src": "/images/pd/sinai-christ.jpg",
+      "alt": { "en": "Icon of Christ Pantocrator holding the Gospel book", "ru": "Икона Христа Вседержителя с Евангелием", "el": "Εικόνα του Χριστού Παντοκράτορα με το Ευαγγέλιο" },
+      "caption": { "en": "Christ Pantocrator, St. Catherine's Monastery, Sinai, 6th century", "ru": "Христос Вседержитель, монастырь святой Екатерины на Синае, VI век", "el": "Χριστός Παντοκράτωρ, Μονή Αγίας Αικατερίνης Σινά, 6ος αιώνας" },
+      "credit": "Unknown iconographer, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "rostov-iconostasis",
+      "album": "icons",
+      "src": "/images/pd/rostov-iconostasis.jpg",
+      "alt": { "en": "A carved and gilded iconostasis with rows of icons", "ru": "Резной позолоченный иконостас с рядами икон", "el": "Σκαλιστό επιχρυσωμένο τέμπλο με σειρές εικόνων" },
+      "caption": { "en": "Iconostasis, Church of St. John the Theologian, Rostov, 1911", "ru": "Иконостас церкви Иоанна Богослова, Ростов, 1911", "el": "Τέμπλο, ναός Αγίου Ιωάννου του Θεολόγου, Ροστόφ, 1911" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "yalutorovsk-iconostasis",
+      "album": "icons",
+      "src": "/images/pd/yalutorovsk-iconostasis.jpg",
+      "alt": { "en": "Interior of a cathedral with a tall iconostasis", "ru": "Интерьер собора с высоким иконостасом", "el": "Εσωτερικό καθεδρικού ναού με ψηλό τέμπλο" },
+      "caption": { "en": "Iconostasis, Cathedral of the Meeting of the Lord, Yalutorovsk, 1912", "ru": "Иконостас Сретенского собора, Ялуторовск, 1912", "el": "Τέμπλο, καθεδρικός της Υπαπαντής, Γιαλουτορόφσκ, 1912" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "rostov-kremlin",
+      "album": "heritage",
+      "src": "/images/pd/rostov-kremlin.jpg",
+      "alt": { "en": "Green domes and brick towers of a walled church complex", "ru": "Зелёные купола и кирпичные башни кремля", "el": "Πράσινοι τρούλοι και πλίνθινοι πύργοι οχυρωμένου συγκροτήματος" },
+      "caption": { "en": "The Kremlin of Rostov the Great, 1911", "ru": "Ростовский кремль, 1911", "el": "Το Κρεμλίνο του Ροστόφ, 1911" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "korovniki",
+      "album": "heritage",
+      "src": "/images/pd/korovniki-ensemble.jpg",
+      "alt": { "en": "Brick churches and a tall bell tower beside a river", "ru": "Кирпичные храмы и высокая колокольня у реки", "el": "Πλίνθινοι ναοί και ψηλό καμπαναριό δίπλα σε ποτάμι" },
+      "caption": { "en": "Church ensemble in Korovniki, Yaroslavl, 1911", "ru": "Ансамбль в Коровниках, Ярославль, 1911", "el": "Συγκρότημα ναών στο Κορόβνικι, Γιαροσλάβλ, 1911" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "korovniki-wallpainting",
+      "album": "icons",
+      "src": "/images/pd/korovniki-wallpainting.jpg",
+      "alt": { "en": "Painted wall above a church doorway", "ru": "Стенопись над входом в храм", "el": "Τοιχογραφία πάνω από την είσοδο ναού" },
+      "caption": { "en": "Wall painting above the west door, St. John Chrysostom, Yaroslavl, 1911", "ru": "Роспись над западным входом, церковь Иоанна Златоуста, Ярославль, 1911", "el": "Τοιχογραφία πάνω από τη δυτική πύλη, Άγιος Ιωάννης ο Χρυσόστομος, Γιαροσλάβλ, 1911" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "kirillo-belozersky",
+      "album": "heritage",
+      "src": "/images/pd/kirillo-belozersky-euthymius.jpg",
+      "alt": { "en": "A small white church with a tent roof inside monastery walls", "ru": "Небольшой белый шатровый храм за монастырскими стенами", "el": "Μικρός λευκός ναός μέσα σε τείχη μονής" },
+      "caption": { "en": "Church of St. Euthymius, Kirillo-Belozersky Monastery, 1909", "ru": "Церковь Евфимия, Кирилло-Белозерский монастырь, 1909", "el": "Ναός Αγίου Ευθυμίου, Μονή Κιρίλλο-Μπελοζέρσκι, 1909" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "rostov-yakovlevsky",
+      "album": "heritage",
+      "src": "/images/pd/rostov-yakovlevsky.jpg",
+      "alt": { "en": "Monastery churches with silver domes by a lake", "ru": "Монастырские храмы с серебристыми куполами у озера", "el": "Ναοί μονής με ασημένιους τρούλους δίπλα σε λίμνη" },
+      "caption": { "en": "St. Jacob Monastery, Rostov, 1911", "ru": "Спасо-Яковлевский монастырь, Ростов, 1911", "el": "Μονή Αγίου Ιακώβου, Ροστόφ, 1911" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    },
+    {
+      "id": "st-nicholas-pensky",
+      "album": "heritage",
+      "src": "/images/pd/st-nicholas-pensky.jpg",
+      "alt": { "en": "A brick church with five domes and a bell tower", "ru": "Кирпичный пятиглавый храм с колокольней", "el": "Πλίνθινος ναός με πέντε τρούλους και καμπαναριό" },
+      "caption": { "en": "Church of St. Nicholas, Yaroslavl, 1911", "ru": "Церковь святителя Николая Пенского, Ярославль, 1911", "el": "Ναός Αγίου Νικολάου, Γιαροσλάβλ, 1911" },
+      "credit": "Sergei Prokudin-Gorskii, public domain (PD-old), via Wikimedia Commons"
+    }
+  ]
+}

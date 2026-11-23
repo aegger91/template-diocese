@@ -1,0 +1,145 @@
+{
+  "$schema": "../schemas/site.config.schema.json",
+  "templateSlug": "orthodox-diocese-template",
+  "siteName": {
+    "en": "Diocese of St. Example",
+    "ru": "Епархия святого Примера",
+    "el": "Ιερά Επισκοπή Αγίου Παραδείγματος"
+  },
+  "siteTagline": {
+    "en": "A sample diocese of the Orthodox Church",
+    "ru": "Образец епархии Православной Церкви",
+    "el": "Υπόδειγμα επισκοπής της Ορθοδόξου Εκκλησίας"
+  },
+  "showSampleNotice": true,
+  "defaultLanguage": "en",
+  "languages": [
+    { "code": "en", "label": "English", "direction": "ltr", "displayFont": "none" },
+    { "code": "ru", "label": "Русский", "direction": "ltr", "displayFont": "slavonic" },
+    { "code": "el", "label": "Ελληνικά", "direction": "ltr", "displayFont": "greek" }
+  ],
+  "logo": {
+    "style": "seal",
+    "image": "/images/logo-square.svg",
+    "sealText": {
+      "en": "Diocese of St. Example",
+      "ru": "Епархия святого Примера",
+      "el": "Επισκοπή Αγίου Παραδείγματος"
+    },
+    "sealYear": "1905"
+  },
+  "churchCalendar": "revised-julian",
+  "weekStartsOn": "sunday",
+  "homeSections": [
+    { "id": "hero", "enabled": true },
+    { "id": "announcements", "enabled": true },
+    { "id": "events", "enabled": true },
+    { "id": "bishopSchedule", "enabled": true },
+    { "id": "parishFinder", "enabled": true },
+    { "id": "ministries", "enabled": true },
+    { "id": "livestream", "enabled": true },
+    { "id": "donateAppeal", "enabled": true },
+    { "id": "gallery", "enabled": true }
+  ],
+  "features": {
+    "donate": true,
+    "careers": true,
+    "mediaGallery": true,
+    "livestream": true,
+    "newsletter": true,
+    "fundTotals": false
+  },
+  "navigation": [
+    {
+      "label": { "en": "About", "ru": "О епархии", "el": "Η Επισκοπή" },
+      "href": "/about/",
+      "children": [
+        { "label": { "en": "Our Bishop", "ru": "Правящий архиерей", "el": "Ο Επίσκοπος" }, "href": "/about/bishop/" },
+        { "label": { "en": "History", "ru": "История", "el": "Ιστορία" }, "href": "/about/history/" },
+        { "label": { "en": "Diocesan structure", "ru": "Структура епархии", "el": "Διοικητική δομή" }, "href": "/about/structure/" },
+        { "label": { "en": "Our Church and Synod", "ru": "Церковь и Синод", "el": "Εκκλησία και Σύνοδος" }, "href": "/about/church/" },
+        { "label": { "en": "Clergy directory", "ru": "Духовенство", "el": "Κατάλογος κληρικών" }, "href": "/clergy/" },
+        { "label": { "en": "Diocesan archives", "ru": "Архив епархии", "el": "Αρχείο επισκοπής" }, "href": "/about/archives/" }
+      ]
+    },
+    { "label": { "en": "Parishes", "ru": "Приходы", "el": "Ενορίες" }, "href": "/parishes/" },
+    {
+      "label": { "en": "News", "ru": "Новости", "el": "Ειδήσεις" },
+      "href": "/news/",
+      "children": [
+        { "label": { "en": "All news", "ru": "Все новости", "el": "Όλες οι ειδήσεις" }, "href": "/news/" },
+        { "label": { "en": "Encyclicals and letters", "ru": "Послания", "el": "Εγκύκλιοι και επιστολές" }, "href": "/news/?type=letters" },
+        { "label": { "en": "Bishop's schedule", "ru": "Расписание архиерея", "el": "Πρόγραμμα του Επισκόπου" }, "href": "/news/schedule/" }
+      ]
+    },
+    { "label": { "en": "Events", "ru": "События", "el": "Εκδηλώσεις" }, "href": "/events/" },
+    {
+      "label": { "en": "Ministries", "ru": "Служения", "el": "Διακονίες" },
+      "href": "/ministries/",
+      "children": [
+        { "label": { "en": "Youth", "ru": "Молодёжь", "el": "Νεότητα" }, "href": "/ministries/youth/" },
+        { "label": { "en": "Education", "ru": "Образование", "el": "Κατήχηση" }, "href": "/ministries/education/" },
+        { "label": { "en": "Missions", "ru": "Миссия", "el": "Ιεραποστολή" }, "href": "/ministries/missions/" },
+        { "label": { "en": "Church music", "ru": "Церковное пение", "el": "Βυζαντινή μουσική" }, "href": "/ministries/music/" },
+        { "label": { "en": "Charity", "ru": "Милосердие", "el": "Φιλανθρωπία" }, "href": "/ministries/charity/" }
+      ]
+    },
+    {
+      "label": { "en": "Resources", "ru": "Ресурсы", "el": "Υλικό" },
+      "href": "/resources/",
+      "children": [
+        { "label": { "en": "Forms and documents", "ru": "Формы и документы", "el": "Έντυπα και έγγραφα" }, "href": "/resources/" },
+        { "label": { "en": "Calendar of feasts", "ru": "Календарь праздников", "el": "Εορτολόγιο" }, "href": "/resources/feasts/" },
+        { "label": { "en": "Open assignments", "ru": "Вакансии", "el": "Θέσεις διακονίας" }, "href": "/careers/" },
+        { "label": { "en": "Media gallery", "ru": "Фотогалерея", "el": "Φωτογραφίες" }, "href": "/media/" },
+        { "label": { "en": "Livestream", "ru": "Трансляции", "el": "Ζωντανή μετάδοση" }, "href": "/live/" }
+      ]
+    },
+    { "label": { "en": "Contact", "ru": "Контакты", "el": "Επικοινωνία" }, "href": "/contact/" }
+  ],
+  "contact": {
+    "officeName": {
+      "en": "Diocesan Chancery (sample)",
+      "ru": "Канцелярия епархии (образец)",
+      "el": "Γραφεία Επισκοπής (δείγμα)"
+    },
+    "street": "1 Example Plaza",
+    "city": "Chicago",
+    "region": "IL",
+    "postalCode": "00000",
+    "country": "USA",
+    "phone": "(555) 010-0100",
+    "email": "chancery@diocese.example",
+    "officeHours": {
+      "en": "Monday to Friday, 9:00 to 17:00",
+      "ru": "Понедельник - пятница, 9:00-17:00",
+      "el": "Δευτέρα έως Παρασκευή, 9:00 έως 17:00"
+    }
+  },
+  "orthodoxConnect": {
+    "enabled": true,
+    "baseUrl": "https://app.orthodoxconnect.example",
+    "organizationId": "sample-diocese-st-example",
+    "eventRegistrationPath": "/org/{organizationId}/events/{eventId}/register",
+    "newsletterSignupPath": "/org/{organizationId}/newsletter/subscribe"
+  },
+  "donations": {
+    "paymentProvider": "none",
+    "currency": "USD",
+    "suggestedAmounts": [25, 50, 100, 250],
+    "fundTotalsProvider": "none",
+    "fundTotalsEndpoint": "/api/funds/{fundId}/totals"
+  },
+  "map": {
+    "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+    "tileAttribution": "&copy; OpenStreetMap contributors"
+  },
+  "livestream": {
+    "embedUrl": "",
+    "channelUrl": ""
+  },
+  "social": [
+    { "label": "YouTube", "href": "https://youtube.example/sample-diocese" },
+    { "label": "Facebook", "href": "https://facebook.example/sample-diocese" }
+  ]
+}

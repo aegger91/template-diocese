@@ -1,0 +1,189 @@
+{
+  "$schema": "../schemas/news.schema.json",
+  "news": [
+    {
+      "id": "nativity-fast-pastoral-letter-2026",
+      "date": "2026-11-20",
+      "category": "pastoralLetter",
+      "title": { "en": "Pastoral letter for the Nativity Fast", "ru": "Архипастырское послание на Рождественский пост", "el": "Ποιμαντική επιστολή για τη Σαρακοστή των Χριστουγέννων" },
+      "summary": {
+        "en": "The bishop asks every household to keep a simple rule of prayer during the fast and to remember those who are alone. Sample letter.",
+        "ru": "Архиерей призывает каждую семью хранить простое молитвенное правило в пост и не забывать одиноких. Образец послания.",
+        "el": "Ο Επίσκοπος ζητά από κάθε οικογένεια να κρατήσει έναν απλό κανόνα προσευχής κατά τη νηστεία και να θυμάται όσους είναι μόνοι. Δείγμα επιστολής."
+      },
+      "body": {
+        "en": [
+          "To the reverend clergy, monastics and faithful of the Diocese of St. Example.",
+          "Beloved in the Lord, the forty days before the Nativity of Christ are given to us so that we may prepare a place for Him. Not a great place, but a quiet corner of the heart, swept clean and kept warm.",
+          "I ask each household to choose a small rule of prayer for the fast and to keep it faithfully: the morning prayers, a psalm before supper, a few minutes with the Gospel. Do what you can, and do it every day.",
+          "Remember those who will spend the feast alone. A visit, a phone call or a place at your table may be the gift they remember most.",
+          "This is a sample letter. The full text is available as a PDF."
+        ],
+        "ru": [
+          "Всечестному духовенству, монашествующим и всем верным чадам епархии святого Примера.",
+          "Возлюбленные о Господе, сорок дней перед Рождеством Христовым даны нам, чтобы приготовить Ему место. Не великое место, а тихий уголок сердца, выметенный и согретый.",
+          "Прошу каждую семью избрать на время поста небольшое молитвенное правило и верно его исполнять: утренние молитвы, псалом перед ужином, несколько минут с Евангелием. Делайте, что можете, но каждый день.",
+          "Помните о тех, кто встретит праздник в одиночестве. Посещение, звонок или место за вашим столом могут стать для них самым дорогим подарком.",
+          "Это образец послания. Полный текст доступен в формате PDF."
+        ],
+        "el": [
+          "Προς τον ευλαβέστατο κλήρο, τους μοναχούς και τους πιστούς της Επισκοπής Αγίου Παραδείγματος.",
+          "Αγαπητοί εν Κυρίω, οι σαράντα ημέρες πριν από τη Γέννηση του Χριστού μάς δίνονται για να Του ετοιμάσουμε τόπο. Όχι μεγάλο τόπο, αλλά μια ήσυχη γωνιά της καρδιάς, καθαρή και ζεστή.",
+          "Ζητώ από κάθε οικογένεια να διαλέξει έναν μικρό κανόνα προσευχής για τη νηστεία και να τον τηρεί πιστά: τις πρωινές προσευχές, έναν ψαλμό πριν από το δείπνο, λίγα λεπτά με το Ευαγγέλιο. Κάντε ό,τι μπορείτε, και κάντε το κάθε μέρα.",
+          "Θυμηθείτε όσους θα περάσουν τη γιορτή μόνοι. Μια επίσκεψη, ένα τηλεφώνημα ή μια θέση στο τραπέζι σας μπορεί να είναι το δώρο που θα θυμούνται περισσότερο.",
+          "Αυτή είναι δείγμα επιστολής. Το πλήρες κείμενο διατίθεται σε μορφή PDF."
+        ]
+      },
+      "pdf": "/files/sample-pastoral-letter-nativity-fast.pdf"
+    },
+    {
+      "id": "office-holiday-hours-2026",
+      "date": "2026-11-18",
+      "category": "announcement",
+      "title": { "en": "Chancery office hours for the holidays", "ru": "Часы работы канцелярии в праздничные дни", "el": "Ωράριο γραφείων κατά τις γιορτές" },
+      "summary": {
+        "en": "The chancery will be closed on civil holidays in late November and December. Urgent pastoral matters go to the chancellor. Sample notice.",
+        "ru": "Канцелярия не работает в гражданские праздники в конце ноября и в декабре. По срочным пастырским вопросам обращайтесь к секретарю епархии. Образец объявления.",
+        "el": "Τα γραφεία θα είναι κλειστά τις αργίες στα τέλη Νοεμβρίου και τον Δεκέμβριο. Για επείγοντα ποιμαντικά θέματα επικοινωνήστε με τον Γραμματέα. Δείγμα ανακοίνωσης."
+      },
+      "body": {
+        "en": ["Sample notice. Replace with your own office schedule."],
+        "ru": ["Образец объявления. Замените своим расписанием."],
+        "el": ["Δείγμα ανακοίνωσης. Αντικαταστήστε με το δικό σας ωράριο."]
+      }
+    },
+    {
+      "id": "appeal-encyclical-2026",
+      "date": "2026-11-14",
+      "category": "encyclical",
+      "title": { "en": "Encyclical on the annual diocesan appeal", "ru": "Окружное послание о ежегодном епархиальном сборе", "el": "Εγκύκλιος για την ετήσια έκκληση της Επισκοπής" },
+      "summary": {
+        "en": "Read in all parishes on the Sunday after receipt. The appeal supports mission priests, seminarians and diocesan charity. Sample encyclical.",
+        "ru": "Читается во всех приходах в ближайшее воскресенье. Сбор поддерживает миссионерских священников, семинаристов и епархиальную благотворительность. Образец послания.",
+        "el": "Να αναγνωσθεί σε όλες τις ενορίες την Κυριακή μετά τη λήψη. Η έκκληση στηρίζει ιερείς ιεραποστολών, ιεροσπουδαστές και τη φιλανθρωπία. Δείγμα εγκυκλίου."
+      },
+      "body": {
+        "en": [
+          "To be read in all parishes and missions of the diocese.",
+          "Each year our diocese asks its faithful for help with work no single parish can do alone. Your gifts pay the travel of priests who serve our missions, help young men in seminary, and support the charity work of the diocese.",
+          "Please give what you can, whether once or each month. Every gift is received with gratitude and remembered in prayer.",
+          "This is a sample encyclical. The full text is available as a PDF."
+        ],
+        "ru": [
+          "Для прочтения во всех приходах и миссиях епархии.",
+          "Каждый год наша епархия просит верующих помочь в делах, которые не под силу одному приходу. Ваши пожертвования оплачивают поездки священников в миссии, помогают семинаристам и поддерживают благотворительность епархии.",
+          "Пожалуйста, жертвуйте сколько можете, единовременно или ежемесячно. Каждый дар принимается с благодарностью и поминается в молитве.",
+          "Это образец послания. Полный текст доступен в формате PDF."
+        ],
+        "el": [
+          "Να αναγνωσθεί σε όλες τις ενορίες και ιεραποστολές της Επισκοπής.",
+          "Κάθε χρόνο η Επισκοπή μας ζητά από τους πιστούς βοήθεια για έργο που καμία ενορία δεν μπορεί να κάνει μόνη της. Οι δωρεές σας καλύπτουν τα ταξίδια των ιερέων που διακονούν τις ιεραποστολές, βοηθούν νέους στο ιεροδιδασκαλείο και στηρίζουν τη φιλανθρωπία της Επισκοπής.",
+          "Παρακαλούμε δώστε ό,τι μπορείτε, εφάπαξ ή κάθε μήνα. Κάθε δωρεά γίνεται δεκτή με ευγνωμοσύνη και μνημονεύεται στην προσευχή.",
+          "Αυτή είναι δείγμα εγκυκλίου. Το πλήρες κείμενο διατίθεται σε μορφή PDF."
+        ]
+      },
+      "pdf": "/files/sample-encyclical-diocesan-appeal.pdf"
+    },
+    {
+      "id": "new-mission-received-2026",
+      "date": "2026-11-10",
+      "category": "announcement",
+      "title": { "en": "A new mission is received into the diocese", "ru": "В епархию принята новая миссия", "el": "Μια νέα ιεραποστολή εντάσσεται στην Επισκοπή" },
+      "summary": {
+        "en": "St. Herman Sample Mission in Des Moines has been received as a mission parish of the Prairie Deanery. Sample news.",
+        "ru": "Миссия святого Германа (образец) в Де-Мойне принята в Степное благочиние. Образец новости.",
+        "el": "Η Ιεραποστολή Αγίου Γερμανού (δείγμα) στο Ντε Μόιν εντάχθηκε στην Περιφέρεια Πεδιάδων. Δείγμα είδησης."
+      },
+      "body": {
+        "en": [
+          "The bishop has blessed the reception of the St. Herman Sample Mission. Archpriest Peter Example will serve the mission twice a month.",
+          "Please keep the mission and its families in your prayers."
+        ],
+        "ru": [
+          "Архиерей благословил принять в епархию миссию святого Германа (образец). Протоиерей Пётр Примеров будет служить в миссии дважды в месяц.",
+          "Пожалуйста, молитесь о миссии и её семьях."
+        ],
+        "el": [
+          "Ο Επίσκοπος ευλόγησε την ένταξη της Ιεραποστολής Αγίου Γερμανού (δείγμα). Ο Πρωτοπρεσβύτερος Πέτρος Παραδειγματίδης θα λειτουργεί εκεί δύο φορές τον μήνα.",
+          "Παρακαλούμε να θυμάστε την ιεραποστολή και τις οικογένειές της στις προσευχές σας."
+        ]
+      },
+      "image": "/images/pd/rostov-yakovlevsky.jpg"
+    },
+    {
+      "id": "clergy-assignments-2026",
+      "date": "2026-11-02",
+      "category": "announcement",
+      "title": { "en": "Clergy assignments for the coming year", "ru": "Назначения духовенства на будущий год", "el": "Τοποθετήσεις κληρικών για το νέο έτος" },
+      "summary": {
+        "en": "The bishop has announced new assignments taking effect after Theophany. Sample news.",
+        "ru": "Архиерей объявил новые назначения, вступающие в силу после Богоявления. Образец новости.",
+        "el": "Ο Επίσκοπος ανακοίνωσε νέες τοποθετήσεις που ισχύουν μετά τα Θεοφάνεια. Δείγμα είδησης."
+      },
+      "body": {
+        "en": [
+          "The full list of assignments appears in the clergy directory. Open positions are listed on the open assignments page.",
+          "This is sample content."
+        ],
+        "ru": [
+          "Полный список назначений есть в разделе духовенства. Вакантные места указаны на странице вакансий.",
+          "Это образец текста."
+        ],
+        "el": [
+          "Ο πλήρης κατάλογος βρίσκεται στον κατάλογο κληρικών. Οι κενές θέσεις αναφέρονται στη σελίδα θέσεων διακονίας.",
+          "Αυτό είναι δείγμα κειμένου."
+        ]
+      }
+    },
+    {
+      "id": "protection-pastoral-letter-2026",
+      "date": "2026-10-01",
+      "category": "pastoralLetter",
+      "title": { "en": "Letter on the feast of the Protection", "ru": "Послание на праздник Покрова", "el": "Επιστολή για την εορτή της Αγίας Σκέπης" },
+      "summary": {
+        "en": "On the protection of the Mother of God over families and parishes. Sample letter with PDF.",
+        "ru": "О покрове Богородицы над семьями и приходами. Образец послания с PDF.",
+        "el": "Για τη σκέπη της Θεοτόκου πάνω στις οικογένειες και τις ενορίες. Δείγμα επιστολής με PDF."
+      },
+      "body": {
+        "en": ["Sample letter. Download the PDF for the full text."],
+        "ru": ["Образец послания. Полный текст в файле PDF."],
+        "el": ["Δείγμα επιστολής. Κατεβάστε το PDF για το πλήρες κείμενο."]
+      },
+      "pdf": "/files/sample-pastoral-letter-protection.pdf"
+    },
+    {
+      "id": "church-new-year-encyclical-2026",
+      "date": "2026-09-01",
+      "category": "encyclical",
+      "title": { "en": "Encyclical for the beginning of the church year", "ru": "Послание к началу церковного года", "el": "Εγκύκλιος για την αρχή της Ινδίκτου" },
+      "summary": {
+        "en": "On the care of creation and the start of the new liturgical year. Sample encyclical with PDF.",
+        "ru": "О бережном отношении к творению и о начале церковного года. Образец послания с PDF.",
+        "el": "Για τη φροντίδα της κτίσης και την αρχή του νέου εκκλησιαστικού έτους. Δείγμα εγκυκλίου με PDF."
+      },
+      "body": {
+        "en": ["Sample encyclical. Download the PDF for the full text."],
+        "ru": ["Образец послания. Полный текст в файле PDF."],
+        "el": ["Δείγμα εγκυκλίου. Κατεβάστε το PDF για το πλήρες κείμενο."]
+      },
+      "pdf": "/files/sample-encyclical-church-new-year.pdf"
+    },
+    {
+      "id": "youth-council-formed-2026",
+      "date": "2026-10-26",
+      "category": "announcement",
+      "title": { "en": "Diocesan youth council formed", "ru": "Создан епархиальный молодёжный совет", "el": "Συγκροτήθηκε το Συμβούλιο Νεότητας" },
+      "summary": {
+        "en": "Two young people from each deanery will help plan retreats and camp. Sample news.",
+        "ru": "По два человека от каждого благочиния будут помогать готовить слёты и лагерь. Образец новости.",
+        "el": "Δύο νέοι από κάθε περιφέρεια θα βοηθούν στον σχεδιασμό συνάξεων και κατασκήνωσης. Δείγμα είδησης."
+      },
+      "body": {
+        "en": ["Sample news. Replace with your own announcement."],
+        "ru": ["Образец новости. Замените своим объявлением."],
+        "el": ["Δείγμα είδησης. Αντικαταστήστε με τη δική σας ανακοίνωση."]
+      }
+    }
+  ]
+}

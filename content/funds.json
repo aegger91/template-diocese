@@ -1,0 +1,39 @@
+{
+  "$schema": "../schemas/funds.schema.json",
+  "appeal": {
+    "title": { "en": "Annual Diocesan Appeal", "ru": "Ежегодный епархиальный сбор", "el": "Ετήσια Έκκληση της Επισκοπής" },
+    "text": {
+      "en": "Your gift supports the work no single parish can do alone: priests for our missions, help for seminarians and care for families in need.",
+      "ru": "Ваше пожертвование поддерживает то, что не под силу одному приходу: священников для миссий, помощь семинаристам и заботу о нуждающихся семьях.",
+      "el": "Η δωρεά σας στηρίζει το έργο που καμία ενορία δεν μπορεί να κάνει μόνη της: ιερείς για τις ιεραποστολές, βοήθεια στους ιεροσπουδαστές και φροντίδα για οικογένειες σε ανάγκη."
+    }
+  },
+  "funds": [
+    {
+      "id": "diocesan-appeal",
+      "name": { "en": "Annual Diocesan Appeal", "ru": "Ежегодный епархиальный сбор", "el": "Ετήσια Έκκληση" },
+      "description": { "en": "Where the need is greatest across the diocese.", "ru": "Туда, где нужда сейчас больше всего.", "el": "Όπου η ανάγκη είναι μεγαλύτερη." },
+      "isDefault": true
+    },
+    {
+      "id": "mission-priests",
+      "name": { "en": "Mission priests fund", "ru": "Фонд миссионерских священников", "el": "Ταμείο ιερέων ιεραποστολής" },
+      "description": { "en": "Travel and stipends for priests who serve our missions.", "ru": "Поездки и содержание священников, служащих в миссиях.", "el": "Ταξίδια και ενίσχυση των ιερέων που διακονούν τις ιεραποστολές." }
+    },
+    {
+      "id": "seminarians",
+      "name": { "en": "Seminarian support", "ru": "Помощь семинаристам", "el": "Στήριξη ιεροσπουδαστών" },
+      "description": { "en": "Tuition and books for students preparing for ordination.", "ru": "Плата за обучение и книги для готовящихся к рукоположению.", "el": "Δίδακτρα και βιβλία για όσους προετοιμάζονται για χειροτονία." }
+    },
+    {
+      "id": "charity",
+      "name": { "en": "Diocesan charity", "ru": "Епархиальная благотворительность", "el": "Φιλανθρωπικό ταμείο" },
+      "description": { "en": "Food drives and help for families in sudden need.", "ru": "Сбор продуктов и помощь семьям в трудной ситуации.", "el": "Συλλογές τροφίμων και βοήθεια σε οικογένειες σε ξαφνική ανάγκη." }
+    },
+    {
+      "id": "youth-camp",
+      "name": { "en": "Camp scholarships", "ru": "Стипендии для лагеря", "el": "Υποτροφίες κατασκήνωσης" },
+      "description": { "en": "So that no child misses camp because of cost.", "ru": "Чтобы ни один ребёнок не остался без лагеря из-за денег.", "el": "Ώστε κανένα παιδί να μη χάσει την κατασκήνωση λόγω κόστους." }
+    }
+  ]
+}
